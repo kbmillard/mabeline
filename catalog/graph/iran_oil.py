@@ -260,8 +260,60 @@ def build_iran_oil_receipt(*, truck_month: str | None = None) -> dict[str, Any]:
             "note": "May 2026 Iran→US goods are non-oil (e.g. carpets); vessel crude weight is zero in IMDB month.",
         },
         "truck_petroleum": truck,
+        "hormuz_lever": {
+            "pattern": "open_strait_calm_then_threaten_spike",
+            "unit": "USD_per_bbl_WTI_reported",
+            "note": (
+                "Not Iran→US barrels (EIA IRN last 202310). Lever is Hormuz risk + sanctions waiver "
+                "on/off. Truck +55% is a separate sensor."
+            ),
+            "events": [
+                {
+                    "when": "war_peak_2026",
+                    "wti_usd": 119.48,
+                    "label": "conflict / Hormuz disruption peak (reported)",
+                    "source": "DTN/market reports Jul 2026",
+                },
+                {
+                    "when": "2026-06-17",
+                    "label": "Islamabad MoU — ceasefire window, strait reopen, temporary Iran oil waiver",
+                    "price_effect": "WTI fell ~4 weeks toward ~67",
+                    "wti_usd": 67.04,
+                    "source": "DTN Jul 8 2026 (ceasefire aftermath lows)",
+                },
+                {
+                    "when": "2026-07-07/08",
+                    "label": "ceasefire called over + strikes + Iran oil waiver revoked",
+                    "price_effect": "WTI jumped to ~73–76 same session",
+                    "wti_usd": 73.52,
+                    "source": "DTN/AP/Al Jazeera Jul 8–9 2026",
+                },
+            ],
+            "world_us_crude_kbbl_recent": None,  # filled below
+        },
         "public_url": "https://mabeline.vercel.app/iran",
     }
+
+    # Attach newest world crude months from same PET file (sensor, not Iran)
+    try:
+        pet = _pet_path()
+        world_m: list[dict[str, Any]] = []
+        with pet.open(encoding="utf-8") as fh:
+            for line in fh:
+                if "PET_IMPORTS.WORLD-US-ALL.M" not in line:
+                    continue
+                obj = json.loads(line)
+                world_m = [
+                    {"period": str(p), "kbbl": float(v)}
+                    for p, v in (obj.get("data") or [])
+                    if v is not None
+                ]
+                world_m.sort(key=lambda r: r["period"])
+                break
+        receipt["hormuz_lever"]["world_us_crude_kbbl_recent"] = world_m[-8:]
+    except Exception:
+        pass
+
     write_json(RECEIPT_PATH, receipt)
     return receipt
 

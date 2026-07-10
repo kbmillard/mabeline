@@ -1,6 +1,6 @@
 {
   "scan_type": "thg_iran_oil_v1",
-  "as_of": "2026-07-10T02:27:18Z",
+  "as_of": "2026-07-10T02:38:25Z",
   "thesis": "truck=sensor commodity=signal; Iran origin_pressure tags geopolitics onto SCTG 17",
   "sctg2": "17",
   "sctg2_name": "Petroleum products",
@@ -95,6 +95,67 @@
     "truck_weight": 1576.0,
     "prior_weight": 1016.0,
     "source": "temporal_change_scores"
+  },
+  "hormuz_lever": {
+    "pattern": "open_strait_calm_then_threaten_spike",
+    "unit": "USD_per_bbl_WTI_reported",
+    "note": "Not Iran\u2192US barrels (EIA IRN last 202310). Lever is Hormuz risk + sanctions waiver on/off. Truck +55% is a separate sensor.",
+    "events": [
+      {
+        "when": "war_peak_2026",
+        "wti_usd": 119.48,
+        "label": "conflict / Hormuz disruption peak (reported)",
+        "source": "DTN/market reports Jul 2026"
+      },
+      {
+        "when": "2026-06-17",
+        "label": "Islamabad MoU \u2014 ceasefire window, strait reopen, temporary Iran oil waiver",
+        "price_effect": "WTI fell ~4 weeks toward ~67",
+        "wti_usd": 67.04,
+        "source": "DTN Jul 8 2026 (ceasefire aftermath lows)"
+      },
+      {
+        "when": "2026-07-07/08",
+        "label": "ceasefire called over + strikes + Iran oil waiver revoked",
+        "price_effect": "WTI jumped to ~73\u201376 same session",
+        "wti_usd": 73.52,
+        "source": "DTN/AP/Al Jazeera Jul 8\u20139 2026"
+      }
+    ],
+    "world_us_crude_kbbl_recent": [
+      {
+        "period": "202509",
+        "kbbl": 192039.0
+      },
+      {
+        "period": "202510",
+        "kbbl": 182832.0
+      },
+      {
+        "period": "202511",
+        "kbbl": 173404.0
+      },
+      {
+        "period": "202512",
+        "kbbl": 198699.0
+      },
+      {
+        "period": "202601",
+        "kbbl": 200538.0
+      },
+      {
+        "period": "202602",
+        "kbbl": 180799.0
+      },
+      {
+        "period": "202603",
+        "kbbl": 202613.0
+      },
+      {
+        "period": "202604",
+        "kbbl": 187705.0
+      }
+    ]
   },
   "public_url": "https://mabeline.vercel.app/iran"
 }
