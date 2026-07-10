@@ -1,0 +1,235 @@
+{
+  "scan_type": "penny_forward_screen_v1",
+  "as_of": "2026-07-07",
+  "survivor_count": 20,
+  "top_k": 20,
+  "method": "penny_now biotech screen; projection = analyst mean target vs current price; NOT investment advice",
+  "elapsed_sec": null,
+  "top": [
+    {
+      "ticker": "ENSC",
+      "name": "Ensysce Biosciences, Inc.",
+      "px": 0.28,
+      "score": 58.601000000000006,
+      "ret_1y": -88.1,
+      "ret_3m": -50.6,
+      "upside_pct": 5860.1,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "CASIF",
+      "name": "CASI Pharmaceuticals, Inc.",
+      "px": 0.13,
+      "score": 29.746,
+      "ret_1y": -90.2,
+      "ret_3m": -7.1,
+      "upside_pct": 2974.6,
+      "sector": null,
+      "exchange": "OQB"
+    },
+    {
+      "ticker": "RVPH",
+      "name": "REVIVA PHARMACEUTICALS HOLDINGS, INC.",
+      "px": 0.63,
+      "score": 26.778000000000002,
+      "ret_1y": -91.4,
+      "ret_3m": -11.5,
+      "upside_pct": 2677.8,
+      "sector": null,
+      "exchange": "OQB"
+    },
+    {
+      "ticker": "SBFM",
+      "name": "Sunshine Biopharma Inc.",
+      "px": 2.08,
+      "score": 25.923000000000002,
+      "ret_1y": -85.9,
+      "ret_3m": -82.1,
+      "upside_pct": 2592.3,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "KAPA",
+      "name": "Kairos Pharma, LTD.",
+      "px": 0.36,
+      "score": 21.221999999999998,
+      "ret_1y": -45.7,
+      "ret_3m": -41.9,
+      "upside_pct": 2122.2,
+      "sector": null,
+      "exchange": "ASE"
+    },
+    {
+      "ticker": "SLXN",
+      "name": "Silexion Therapeutics Corp",
+      "px": 2.74,
+      "score": 20.898000000000003,
+      "ret_1y": -97.8,
+      "ret_3m": -76.2,
+      "upside_pct": 2089.8,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "HOWL",
+      "name": "Werewolf Therapeutics, Inc.",
+      "px": 0.34,
+      "score": 19.349,
+      "ret_1y": -67.2,
+      "ret_3m": -66.9,
+      "upside_pct": 1934.9,
+      "sector": null,
+      "exchange": "NMS"
+    },
+    {
+      "ticker": "REVB",
+      "name": "REVELATION BIOSCIENCES, INC.",
+      "px": 0.99,
+      "score": 18.444000000000003,
+      "ret_1y": -90.4,
+      "ret_3m": -14.7,
+      "upside_pct": 1844.4,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "JSPR",
+      "name": "Jasper Therapeutics, Inc.",
+      "px": 0.48,
+      "score": 18.03,
+      "ret_1y": -84.2,
+      "ret_3m": -29.6,
+      "upside_pct": 1803.0,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "CELZ",
+      "name": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+      "px": 1.09,
+      "score": 17.349,
+      "ret_1y": -58.9,
+      "ret_3m": -49.1,
+      "upside_pct": 1734.9,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "AIM",
+      "name": "AIM ImmunoTech Inc.",
+      "px": 0.31,
+      "score": 16.185,
+      "ret_1y": -96.4,
+      "ret_3m": -48.2,
+      "upside_pct": 1618.5,
+      "sector": null,
+      "exchange": "ASE"
+    },
+    {
+      "ticker": "IGC",
+      "name": "IGC Pharma, Inc.",
+      "px": 0.28,
+      "score": 14.288,
+      "ret_1y": -13.1,
+      "ret_3m": 3.0,
+      "upside_pct": 1428.8,
+      "sector": null,
+      "exchange": "ASE"
+    },
+    {
+      "ticker": "PHIO",
+      "name": "Phio Pharmaceuticals Corp.",
+      "px": 1.01,
+      "score": 12.860999999999999,
+      "ret_1y": -60.4,
+      "ret_3m": -19.8,
+      "upside_pct": 1286.1,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "BTAI",
+      "name": "BioXcel Therapeutics, Inc.",
+      "px": 1.04,
+      "score": 12.462,
+      "ret_1y": -45.3,
+      "ret_3m": -8.8,
+      "upside_pct": 1246.2,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "ESLA",
+      "name": "Estrella Immunopharma, Inc.",
+      "px": 0.91,
+      "score": 12.187000000000001,
+      "ret_1y": 3.2,
+      "ret_3m": -33.1,
+      "upside_pct": 1218.7,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "MDCX",
+      "name": "Medicus Pharma Ltd.",
+      "px": 0.44,
+      "score": 11.879000000000001,
+      "ret_1y": -87.1,
+      "ret_3m": -10.4,
+      "upside_pct": 1187.9,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "SNTI",
+      "name": "Senti Biosciences Holdings, Inc.",
+      "px": 1.01,
+      "score": 11.870999999999999,
+      "ret_1y": -54.3,
+      "ret_3m": 10.7,
+      "upside_pct": 1187.1,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "ACXP",
+      "name": "Acurx Pharmaceuticals, Inc.",
+      "px": 1.45,
+      "score": 10.724,
+      "ret_1y": -84.6,
+      "ret_3m": -59.0,
+      "upside_pct": 1072.4,
+      "sector": null,
+      "exchange": "NCM"
+    },
+    {
+      "ticker": "MDNAF",
+      "name": "Medicenna Therapeutics Corp.",
+      "px": 0.29,
+      "score": 10.207,
+      "ret_1y": -55.2,
+      "ret_3m": -36.1,
+      "upside_pct": 1020.7,
+      "sector": null,
+      "exchange": "OQX"
+    },
+    {
+      "ticker": "TPST",
+      "name": "Tempest Therapeutics, Inc.",
+      "px": 0.99,
+      "score": 10.101,
+      "ret_1y": -86.0,
+      "ret_3m": -37.7,
+      "upside_pct": 1010.1,
+      "sector": null,
+      "exchange": "NCM"
+    }
+  ],
+  "artv_reference": {
+    "ticker": "ARTV",
+    "note": "already matured; excluded by ret_1y filter"
+  },
+  "algorithm": null
+}

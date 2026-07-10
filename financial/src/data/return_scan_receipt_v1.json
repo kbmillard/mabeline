@@ -1,0 +1,90 @@
+{
+  "scan_type": "repo_identifier_to_yfinance_1y_return",
+  "period": "2025-07-07 to 2026-07-07",
+  "sources": [
+    "_unwrapped/sec_filings/company_tickers.json",
+    "_unwrapped/exchanges/jpx/jpx_auto_companies.csv",
+    "_unwrapped/economic/release=2026-07-05/STEO/STEO.txt"
+  ],
+  "runs": {
+    "raw_sec_scan": {
+      "task_id": "620506",
+      "status": "success",
+      "tickers_priced": 5694,
+      "raw_highest": {
+        "ticker": "ECXJ",
+        "return_pct": 14999900.38,
+        "start_usd": 1e-05,
+        "end_usd": 1.5,
+        "note": "OTC penny-stock price-history artifact; not investable"
+      },
+      "raw_runner_up": {
+        "ticker": "AMFN",
+        "return_pct": 98900,
+        "note": "OTC reverse-recap / share-cancellation artifact"
+      },
+      "macro_highest_unfiltered": {
+        "series_id": "STEO.ZWCD_NEC.Q",
+        "name": "Cooling Degree Days New England, Quarterly",
+        "return_pct": 329962518100,
+        "note": "near-zero denominator; not an economic return"
+      }
+    },
+    "sanity_sec_scan_fast": {
+      "task_id": "620508",
+      "status": "success",
+      "filters": "start_price_gte_1_usd, return_cap_500pct",
+      "tickers_priced": 5405,
+      "highest": {
+        "ticker": "ARTV",
+        "return_pct": 497.5,
+        "start_usd": 1.58,
+        "end_usd": 9.44
+      }
+    },
+    "sanity_sec_scan_full": {
+      "task_id": "620507",
+      "status": "success",
+      "filters": "start_price_gte_1_usd, return_cap_500pct",
+      "tickers_priced": 6558,
+      "highest": {
+        "ticker": "ARTV",
+        "return_pct": 497.47,
+        "start_usd": 1.58,
+        "end_usd": 9.44
+      },
+      "note": "slower throttled pass; supersedes fast scan for SEC coverage"
+    },
+    "exchange_sample": {
+      "task_id": "620508",
+      "tickers": [
+        "7203.T",
+        "6758.T",
+        "BAS.DE",
+        "FRVIA.PA",
+        "POM.PA",
+        "005930.KS"
+      ],
+      "priced": 3,
+      "highest": {
+        "ticker": "7203.T",
+        "return_pct": 22.8,
+        "start_usd": 2380.87,
+        "end_usd": 2923.0
+      }
+    },
+    "aborted": [
+      "620505",
+      "620509"
+    ],
+    "abort_reason": "yfinance rate limits after prior full scans"
+  },
+  "prior_validated_basket": {
+    "note": "freight/public names validated before rate-limit block",
+    "highest": {
+      "ticker": "UNFI",
+      "return_pct": 103
+    }
+  },
+  "created_at": "2026-07-08T00:40:00Z"
+}

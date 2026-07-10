@@ -1,0 +1,303 @@
+{
+  "scan_type": "dollar_to_million_playbook_v1",
+  "as_of": "2026-07-07",
+  "goal_usd": 1000000.0,
+  "llm_first": true,
+  "verdict": "$1 \u2192 $1,000,000 requires ~1,000,000\u00d7. SEC equities in this repo cap at ~20\u201360\u00d7 on analyst targets. Only documented $1-ish \u2192 $1M paths are zero-day memecoin launch snipes (KEYCAT, ASTEROID, early SHIB). NOT investment advice.",
+  "paths": {
+    "memecoin_launch": {
+      "feasible_for_1_to_1m": true,
+      "expected_hit_rate": "well under 1%",
+      "documented_examples": [
+        {
+          "name": "KEYCAT (Base)",
+          "in_usd": 100,
+          "out_usd": 8300000,
+          "multiple": 83000,
+          "horizon": "~1 week",
+          "source": "https://coingape.com/trending/trader-turned-100-crypto-investment-into-8-3-million-in-a-week-heres-how-he-did-it/"
+        },
+        {
+          "name": "ASTEROID (Solana)",
+          "in_usd": 575,
+          "out_usd": 1000000,
+          "multiple": 1740,
+          "horizon": "~2 days",
+          "source": "https://finbold.com/trader-turns-575-into-1-million-in-2-days-trading-this-crypto/"
+        },
+        {
+          "name": "SHIB (early)",
+          "in_usd": 650,
+          "out_usd": 1700000,
+          "multiple": 2615,
+          "horizon": "bull cycle",
+          "source": "https://thecryptobasic.com/2024/01/12/shiba-inu-investor-flips-650-to-a-1-7m-fortune/"
+        },
+        {
+          "name": "PEPE (early)",
+          "in_usd": 3000,
+          "out_usd": 73000000,
+          "multiple": 24656,
+          "horizon": "~20 months",
+          "source": "https://dailyhodl.com/2024/12/10/trader-turns-3000-investment-into-73000000-with-frog-themed-memecoin-pepe-lookonchain/"
+        }
+      ],
+      "monitor_checklist": [
+        "Wallet: Phantom (Solana) or Base wallet; keep $5\u201310 gas + $1 buy size",
+        "Watch: Pump.fun new deploys, Bonk launchpad, Base new pairs (DexScreener / Birdeye)",
+        "Entry: first 5\u201330 minutes while mcap often $3K\u2013$100K",
+        "Size: literal $1 per attempt; expect 99%+ total loss",
+        "Exit rules: take partial at 10\u00d7, 100\u00d7; never hold illiquid to zero",
+        "On-chain verify: liquidity locked, mint revoked, holder concentration"
+      ]
+    },
+    "sec_penny_stocks": {
+      "feasible_for_1_to_1m": false,
+      "best_asymmetric_add": {
+        "ticker": "GTBP",
+        "name": "GT Biopharma, Inc.",
+        "price_now": 0.46,
+        "proj_1y_target": 3.0,
+        "proj_upside_pct": 552.2,
+        "ret_1y": 41.4,
+        "ret_3m": -6.1,
+        "mcap_m": 16.6,
+        "exchange": "NCM",
+        "rec": "buy",
+        "vol": 1473251,
+        "catalyst": "GTB-3650/GTB-5550 Phase 1 data H2 2026; NK TriKE platform; ~$13-17M mcap vs billion-dollar NK peers",
+        "sec_file": "_unwrapped/sec_filings/company_tickers.json",
+        "web_refs": [
+          "https://finance.yahoo.com/quote/GTBP/",
+          "https://investingnews.com/the-13-million-company-teaching-the-immune-system-to-hunt-cancer/"
+        ]
+      },
+      "stock_paths_from_moneyball": [
+        {
+          "ticker": "HOWL",
+          "name": "Werewolf Therapeutics, Inc.",
+          "price_now": 0.34,
+          "proj_target": 7.0,
+          "upside_multiple": 20.6,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 20.59,
+          "stake_needed_for_1m_usd": 48543.69,
+          "moneyball_score": 162.0,
+          "cent_zone": true,
+          "exchange": "NMS",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "JSPR",
+          "name": "Jasper Therapeutics, Inc.",
+          "price_now": 0.48,
+          "proj_target": 9.17,
+          "upside_multiple": 19.1,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 19.1,
+          "stake_needed_for_1m_usd": 52356.02,
+          "moneyball_score": 146.1,
+          "cent_zone": true,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "MDCX",
+          "name": "Medicus Pharma Ltd.",
+          "price_now": 0.44,
+          "proj_target": 5.67,
+          "upside_multiple": 12.9,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 12.89,
+          "stake_needed_for_1m_usd": 77519.38,
+          "moneyball_score": 122.9,
+          "cent_zone": true,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "AIM",
+          "name": "AIM ImmunoTech Inc.",
+          "price_now": 0.31,
+          "proj_target": 5.25,
+          "upside_multiple": 16.9,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 16.94,
+          "stake_needed_for_1m_usd": 59171.6,
+          "moneyball_score": 121.9,
+          "cent_zone": true,
+          "exchange": "ASE",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "ENSC",
+          "name": "Ensysce Biosciences, Inc.",
+          "price_now": 0.28,
+          "proj_target": 16.45,
+          "upside_multiple": 58.7,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 58.75,
+          "stake_needed_for_1m_usd": 17035.78,
+          "moneyball_score": 120.0,
+          "cent_zone": true,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "TPST",
+          "name": "Tempest Therapeutics, Inc.",
+          "price_now": 0.99,
+          "proj_target": 11.0,
+          "upside_multiple": 11.1,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 11.11,
+          "stake_needed_for_1m_usd": 90090.09,
+          "moneyball_score": 116.1,
+          "cent_zone": true,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "IGC",
+          "name": "IGC Pharma, Inc.",
+          "price_now": 0.28,
+          "proj_target": 4.25,
+          "upside_multiple": 15.2,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 15.18,
+          "stake_needed_for_1m_usd": 65789.47,
+          "moneyball_score": 115.2,
+          "cent_zone": true,
+          "exchange": "ASE",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "SLXN",
+          "name": "Silexion Therapeutics Corp",
+          "price_now": 2.74,
+          "proj_target": 60.0,
+          "upside_multiple": 21.9,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 21.9,
+          "stake_needed_for_1m_usd": 45662.1,
+          "moneyball_score": 107.0,
+          "cent_zone": false,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "GTBP",
+          "name": "GT Biopharma, Inc.",
+          "price_now": 0.46,
+          "proj_target": 3.0,
+          "upside_multiple": 6.5,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 6.52,
+          "stake_needed_for_1m_usd": 153846.15,
+          "moneyball_score": 106.5,
+          "cent_zone": true,
+          "exchange": "NCM",
+          "source": "moneyball_supplements_v1"
+        },
+        {
+          "ticker": "MDNAF",
+          "name": "Medicenna Therapeutics Corp.",
+          "price_now": 0.29,
+          "proj_target": 3.25,
+          "upside_multiple": 11.2,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 11.21,
+          "stake_needed_for_1m_usd": 89285.71,
+          "moneyball_score": 106.2,
+          "cent_zone": true,
+          "exchange": "OQX",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "KAPA",
+          "name": "Kairos Pharma, LTD.",
+          "price_now": 0.36,
+          "proj_target": 8.0,
+          "upside_multiple": 22.2,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 22.22,
+          "stake_needed_for_1m_usd": 45045.05,
+          "moneyball_score": 105.0,
+          "cent_zone": true,
+          "exchange": "ASE",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "RVPH",
+          "name": "REVIVA PHARMACEUTICALS HOLDINGS, INC.",
+          "price_now": 0.63,
+          "proj_target": 17.5,
+          "upside_multiple": 27.8,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 27.78,
+          "stake_needed_for_1m_usd": 35971.22,
+          "moneyball_score": 102.0,
+          "cent_zone": true,
+          "exchange": "OQB",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "SNTI",
+          "name": "Senti Biosciences Holdings, Inc.",
+          "price_now": 1.01,
+          "proj_target": 13.0,
+          "upside_multiple": 12.9,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 12.87,
+          "stake_needed_for_1m_usd": 77519.38,
+          "moneyball_score": 94.9,
+          "cent_zone": false,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "CELZ",
+          "name": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+          "price_now": 1.09,
+          "proj_target": 20.0,
+          "upside_multiple": 18.3,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 18.35,
+          "stake_needed_for_1m_usd": 54644.81,
+          "moneyball_score": 93.3,
+          "cent_zone": false,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        },
+        {
+          "ticker": "ESLA",
+          "name": "Estrella Immunopharma, Inc.",
+          "price_now": 0.91,
+          "proj_target": 12.0,
+          "upside_multiple": 13.2,
+          "stake_usd_1": 1.0,
+          "value_at_target_from_1_usd": 13.19,
+          "stake_needed_for_1m_usd": 75757.58,
+          "moneyball_score": 93.2,
+          "cent_zone": true,
+          "exchange": "NCM",
+          "source": "penny_forward_screen_v1"
+        }
+      ],
+      "note": "For $1M from stocks use stake_needed_for_1m_usd column (~$17k\u2013$50k at analyst targets). GTBP added via moneyball_supplements (NK-cell asymmetry vs peer mcap)."
+    }
+  },
+  "wired_inputs": {
+    "moneyball_aggregate": "build_reports/moneyball_aggregate_v1.json",
+    "moneyball_supplements": "build_reports/moneyball_supplements_v1.json",
+    "penny_forward_screen": "build_reports/penny_forward_screen_v1.json",
+    "return_scan": "build_reports/return_scan_receipt_v1.json"
+  },
+  "commands": [
+    "bin/mabel-catalog moneyball --sync --goal 1000000",
+    "bin/mabel-catalog financial",
+    "bin/mabel-catalog sync-financial"
+  ],
+  "method": "LLM-first synthesis + moneyball stake math for $1M goal. NOT investment advice.",
+  "created_at": "2026-07-08T13:55:31Z"
+}

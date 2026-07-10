@@ -1,0 +1,455 @@
+{
+  "scan_type": "market_scan_returns_v1",
+  "period": "2025-07-08 to 2026-07-08",
+  "universe_size": 16572,
+  "priced": 15783,
+  "filters": {
+    "min_start_price": 1.0,
+    "max_return_cap": 500.0
+  },
+  "top_50_sane": [
+    {
+      "ticker": "245620.KQ",
+      "market": "KRX",
+      "name": "EDGC",
+      "start": 415.0,
+      "end": 2489.5022,
+      "ret_1y": 499.88
+    },
+    {
+      "ticker": "131290.KQ",
+      "market": "KRX",
+      "name": "\ud2f0\uc5d0\uc2a4\uc774",
+      "start": 39044.1719,
+      "end": 233500.0,
+      "ret_1y": 498.04
+    },
+    {
+      "ticker": "DFTX",
+      "market": "SEC",
+      "name": "Definium Therapeutics, Inc.",
+      "start": 7.47,
+      "end": 44.48,
+      "ret_1y": 495.45
+    },
+    {
+      "ticker": "BBGI",
+      "market": "SEC",
+      "name": "BEASLEY BROADCAST GROUP INC",
+      "start": 4.18,
+      "end": 24.52,
+      "ret_1y": 486.6
+    },
+    {
+      "ticker": "PVLA",
+      "market": "SEC",
+      "name": "PALVELLA THERAPEUTICS, INC.",
+      "start": 24.89,
+      "end": 145.7,
+      "ret_1y": 485.38
+    },
+    {
+      "ticker": "WSKEF",
+      "market": "SEC",
+      "name": "Wisekey International Holding S.A.",
+      "start": 2.4072,
+      "end": 14.0,
+      "ret_1y": 481.6
+    },
+    {
+      "ticker": "008600.KS",
+      "market": "KRX",
+      "name": "\uc70c\ube44\uc2a4",
+      "start": 452.0,
+      "end": 2620.0,
+      "ret_1y": 479.65
+    },
+    {
+      "ticker": "STX",
+      "market": "SEC",
+      "name": "Seagate Technology Holdings plc",
+      "start": 143.2869,
+      "end": 827.64,
+      "ret_1y": 477.61
+    },
+    {
+      "ticker": "MXL",
+      "market": "SEC",
+      "name": "MAXLINEAR, INC",
+      "start": 14.91,
+      "end": 85.82,
+      "ret_1y": 475.59
+    },
+    {
+      "ticker": "036930.KQ",
+      "market": "KRX",
+      "name": "\uc8fc\uc131\uc5d4\uc9c0\ub2c8\uc5b4\ub9c1",
+      "start": 30591.8789,
+      "end": 175600.0,
+      "ret_1y": 474.01
+    },
+    {
+      "ticker": "3103.T",
+      "market": "JPX",
+      "name": "UNITIKA LTD.",
+      "start": 173.0,
+      "end": 982.0,
+      "ret_1y": 467.63
+    },
+    {
+      "ticker": "420770.KQ",
+      "market": "KRX",
+      "name": "\uae30\uac00\ube44\uc2a4",
+      "start": 24744.5176,
+      "end": 140000.0,
+      "ret_1y": 465.78
+    },
+    {
+      "ticker": "VICR",
+      "market": "SEC",
+      "name": "VICOR CORP",
+      "start": 45.64,
+      "end": 257.34,
+      "ret_1y": 463.85
+    },
+    {
+      "ticker": "ARTV",
+      "market": "SEC",
+      "name": "Artiva Biotherapeutics, Inc.",
+      "start": 1.69,
+      "end": 9.48,
+      "ret_1y": 460.95
+    },
+    {
+      "ticker": "6072.T",
+      "market": "JPX",
+      "name": "Jibannet Holdings Co.,Ltd.",
+      "start": 180.0,
+      "end": 1008.0,
+      "ret_1y": 460.0
+    },
+    {
+      "ticker": "EMPG",
+      "market": "SEC",
+      "name": "Empro Group Inc.",
+      "start": 3.12,
+      "end": 17.36,
+      "ret_1y": 456.41
+    },
+    {
+      "ticker": "BIOA",
+      "market": "SEC",
+      "name": "BioAge Labs, Inc.",
+      "start": 4.39,
+      "end": 24.4,
+      "ret_1y": 455.81
+    },
+    {
+      "ticker": "011070.KS",
+      "market": "KRX",
+      "name": "LG\uc774\ub178\ud14d",
+      "start": 147131.8594,
+      "end": 814000.0,
+      "ret_1y": 453.25
+    },
+    {
+      "ticker": "6227.T",
+      "market": "JPX",
+      "name": "AIMECHATEC,Ltd.",
+      "start": 1082.201,
+      "end": 5960.0,
+      "ret_1y": 450.73
+    },
+    {
+      "ticker": "RLAY",
+      "market": "SEC",
+      "name": "Relay Therapeutics, Inc.",
+      "start": 3.59,
+      "end": 19.74,
+      "ret_1y": 449.86
+    },
+    {
+      "ticker": "XMAX",
+      "market": "SEC",
+      "name": "XMax Inc.",
+      "start": 1.59,
+      "end": 8.72,
+      "ret_1y": 448.43
+    },
+    {
+      "ticker": "095610.KQ",
+      "market": "KRX",
+      "name": "\ud14c\uc2a4",
+      "start": 26480.7695,
+      "end": 145000.0,
+      "ret_1y": 447.57
+    },
+    {
+      "ticker": "LWLG",
+      "market": "SEC",
+      "name": "Lightwave Logic, Inc.",
+      "start": 1.24,
+      "end": 6.74,
+      "ret_1y": 443.55
+    },
+    {
+      "ticker": "RILYL",
+      "market": "SEC",
+      "name": "BRC Group Holdings, Inc.",
+      "start": 2.72,
+      "end": 14.56,
+      "ret_1y": 435.29
+    },
+    {
+      "ticker": "CIEN",
+      "market": "SEC",
+      "name": "CIENA CORP",
+      "start": 78.66,
+      "end": 418.91,
+      "ret_1y": 432.56
+    },
+    {
+      "ticker": "7746.T",
+      "market": "JPX",
+      "name": "OKAMOTO GLASS CO.,LTD.",
+      "start": 154.0,
+      "end": 820.0,
+      "ret_1y": 432.47
+    },
+    {
+      "ticker": "TNGX",
+      "market": "SEC",
+      "name": "Tango Therapeutics, Inc.",
+      "start": 5.7,
+      "end": 30.12,
+      "ret_1y": 428.42
+    },
+    {
+      "ticker": "BUUU",
+      "market": "SEC",
+      "name": "BUUU Group Ltd",
+      "start": 4.0,
+      "end": 21.11,
+      "ret_1y": 427.75
+    },
+    {
+      "ticker": "5801.T",
+      "market": "JPX",
+      "name": "Furukawa Electric Co.,Ltd.",
+      "start": 736.9556,
+      "end": 3888.0,
+      "ret_1y": 427.58
+    },
+    {
+      "ticker": "DNTH",
+      "market": "SEC",
+      "name": "Dianthus Therapeutics, Inc. /DE/",
+      "start": 18.25,
+      "end": 95.76,
+      "ret_1y": 424.71
+    },
+    {
+      "ticker": "BKZHF",
+      "market": "SEC",
+      "name": "Santander Bank Polska SA/ADR",
+      "start": 31.8648,
+      "end": 166.922,
+      "ret_1y": 423.84
+    },
+    {
+      "ticker": "080220.KQ",
+      "market": "KRX",
+      "name": "\uc81c\uc8fc\ubc18\ub3c4\uccb4",
+      "start": 15730.0,
+      "end": 82300.0,
+      "ret_1y": 423.2
+    },
+    {
+      "ticker": "440110.KQ",
+      "market": "KRX",
+      "name": "\ud30c\ub450",
+      "start": 13380.0,
+      "end": 70000.0,
+      "ret_1y": 423.17
+    },
+    {
+      "ticker": "RVMD",
+      "market": "SEC",
+      "name": "Revolution Medicines, Inc.",
+      "start": 36.44,
+      "end": 190.46,
+      "ret_1y": 422.67
+    },
+    {
+      "ticker": "064290.KQ",
+      "market": "KRX",
+      "name": "\uc778\ud14d\ud50c\ub7ec\uc2a4",
+      "start": 8880.0,
+      "end": 46350.0,
+      "ret_1y": 421.96
+    },
+    {
+      "ticker": "5985.T",
+      "market": "JPX",
+      "name": "SUNCALL CORPORATION",
+      "start": 291.5445,
+      "end": 1500.0,
+      "ret_1y": 414.5
+    },
+    {
+      "ticker": "3449.T",
+      "market": "JPX",
+      "name": "TECHNOFLEX CORPORATION",
+      "start": 1290.3849,
+      "end": 6620.0,
+      "ret_1y": 413.03
+    },
+    {
+      "ticker": "1948.T",
+      "market": "JPX",
+      "name": "The Kodensha,Co.,Ltd.",
+      "start": 2245.9983,
+      "end": 11450.0,
+      "ret_1y": 409.8
+    },
+    {
+      "ticker": "6522.T",
+      "market": "JPX",
+      "name": "Asterisk Inc.",
+      "start": 412.0,
+      "end": 2096.0,
+      "ret_1y": 408.74
+    },
+    {
+      "ticker": "EVC",
+      "market": "SEC",
+      "name": "ENTRAVISION COMMUNICATIONS CORP",
+      "start": 2.3413,
+      "end": 11.9,
+      "ret_1y": 408.26
+    },
+    {
+      "ticker": "CHRN",
+      "market": "SEC",
+      "name": "ChronoScale Corp",
+      "start": 3.46,
+      "end": 17.52,
+      "ret_1y": 406.36
+    },
+    {
+      "ticker": "INBX",
+      "market": "SEC",
+      "name": "Inhibrx Biosciences, Inc.",
+      "start": 19.94,
+      "end": 100.75,
+      "ret_1y": 405.27
+    },
+    {
+      "ticker": "RILYP",
+      "market": "SEC",
+      "name": "BRC Group Holdings, Inc.",
+      "start": 2.8,
+      "end": 14.11,
+      "ret_1y": 403.93
+    },
+    {
+      "ticker": "182400.KQ",
+      "market": "KRX",
+      "name": "\uc5d4\ucf00\uc774\uc820\ubc14\uc774\uc624\ud14d\ucf54\ub9ac\uc544",
+      "start": 9596.1992,
+      "end": 47980.9961,
+      "ret_1y": 400.0
+    },
+    {
+      "ticker": "219130.KQ",
+      "market": "KRX",
+      "name": "\ud0c0\uc774\uac70\uc77c\ub809",
+      "start": 12750.0,
+      "end": 63500.0,
+      "ret_1y": 398.04
+    },
+    {
+      "ticker": "ARWR",
+      "market": "SEC",
+      "name": "ARROWHEAD PHARMACEUTICALS, INC.",
+      "start": 17.54,
+      "end": 86.97,
+      "ret_1y": 395.84
+    },
+    {
+      "ticker": "9256.T",
+      "market": "JPX",
+      "name": "Succeed co.,ltd.",
+      "start": 780.2766,
+      "end": 3855.0,
+      "ret_1y": 394.06
+    },
+    {
+      "ticker": "FCEL",
+      "market": "SEC",
+      "name": "FUELCELL ENERGY INC",
+      "start": 5.3,
+      "end": 25.96,
+      "ret_1y": 389.81
+    },
+    {
+      "ticker": "3891.T",
+      "market": "JPX",
+      "name": "NIPPON KODOSHI CORPORATION",
+      "start": 1659.188,
+      "end": 8120.0,
+      "ret_1y": 389.4
+    },
+    {
+      "ticker": "MAAS",
+      "market": "SEC",
+      "name": "Maase Inc.",
+      "start": 3.4,
+      "end": 16.6,
+      "ret_1y": 388.24
+    }
+  ],
+  "raw_max": {
+    "ticker": "ECXJ",
+    "market": "SEC",
+    "name": "CXJ GROUP CO., Ltd",
+    "start": 0.0,
+    "end": 1.5,
+    "ret_1y": 14999900.38
+  },
+  "best_per_market": {
+    "KRX": {
+      "ticker": "245620.KQ",
+      "market": "KRX",
+      "name": "EDGC",
+      "start": 415.0,
+      "end": 2489.5022,
+      "ret_1y": 499.88
+    },
+    "JPX": {
+      "ticker": "3103.T",
+      "market": "JPX",
+      "name": "UNITIKA LTD.",
+      "start": 173.0,
+      "end": 982.0,
+      "ret_1y": 467.63
+    },
+    "SEC": {
+      "ticker": "DFTX",
+      "market": "SEC",
+      "name": "Definium Therapeutics, Inc.",
+      "start": 7.47,
+      "end": 44.48,
+      "ret_1y": 495.45
+    },
+    "XETRA": {
+      "ticker": "IFX.DE",
+      "market": "XETRA",
+      "name": "INFINEON TECH.AG NA O.N.",
+      "start": 37.5312,
+      "end": 70.83,
+      "ret_1y": 88.72
+    }
+  },
+  "created_at": "2026-07-08T13:51:01Z"
+}

@@ -1,0 +1,595 @@
+{
+  "month": "202606",
+  "commodities": [
+    {
+      "sctg2": "18",
+      "name": "Chemical products",
+      "score": 51.923,
+      "delta": 100.687,
+      "faf_resid": 119.7752,
+      "weight": 584.0,
+      "prior": 291.0
+    },
+    {
+      "sctg2": "17",
+      "name": "Petroleum products",
+      "score": 30.063,
+      "delta": 55.118,
+      "faf_resid": 216.0177,
+      "weight": 1576.0,
+      "prior": 1016.0
+    },
+    {
+      "sctg2": "11",
+      "name": "Natural sands",
+      "score": 12.994,
+      "delta": 23.853,
+      "faf_resid": 38.9139,
+      "weight": 135.0,
+      "prior": 109.0
+    },
+    {
+      "sctg2": "31",
+      "name": "Mixed freight",
+      "score": 8.792,
+      "delta": 6.241,
+      "faf_resid": 3420.0847,
+      "weight": 19712.0,
+      "prior": 18554.0
+    },
+    {
+      "sctg2": "19",
+      "name": "Coal",
+      "score": 4.621,
+      "delta": 0.0,
+      "faf_resid": 0.3896,
+      "weight": 6.0,
+      "prior": 6.0
+    },
+    {
+      "sctg2": "02",
+      "name": "Cereal grains",
+      "score": 0.0,
+      "delta": -10.909,
+      "faf_resid": 7.3941,
+      "weight": 49.0,
+      "prior": 55.0
+    }
+  ],
+  "corridors": {
+    "18": [
+      {
+        "state": "CA",
+        "score": 100.0,
+        "delta": 373.913,
+        "weight": 109.0
+      },
+      {
+        "state": "AR",
+        "score": 100.0,
+        "delta": 860.0,
+        "weight": 48.0
+      },
+      {
+        "state": "OH",
+        "score": 100.0,
+        "delta": 416.667,
+        "weight": 31.0
+      },
+      {
+        "state": "MS",
+        "score": 100.0,
+        "delta": 666.667,
+        "weight": 23.0
+      },
+      {
+        "state": "PA",
+        "score": 100.0,
+        "delta": 400.0,
+        "weight": 20.0
+      },
+      {
+        "state": "WI",
+        "score": 100.0,
+        "delta": 450.0,
+        "weight": 11.0
+      }
+    ],
+    "17": [
+      {
+        "state": "PA",
+        "score": 100.0,
+        "delta": 325.0,
+        "weight": 85.0
+      },
+      {
+        "state": "KY",
+        "score": 100.0,
+        "delta": 300.0,
+        "weight": 52.0
+      },
+      {
+        "state": "MS",
+        "score": 100.0,
+        "delta": 425.0,
+        "weight": 42.0
+      },
+      {
+        "state": "MO",
+        "score": 100.0,
+        "delta": 200.0,
+        "weight": 36.0
+      },
+      {
+        "state": "NJ",
+        "score": 100.0,
+        "delta": 285.714,
+        "weight": 27.0
+      },
+      {
+        "state": "LA",
+        "score": 100.0,
+        "delta": 525.0,
+        "weight": 25.0
+      }
+    ],
+    "11": [
+      {
+        "state": "TN",
+        "score": 100.0,
+        "delta": 250.0,
+        "weight": 7.0
+      },
+      {
+        "state": "IN",
+        "score": 51.042,
+        "delta": 100.0,
+        "weight": 4.0
+      },
+      {
+        "state": "GA",
+        "score": 51.042,
+        "delta": 100.0,
+        "weight": 4.0
+      },
+      {
+        "state": "OK",
+        "score": 51.042,
+        "delta": 100.0,
+        "weight": 4.0
+      },
+      {
+        "state": "PA",
+        "score": 51.042,
+        "delta": 100.0,
+        "weight": 4.0
+      },
+      {
+        "state": "OH",
+        "score": 31.042,
+        "delta": 60.0,
+        "weight": 8.0
+      }
+    ],
+    "31": [
+      {
+        "state": "MA",
+        "score": 100.0,
+        "delta": 400.0,
+        "weight": 50.0
+      },
+      {
+        "state": "SC",
+        "score": 50.345,
+        "delta": 97.122,
+        "weight": 274.0
+      },
+      {
+        "state": "KS",
+        "score": 42.674,
+        "delta": 81.818,
+        "weight": 180.0
+      },
+      {
+        "state": "SD",
+        "score": 34.301,
+        "delta": 65.116,
+        "weight": 71.0
+      },
+      {
+        "state": "AL",
+        "score": 31.247,
+        "delta": 58.929,
+        "weight": 267.0
+      },
+      {
+        "state": "NY",
+        "score": 28.284,
+        "delta": 52.966,
+        "weight": 361.0
+      }
+    ],
+    "19": [
+      {
+        "state": "NE",
+        "score": 4.621,
+        "delta": 0.0,
+        "weight": 2.0
+      },
+      {
+        "state": "WV",
+        "score": 0.0,
+        "delta": -33.333,
+        "weight": 2.0
+      },
+      {
+        "state": "IL",
+        "score": 0.0,
+        "delta": -66.667,
+        "weight": 2.0
+      }
+    ],
+    "02": [
+      {
+        "state": "TX",
+        "score": 35.324,
+        "delta": 66.667,
+        "weight": 15.0
+      },
+      {
+        "state": "NE",
+        "score": 1.988,
+        "delta": 0.0,
+        "weight": 2.0
+      },
+      {
+        "state": "NC",
+        "score": 1.988,
+        "delta": 0.0,
+        "weight": 2.0
+      },
+      {
+        "state": "OK",
+        "score": 1.988,
+        "delta": 0.0,
+        "weight": 2.0
+      },
+      {
+        "state": "TN",
+        "score": 1.988,
+        "delta": 0.0,
+        "weight": 2.0
+      },
+      {
+        "state": "ND",
+        "score": 1.988,
+        "delta": 0.0,
+        "weight": 2.0
+      }
+    ]
+  },
+  "carriers": {
+    "18": [
+      {
+        "dot": "63391",
+        "weight": 47.0,
+        "shippers": 6
+      },
+      {
+        "dot": "288323",
+        "weight": 41.0,
+        "shippers": 4
+      },
+      {
+        "dot": "388004",
+        "weight": 25.0,
+        "shippers": 4
+      },
+      {
+        "dot": "332037",
+        "weight": 25.0,
+        "shippers": 4
+      },
+      {
+        "dot": "188891",
+        "weight": 23.0,
+        "shippers": 4
+      },
+      {
+        "dot": "239039",
+        "weight": 21.0,
+        "shippers": 2
+      },
+      {
+        "dot": "90849",
+        "weight": 15.0,
+        "shippers": 4
+      },
+      {
+        "dot": "661173",
+        "weight": 14.0,
+        "shippers": 7
+      }
+    ],
+    "17": [
+      {
+        "dot": "2864600",
+        "weight": 133.0,
+        "shippers": 22
+      },
+      {
+        "dot": "913300",
+        "weight": 61.0,
+        "shippers": 16
+      },
+      {
+        "dot": "811465",
+        "weight": 50.0,
+        "shippers": 7
+      },
+      {
+        "dot": "91805",
+        "weight": 50.0,
+        "shippers": 12
+      },
+      {
+        "dot": "559477",
+        "weight": 42.0,
+        "shippers": 9
+      },
+      {
+        "dot": "2412786",
+        "weight": 37.0,
+        "shippers": 8
+      },
+      {
+        "dot": "2439172",
+        "weight": 33.0,
+        "shippers": 7
+      },
+      {
+        "dot": "2126272",
+        "weight": 32.0,
+        "shippers": 7
+      }
+    ],
+    "11": [
+      {
+        "dot": "178538",
+        "weight": 6.0,
+        "shippers": 3
+      },
+      {
+        "dot": "54283",
+        "weight": 6.0,
+        "shippers": 3
+      },
+      {
+        "dot": "555875",
+        "weight": 6.0,
+        "shippers": 2
+      },
+      {
+        "dot": "494832",
+        "weight": 5.0,
+        "shippers": 2
+      },
+      {
+        "dot": "87409",
+        "weight": 5.0,
+        "shippers": 1
+      },
+      {
+        "dot": "136936",
+        "weight": 4.0,
+        "shippers": 1
+      },
+      {
+        "dot": "2464582",
+        "weight": 4.0,
+        "shippers": 1
+      },
+      {
+        "dot": "120670",
+        "weight": 4.0,
+        "shippers": 2
+      }
+    ]
+  },
+  "shippers": {
+    "18": [
+      {
+        "name": "R L CARRIERS",
+        "weight": 37.0,
+        "carriers": 1
+      },
+      {
+        "name": "AUTOZONE",
+        "weight": 33.0,
+        "carriers": 1
+      },
+      {
+        "name": "CARRIER",
+        "weight": 24.0,
+        "carriers": 9
+      },
+      {
+        "name": "LINDE",
+        "weight": 17.0,
+        "carriers": 2
+      },
+      {
+        "name": "FEDEX",
+        "weight": 17.0,
+        "carriers": 1
+      },
+      {
+        "name": "AMERIGAS",
+        "weight": 14.0,
+        "carriers": 1
+      }
+    ],
+    "17": [
+      {
+        "name": "PMI TRADING",
+        "weight": 105.0,
+        "carriers": 11
+      },
+      {
+        "name": "KINDER MORGAN",
+        "weight": 64.0,
+        "carriers": 18
+      },
+      {
+        "name": "WSTRN RFNG",
+        "weight": 48.0,
+        "carriers": 5
+      },
+      {
+        "name": "PHILLIPS 66",
+        "weight": 44.0,
+        "carriers": 16
+      },
+      {
+        "name": "CARRIER",
+        "weight": 42.0,
+        "carriers": 18
+      },
+      {
+        "name": "SUNOCO",
+        "weight": 39.0,
+        "carriers": 14
+      }
+    ],
+    "11": [
+      {
+        "name": "STEEL GIRDER LLC",
+        "weight": 10.0,
+        "carriers": 4
+      },
+      {
+        "name": "STEEL DYNAMICS",
+        "weight": 8.0,
+        "carriers": 3
+      },
+      {
+        "name": "METALSA",
+        "weight": 7.0,
+        "carriers": 3
+      },
+      {
+        "name": "NUCOR STEEL",
+        "weight": 6.0,
+        "carriers": 3
+      },
+      {
+        "name": "WORTHINGTON STEEL",
+        "weight": 5.0,
+        "carriers": 1
+      },
+      {
+        "name": "STEELCASE",
+        "weight": 5.0,
+        "carriers": 2
+      }
+    ]
+  },
+  "carrier_names": {
+    "239039": {
+      "legal": "FEDEX FREIGHT INC",
+      "state": "AR"
+    },
+    "136936": {
+      "legal": "STRUCTURAL METALS INC",
+      "state": "TX"
+    },
+    "388004": {
+      "legal": "AMERIGAS PROPANE LP",
+      "state": "PA"
+    },
+    "288323": {
+      "legal": "AUTOZONE TEXAS LLC",
+      "state": "TN"
+    },
+    "332037": {
+      "legal": "LINDE INC",
+      "state": "NY"
+    },
+    "2412786": {
+      "legal": "TRAREYSA SA DE CV",
+      "state": "TA"
+    },
+    "2864600": {
+      "legal": "QUALITY TANK SA DE CV",
+      "state": "NL"
+    },
+    "178538": {
+      "legal": "MAVERICK TRANSPORTATION LLC",
+      "state": "AR"
+    },
+    "188891": {
+      "legal": "CONTRACT TRANSPORTATION SYSTEMS CO",
+      "state": "OH"
+    },
+    "811465": {
+      "legal": "CLI TRANSPORT LP",
+      "state": "PA"
+    },
+    "2126272": {
+      "legal": "WINDSTAR TRUCKING LLC",
+      "state": "TX"
+    },
+    "494832": {
+      "legal": "JORDAN CARRIERS INC",
+      "state": "MS"
+    },
+    "2464582": {
+      "legal": "STEEL GIRDER LLC",
+      "state": "AZ"
+    },
+    "54283": {
+      "legal": "SWIFT TRANSPORTATION COMPANY OF ARIZONA LLC",
+      "state": "AZ"
+    },
+    "63391": {
+      "legal": "GREENWOOD MOTOR LINES INC",
+      "state": "OH"
+    },
+    "87409": {
+      "legal": "ANNETT HOLDINGS INC",
+      "state": "IA"
+    },
+    "90849": {
+      "legal": "OLD DOMINION FREIGHT LINE INC",
+      "state": "NC"
+    },
+    "91805": {
+      "legal": "PILOT TRAVEL CENTERS LLC",
+      "state": "TN"
+    },
+    "913300": {
+      "legal": "GEMINI MOTOR TRANSPORT LP",
+      "state": "OK"
+    },
+    "555875": {
+      "legal": "AMEX DE MEXICO SA DE CV",
+      "state": "BN"
+    },
+    "559477": {
+      "legal": "SERVICIOS ESPECIALIZADOS ALANIS SA DE CV",
+      "state": "NL"
+    },
+    "2439172": {
+      "legal": "HR SERVICES LLC",
+      "state": "NV"
+    },
+    "120670": {
+      "legal": "THE KAPLAN TRUCKING COMPANY",
+      "state": "OH"
+    },
+    "661173": {
+      "legal": "CENTRAL TRANSPORT LLC",
+      "state": "MI"
+    }
+  }
+}

@@ -1,0 +1,1715 @@
+{
+  "scan_type": "moving_commodity_v1",
+  "thesis": "commodity moving a lot = the signal",
+  "tie_method": "SCTG spine: FAF5 national tonnage % + CFS shipment tonnage %",
+  "as_of": "2026-07-09",
+  "faf_year": "2024",
+  "sources": {
+    "faf5": "_unwrapped/faf5_freight/release=2026-07-05/faf5_csv/FAF5.7.1.csv",
+    "cfs_2022": "_unwrapped/trade/release=2026-07-05/cfs_2022_pums/cfs_2022_pums.csv",
+    "source_truth": {
+      "faf5_csv": "_unwrapped/faf5_freight/release=2026-07-05/faf5_csv/FAF5.7.1.csv",
+      "cfs_2022_pums": "_unwrapped/trade/release=2026-07-05/cfs_2022_pums/cfs_2022_pums.csv",
+      "pet_imports": "_unwrapped/maritime/release=2026-07-09/PET_IMPORTS/PET_IMPORTS.txt",
+      "eia_coal": "_unwrapped/rail/release=2026-07-09/COAL/COAL.txt",
+      "fmcsa_census": "_unwrapped/fmcsa_carriers/company_census.csv",
+      "fmcsa_inspections": "_unwrapped/fmcsa_carriers/mcmis/vehicle_inspection_file.csv",
+      "usgs_commodity": "_unwrapped/usgs_minerals/release=2026-07-05/usgs_mrds_relational_compact/Commodity.txt",
+      "stb_ep724_public": "_unwrapped/stb_rail/release=2026-07-09/ep724-public-data.csv",
+      "stb_ep724_dwell": "_unwrapped/stb_rail/release=2026-07-09/ep724-average-terminal-dwell-time.csv",
+      "stb_ep724_element10": "_unwrapped/stb_rail/release=2026-07-09/ep724-element-10.csv",
+      "epa_tri_2024": "_unwrapped/epa_toxics/release=2026-07-09/tri_2024_US_basic.csv"
+    }
+  },
+  "moving_a_lot": [
+    {
+      "sctg": "19",
+      "commodity": "Coal",
+      "moving_a_lot_score": 12.07,
+      "faf5_thousand_tons": 3081943.1,
+      "faf5_pct_of_national": 15.4,
+      "cfs_million_tons": 1720925.34,
+      "cfs_pct_of_shipments": 7.08,
+      "primary_mode": "Pipeline",
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 80209.5
+        },
+        {
+          "corridor": "FAF zone 350 \u2192 FAF zone 350",
+          "thousand_tons": 75952.89
+        },
+        {
+          "corridor": "FAF zone 229 \u2192 FAF zone 280",
+          "thousand_tons": 50095.95
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 1
+    },
+    {
+      "sctg": "12",
+      "commodity": "Gasoline & jet fuel",
+      "moving_a_lot_score": 12.06,
+      "faf5_thousand_tons": 1961487.55,
+      "faf5_pct_of_national": 9.8,
+      "cfs_million_tons": 3758012.29,
+      "cfs_pct_of_shipments": 15.46,
+      "primary_mode": "Truck",
+      "top_corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+          "thousand_tons": 76917.67
+        },
+        {
+          "corridor": "FAF zone 122 \u2192 FAF zone 122",
+          "thousand_tons": 64164.44
+        },
+        {
+          "corridor": "FAF zone 271 \u2192 FAF zone 271",
+          "thousand_tons": 44236.72
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 2
+    },
+    {
+      "sctg": "17",
+      "commodity": "Petroleum products",
+      "moving_a_lot_score": 7.58,
+      "faf5_thousand_tons": 1459974.0,
+      "faf5_pct_of_national": 7.3,
+      "cfs_million_tons": 1946607.79,
+      "cfs_pct_of_shipments": 8.01,
+      "primary_mode": "Truck",
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 84434.28
+        },
+        {
+          "corridor": "FAF zone 481 \u2192 FAF zone 481",
+          "thousand_tons": 71932.2
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 68294.6
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 3
+    },
+    {
+      "sctg": "02",
+      "commodity": "Cereal grains",
+      "moving_a_lot_score": 5.57,
+      "faf5_thousand_tons": 1326135.17,
+      "faf5_pct_of_national": 6.63,
+      "cfs_million_tons": 968840.2,
+      "cfs_pct_of_shipments": 3.99,
+      "primary_mode": "Truck",
+      "top_corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 137202.38
+        },
+        {
+          "corridor": "Remainder of Missouri \u2192 Remainder of Missouri",
+          "thousand_tons": 104708.32
+        },
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 68978.99
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 4
+    },
+    {
+      "sctg": "18",
+      "commodity": "Chemical products",
+      "moving_a_lot_score": 5.07,
+      "faf5_thousand_tons": 975730.63,
+      "faf5_pct_of_national": 4.88,
+      "cfs_million_tons": 1303303.45,
+      "cfs_pct_of_shipments": 5.36,
+      "primary_mode": "Truck",
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 82509.52
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 63649.65
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 55479.19
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 5
+    },
+    {
+      "sctg": "07",
+      "commodity": "Meat",
+      "moving_a_lot_score": 4.14,
+      "faf5_thousand_tons": 687886.3,
+      "faf5_pct_of_national": 3.44,
+      "cfs_million_tons": 1258627.05,
+      "cfs_pct_of_shipments": 5.18,
+      "primary_mode": "Truck",
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 20721.35
+        },
+        {
+          "corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+          "thousand_tons": 15888.75
+        },
+        {
+          "corridor": "FAF zone 069 \u2192 FAF zone 069",
+          "thousand_tons": 15379.47
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 6
+    },
+    {
+      "sctg": "16",
+      "commodity": "Natural gas",
+      "moving_a_lot_score": 3.66,
+      "faf5_thousand_tons": 1219860.19,
+      "faf5_pct_of_national": 6.1,
+      "cfs_million_tons": null,
+      "cfs_pct_of_shipments": 0.0,
+      "primary_mode": "Pipeline",
+      "top_corridor": "Remainder of Texas \u2192 FAF zone 483",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Texas \u2192 FAF zone 483",
+          "thousand_tons": 131189.6
+        },
+        {
+          "corridor": "Remainder of Ohio \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 101577.34
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 94149.78
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": false,
+        "aligned": false
+      },
+      "rank": 7
+    },
+    {
+      "sctg": "11",
+      "commodity": "Natural sands",
+      "moving_a_lot_score": 3.48,
+      "faf5_thousand_tons": 694230.34,
+      "faf5_pct_of_national": 3.47,
+      "cfs_million_tons": 849359.62,
+      "cfs_pct_of_shipments": 3.49,
+      "primary_mode": "Truck",
+      "top_corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+      "top_corridors": [
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 48242.75
+        },
+        {
+          "corridor": "Remainder of Illinois \u2192 Remainder of Illinois",
+          "thousand_tons": 41956.31
+        },
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 33000.82
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 8
+    },
+    {
+      "sctg": "31",
+      "commodity": "Mixed freight",
+      "moving_a_lot_score": 3.46,
+      "faf5_thousand_tons": 1153380.9,
+      "faf5_pct_of_national": 5.76,
+      "cfs_million_tons": 17.74,
+      "cfs_pct_of_shipments": 0.0,
+      "primary_mode": "Truck",
+      "top_corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+      "top_corridors": [
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 43655.08
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 40059.91
+        },
+        {
+          "corridor": "FAF zone 363 \u2192 FAF zone 363",
+          "thousand_tons": 26741.25
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 9
+    },
+    {
+      "sctg": "03",
+      "commodity": "Other ag products",
+      "moving_a_lot_score": 3.07,
+      "faf5_thousand_tons": 741892.22,
+      "faf5_pct_of_national": 3.71,
+      "cfs_million_tons": 513130.9,
+      "cfs_pct_of_shipments": 2.11,
+      "primary_mode": "Truck",
+      "top_corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 25035.82
+        },
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 24230.76
+        },
+        {
+          "corridor": "Remainder of Ohio \u2192 Remainder of Ohio",
+          "thousand_tons": 21808.14
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 10
+    },
+    {
+      "sctg": "20",
+      "commodity": "SCTG 20",
+      "moving_a_lot_score": 2.97,
+      "faf5_thousand_tons": 452265.54,
+      "faf5_pct_of_national": 2.26,
+      "cfs_million_tons": 978803.19,
+      "cfs_pct_of_shipments": 4.03,
+      "primary_mode": null,
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 48845.86
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 8874.32
+        },
+        {
+          "corridor": "FAF zone 482 \u2192 FAF zone 222",
+          "thousand_tons": 8214.6
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 11
+    },
+    {
+      "sctg": "43",
+      "commodity": "SCTG 43",
+      "moving_a_lot_score": 2.73,
+      "faf5_thousand_tons": 433832.1,
+      "faf5_pct_of_national": 2.17,
+      "cfs_million_tons": 869380.66,
+      "cfs_pct_of_shipments": 3.58,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 15210.93
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 9839.33
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 8870.49
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 12
+    },
+    {
+      "sctg": "41",
+      "commodity": "Waste/scrap",
+      "moving_a_lot_score": 2.71,
+      "faf5_thousand_tons": 722852.28,
+      "faf5_pct_of_national": 3.61,
+      "cfs_million_tons": 333986.46,
+      "cfs_pct_of_shipments": 1.37,
+      "primary_mode": "Truck",
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 24701.68
+        },
+        {
+          "corridor": "Remainder of New York \u2192 Remainder of New York",
+          "thousand_tons": 16213.81
+        },
+        {
+          "corridor": "FAF zone 131 \u2192 FAF zone 131",
+          "thousand_tons": 15279.22
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 13
+    },
+    {
+      "sctg": "04",
+      "commodity": "SCTG 04",
+      "moving_a_lot_score": 2.47,
+      "faf5_thousand_tons": 457710.68,
+      "faf5_pct_of_national": 2.29,
+      "cfs_million_tons": 664621.45,
+      "cfs_pct_of_shipments": 2.73,
+      "primary_mode": null,
+      "top_corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 37073.15
+        },
+        {
+          "corridor": "Remainder of Missouri \u2192 Remainder of Missouri",
+          "thousand_tons": 26294.31
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 15612.7
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 14
+    },
+    {
+      "sctg": "26",
+      "commodity": "SCTG 26",
+      "moving_a_lot_score": 2.39,
+      "faf5_thousand_tons": 452318.74,
+      "faf5_pct_of_national": 2.26,
+      "cfs_million_tons": 629908.49,
+      "cfs_pct_of_shipments": 2.59,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 8785.12
+        },
+        {
+          "corridor": "FAF zone 379 \u2192 FAF zone 379",
+          "thousand_tons": 8519.6
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 7117.44
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 15
+    },
+    {
+      "sctg": "32",
+      "commodity": "SCTG 32",
+      "moving_a_lot_score": 2.03,
+      "faf5_thousand_tons": 358977.81,
+      "faf5_pct_of_national": 1.79,
+      "cfs_million_tons": 581330.6,
+      "cfs_pct_of_shipments": 2.39,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 261 \u2192 FAF zone 261",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 261 \u2192 FAF zone 261",
+          "thousand_tons": 5892.74
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 5758.05
+        },
+        {
+          "corridor": "FAF zone 181 \u2192 FAF zone 181",
+          "thousand_tons": 5552.75
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 16
+    },
+    {
+      "sctg": "15",
+      "commodity": "Nonmetal minerals",
+      "moving_a_lot_score": 1.95,
+      "faf5_thousand_tons": 626581.15,
+      "faf5_pct_of_national": 3.13,
+      "cfs_million_tons": 45155.98,
+      "cfs_pct_of_shipments": 0.19,
+      "primary_mode": "Rail",
+      "top_corridor": "Remainder of Ohio \u2192 Remainder of Ohio",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Ohio \u2192 Remainder of Ohio",
+          "thousand_tons": 38796.43
+        },
+        {
+          "corridor": "FAF zone 540 \u2192 FAF zone 540",
+          "thousand_tons": 30921.95
+        },
+        {
+          "corridor": "FAF zone 560 \u2192 Remainder of Texas",
+          "thousand_tons": 21143.78
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 17
+    },
+    {
+      "sctg": "25",
+      "commodity": "SCTG 25",
+      "moving_a_lot_score": 1.77,
+      "faf5_thousand_tons": 583691.53,
+      "faf5_pct_of_national": 2.92,
+      "cfs_million_tons": 13214.19,
+      "cfs_pct_of_shipments": 0.05,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 139 \u2192 FAF zone 139",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 139 \u2192 FAF zone 139",
+          "thousand_tons": 39426.1
+        },
+        {
+          "corridor": "FAF zone 019 \u2192 FAF zone 019",
+          "thousand_tons": 33759.2
+        },
+        {
+          "corridor": "FAF zone 280 \u2192 FAF zone 280",
+          "thousand_tons": 32336.8
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 18
+    },
+    {
+      "sctg": "24",
+      "commodity": "SCTG 24",
+      "moving_a_lot_score": 1.63,
+      "faf5_thousand_tons": 281414.27,
+      "faf5_pct_of_national": 1.41,
+      "cfs_million_tons": 479351.86,
+      "cfs_pct_of_shipments": 1.97,
+      "primary_mode": null,
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 23050.36
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 7905.99
+        },
+        {
+          "corridor": "FAF zone 221 \u2192 FAF zone 221",
+          "thousand_tons": 5298.05
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 19
+    },
+    {
+      "sctg": "36",
+      "commodity": "SCTG 36",
+      "moving_a_lot_score": 1.33,
+      "faf5_thousand_tons": 226286.45,
+      "faf5_pct_of_national": 1.13,
+      "cfs_million_tons": 399204.18,
+      "cfs_pct_of_shipments": 1.64,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 261 \u2192 FAF zone 261",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 261 \u2192 FAF zone 261",
+          "thousand_tons": 13025.64
+        },
+        {
+          "corridor": "FAF zone 189 \u2192 FAF zone 189",
+          "thousand_tons": 7149.06
+        },
+        {
+          "corridor": "Arkansas \u2192 Arkansas",
+          "thousand_tons": 5923.85
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 20
+    },
+    {
+      "sctg": "22",
+      "commodity": "SCTG 22",
+      "moving_a_lot_score": 1.13,
+      "faf5_thousand_tons": 235627.65,
+      "faf5_pct_of_national": 1.18,
+      "cfs_million_tons": 254837.78,
+      "cfs_pct_of_shipments": 1.05,
+      "primary_mode": null,
+      "top_corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 12740.82
+        },
+        {
+          "corridor": "Remainder of Illinois \u2192 FAF zone 124",
+          "thousand_tons": 8428.08
+        },
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 8420.23
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 21
+    },
+    {
+      "sctg": "13",
+      "commodity": "SCTG 13",
+      "moving_a_lot_score": 1.04,
+      "faf5_thousand_tons": 234813.84,
+      "faf5_pct_of_national": 1.17,
+      "cfs_million_tons": 203640.43,
+      "cfs_pct_of_shipments": 0.84,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 399 \u2192 FAF zone 399",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 399 \u2192 FAF zone 399",
+          "thousand_tons": 15164.79
+        },
+        {
+          "corridor": "FAF zone 363 \u2192 FAF zone 363",
+          "thousand_tons": 11383.37
+        },
+        {
+          "corridor": "FAF zone 271 \u2192 FAF zone 271",
+          "thousand_tons": 7701.37
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 22
+    },
+    {
+      "sctg": "23",
+      "commodity": "SCTG 23",
+      "moving_a_lot_score": 0.94,
+      "faf5_thousand_tons": 144646.96,
+      "faf5_pct_of_national": 0.72,
+      "cfs_million_tons": 308812.4,
+      "cfs_pct_of_shipments": 1.27,
+      "primary_mode": null,
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 3784.45
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 3572.89
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 2290.97
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 23
+    },
+    {
+      "sctg": "27",
+      "commodity": "SCTG 27",
+      "moving_a_lot_score": 0.82,
+      "faf5_thousand_tons": 151709.71,
+      "faf5_pct_of_national": 0.76,
+      "cfs_million_tons": 219164.99,
+      "cfs_pct_of_shipments": 0.9,
+      "primary_mode": null,
+      "top_corridor": "San Jose-SF-Oakland, CA \u2192 FAF zone 392",
+      "top_corridors": [
+        {
+          "corridor": "San Jose-SF-Oakland, CA \u2192 FAF zone 392",
+          "thousand_tons": 3382.15
+        },
+        {
+          "corridor": "FAF zone 131 \u2192 FAF zone 132",
+          "thousand_tons": 3053.74
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 2731.11
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 24
+    },
+    {
+      "sctg": "08",
+      "commodity": "SCTG 08",
+      "moving_a_lot_score": 0.82,
+      "faf5_thousand_tons": 132895.42,
+      "faf5_pct_of_national": 0.66,
+      "cfs_million_tons": 258230.01,
+      "cfs_pct_of_shipments": 1.06,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 3607.3
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 3540.94
+        },
+        {
+          "corridor": "San Jose-SF-Oakland, CA \u2192 San Jose-SF-Oakland, CA",
+          "thousand_tons": 3287.22
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 25
+    },
+    {
+      "sctg": "06",
+      "commodity": "SCTG 06",
+      "moving_a_lot_score": 0.78,
+      "faf5_thousand_tons": 146768.12,
+      "faf5_pct_of_national": 0.73,
+      "cfs_million_tons": 206595.4,
+      "cfs_pct_of_shipments": 0.85,
+      "primary_mode": null,
+      "top_corridor": "Arkansas \u2192 Arkansas",
+      "top_corridors": [
+        {
+          "corridor": "Arkansas \u2192 Arkansas",
+          "thousand_tons": 5245.45
+        },
+        {
+          "corridor": "FAF zone 519 \u2192 FAF zone 519",
+          "thousand_tons": 3245.57
+        },
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 2859.61
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 26
+    },
+    {
+      "sctg": "00",
+      "commodity": "SCTG 00",
+      "moving_a_lot_score": 0.78,
+      "faf5_thousand_tons": null,
+      "faf5_pct_of_national": 0.0,
+      "cfs_million_tons": 475604.55,
+      "cfs_pct_of_shipments": 1.96,
+      "primary_mode": null,
+      "top_corridor": null,
+      "top_corridors": [],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": false,
+        "cfs_2022": true,
+        "aligned": false
+      },
+      "rank": 27
+    },
+    {
+      "sctg": "33",
+      "commodity": "SCTG 33",
+      "moving_a_lot_score": 0.76,
+      "faf5_thousand_tons": 144556.55,
+      "faf5_pct_of_national": 0.72,
+      "cfs_million_tons": 201119.72,
+      "cfs_pct_of_shipments": 0.83,
+      "primary_mode": null,
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 6072.8
+        },
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Remainder of Texas",
+          "thousand_tons": 4317.75
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 3649.12
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 28
+    },
+    {
+      "sctg": "05",
+      "commodity": "SCTG 05",
+      "moving_a_lot_score": 0.72,
+      "faf5_thousand_tons": 111216.99,
+      "faf5_pct_of_national": 0.56,
+      "cfs_million_tons": 233439.31,
+      "cfs_pct_of_shipments": 0.96,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 2733.51
+        },
+        {
+          "corridor": "Arkansas \u2192 Arkansas",
+          "thousand_tons": 1616.15
+        },
+        {
+          "corridor": "Remainder of Missouri \u2192 Remainder of Missouri",
+          "thousand_tons": 1486.05
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 29
+    },
+    {
+      "sctg": "34",
+      "commodity": "SCTG 34",
+      "moving_a_lot_score": 0.69,
+      "faf5_thousand_tons": 132116.59,
+      "faf5_pct_of_national": 0.66,
+      "cfs_million_tons": 180471.82,
+      "cfs_pct_of_shipments": 0.74,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 4618.11
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 3614.59
+        },
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 2635.95
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 30
+    },
+    {
+      "sctg": "40",
+      "commodity": "SCTG 40",
+      "moving_a_lot_score": 0.66,
+      "faf5_thousand_tons": 94704.15,
+      "faf5_pct_of_national": 0.47,
+      "cfs_million_tons": 229660.81,
+      "cfs_pct_of_shipments": 0.94,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 4748.29
+        },
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 2959.07
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 1440.39
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 31
+    },
+    {
+      "sctg": "35",
+      "commodity": "SCTG 35",
+      "moving_a_lot_score": 0.65,
+      "faf5_thousand_tons": 107702.82,
+      "faf5_pct_of_national": 0.54,
+      "cfs_million_tons": 198810.86,
+      "cfs_pct_of_shipments": 0.82,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 6792.64
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 San Jose-SF-Oakland, CA",
+          "thousand_tons": 2048.06
+        },
+        {
+          "corridor": "Remainder of New York \u2192 Remainder of New York",
+          "thousand_tons": 1542.2
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 32
+    },
+    {
+      "sctg": "28",
+      "commodity": "SCTG 28",
+      "moving_a_lot_score": 0.59,
+      "faf5_thousand_tons": 77680.06,
+      "faf5_pct_of_national": 0.39,
+      "cfs_million_tons": 212736.09,
+      "cfs_pct_of_shipments": 0.88,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 2595.03
+        },
+        {
+          "corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+          "thousand_tons": 1937.93
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 1474.05
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 33
+    },
+    {
+      "sctg": "14",
+      "commodity": "SCTG 14",
+      "moving_a_lot_score": 0.4,
+      "faf5_thousand_tons": 84531.32,
+      "faf5_pct_of_national": 0.42,
+      "cfs_million_tons": 87804.71,
+      "cfs_pct_of_shipments": 0.36,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 279 \u2192 FAF zone 279",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 279 \u2192 FAF zone 279",
+          "thousand_tons": 14228.07
+        },
+        {
+          "corridor": "FAF zone 279 \u2192 FAF zone 181",
+          "thousand_tons": 12326.98
+        },
+        {
+          "corridor": "FAF zone 269 \u2192 FAF zone 269",
+          "thousand_tons": 8308.29
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 34
+    },
+    {
+      "sctg": "30",
+      "commodity": "SCTG 30",
+      "moving_a_lot_score": 0.32,
+      "faf5_thousand_tons": 54587.53,
+      "faf5_pct_of_national": 0.27,
+      "cfs_million_tons": 93845.18,
+      "cfs_pct_of_shipments": 0.39,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 3490.09
+        },
+        {
+          "corridor": "FAF zone 363 \u2192 FAF zone 363",
+          "thousand_tons": 1550.51
+        },
+        {
+          "corridor": "Remainder of New York \u2192 Remainder of New York",
+          "thousand_tons": 1234.96
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 35
+    },
+    {
+      "sctg": "01",
+      "commodity": "Animal feed",
+      "moving_a_lot_score": 0.31,
+      "faf5_thousand_tons": 97646.17,
+      "faf5_pct_of_national": 0.49,
+      "cfs_million_tons": 6708.78,
+      "cfs_pct_of_shipments": 0.03,
+      "primary_mode": null,
+      "top_corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 10059.0
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 3865.49
+        },
+        {
+          "corridor": "Arkansas \u2192 Arkansas",
+          "thousand_tons": 3853.68
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 36
+    },
+    {
+      "sctg": "21",
+      "commodity": "SCTG 21",
+      "moving_a_lot_score": 0.23,
+      "faf5_thousand_tons": 39056.38,
+      "faf5_pct_of_national": 0.2,
+      "cfs_million_tons": 67331.13,
+      "cfs_pct_of_shipments": 0.28,
+      "primary_mode": null,
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 888.68
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 880.1
+        },
+        {
+          "corridor": "FAF zone 132 \u2192 FAF zone 131",
+          "thousand_tons": 721.98
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 37
+    },
+    {
+      "sctg": "10",
+      "commodity": "SCTG 10",
+      "moving_a_lot_score": 0.19,
+      "faf5_thousand_tons": 12704.75,
+      "faf5_pct_of_national": 0.06,
+      "cfs_million_tons": 95656.81,
+      "cfs_pct_of_shipments": 0.39,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 122 \u2192 FAF zone 122",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 122 \u2192 FAF zone 122",
+          "thousand_tons": 794.29
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 722.57
+        },
+        {
+          "corridor": "FAF zone 479 \u2192 FAF zone 479",
+          "thousand_tons": 694.18
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 38
+    },
+    {
+      "sctg": "29",
+      "commodity": "SCTG 29",
+      "moving_a_lot_score": 0.18,
+      "faf5_thousand_tons": 27509.66,
+      "faf5_pct_of_national": 0.14,
+      "cfs_million_tons": 55023.43,
+      "cfs_pct_of_shipments": 0.23,
+      "primary_mode": null,
+      "top_corridor": "Remainder of New York \u2192 Remainder of New York",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of New York \u2192 Remainder of New York",
+          "thousand_tons": 1003.44
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 721.09
+        },
+        {
+          "corridor": "FAF zone 472 \u2192 FAF zone 472",
+          "thousand_tons": 716.41
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 39
+    },
+    {
+      "sctg": "39",
+      "commodity": "SCTG 39",
+      "moving_a_lot_score": 0.16,
+      "faf5_thousand_tons": 51117.6,
+      "faf5_pct_of_national": 0.26,
+      "cfs_million_tons": 54.65,
+      "cfs_pct_of_shipments": 0.0,
+      "primary_mode": null,
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 2094.08
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 846.3
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 754.37
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 40
+    },
+    {
+      "sctg": "38",
+      "commodity": "SCTG 38",
+      "moving_a_lot_score": 0.09,
+      "faf5_thousand_tons": 14926.83,
+      "faf5_pct_of_national": 0.07,
+      "cfs_million_tons": 26474.67,
+      "cfs_pct_of_shipments": 0.11,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 123 \u2192 FAF zone 123",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 123 \u2192 FAF zone 123",
+          "thousand_tons": 640.22
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 482.01
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 451.85
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 41
+    },
+    {
+      "sctg": "37",
+      "commodity": "SCTG 37",
+      "moving_a_lot_score": 0.06,
+      "faf5_thousand_tons": 12879.64,
+      "faf5_pct_of_national": 0.06,
+      "cfs_million_tons": 15174.57,
+      "cfs_pct_of_shipments": 0.06,
+      "primary_mode": null,
+      "top_corridor": "Remainder of Texas \u2192 Remainder of Texas",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 732.13
+        },
+        {
+          "corridor": "FAF zone 131 \u2192 FAF zone 132",
+          "thousand_tons": 413.7
+        },
+        {
+          "corridor": "FAF zone 019 \u2192 FAF zone 019",
+          "thousand_tons": 310.16
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 42
+    },
+    {
+      "sctg": "09",
+      "commodity": "SCTG 09",
+      "moving_a_lot_score": 0.03,
+      "faf5_thousand_tons": 3653.24,
+      "faf5_pct_of_national": 0.02,
+      "cfs_million_tons": 9645.76,
+      "cfs_pct_of_shipments": 0.04,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 372 \u2192 FAF zone 372",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 372 \u2192 FAF zone 372",
+          "thousand_tons": 1471.87
+        },
+        {
+          "corridor": "Remainder of New York \u2192 Remainder of New York",
+          "thousand_tons": 202.49
+        },
+        {
+          "corridor": "FAF zone 511 \u2192 FAF zone 511",
+          "thousand_tons": 122.29
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 43
+    }
+  ],
+  "top_10": [
+    {
+      "sctg": "19",
+      "commodity": "Coal",
+      "moving_a_lot_score": 12.07,
+      "faf5_thousand_tons": 3081943.1,
+      "faf5_pct_of_national": 15.4,
+      "cfs_million_tons": 1720925.34,
+      "cfs_pct_of_shipments": 7.08,
+      "primary_mode": "Pipeline",
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 80209.5
+        },
+        {
+          "corridor": "FAF zone 350 \u2192 FAF zone 350",
+          "thousand_tons": 75952.89
+        },
+        {
+          "corridor": "FAF zone 229 \u2192 FAF zone 280",
+          "thousand_tons": 50095.95
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 1
+    },
+    {
+      "sctg": "12",
+      "commodity": "Gasoline & jet fuel",
+      "moving_a_lot_score": 12.06,
+      "faf5_thousand_tons": 1961487.55,
+      "faf5_pct_of_national": 9.8,
+      "cfs_million_tons": 3758012.29,
+      "cfs_pct_of_shipments": 15.46,
+      "primary_mode": "Truck",
+      "top_corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+          "thousand_tons": 76917.67
+        },
+        {
+          "corridor": "FAF zone 122 \u2192 FAF zone 122",
+          "thousand_tons": 64164.44
+        },
+        {
+          "corridor": "FAF zone 271 \u2192 FAF zone 271",
+          "thousand_tons": 44236.72
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 2
+    },
+    {
+      "sctg": "17",
+      "commodity": "Petroleum products",
+      "moving_a_lot_score": 7.58,
+      "faf5_thousand_tons": 1459974.0,
+      "faf5_pct_of_national": 7.3,
+      "cfs_million_tons": 1946607.79,
+      "cfs_pct_of_shipments": 8.01,
+      "primary_mode": "Truck",
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 84434.28
+        },
+        {
+          "corridor": "FAF zone 481 \u2192 FAF zone 481",
+          "thousand_tons": 71932.2
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 68294.6
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 3
+    },
+    {
+      "sctg": "02",
+      "commodity": "Cereal grains",
+      "moving_a_lot_score": 5.57,
+      "faf5_thousand_tons": 1326135.17,
+      "faf5_pct_of_national": 6.63,
+      "cfs_million_tons": 968840.2,
+      "cfs_pct_of_shipments": 3.99,
+      "primary_mode": "Truck",
+      "top_corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 137202.38
+        },
+        {
+          "corridor": "Remainder of Missouri \u2192 Remainder of Missouri",
+          "thousand_tons": 104708.32
+        },
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 68978.99
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 4
+    },
+    {
+      "sctg": "18",
+      "commodity": "Chemical products",
+      "moving_a_lot_score": 5.07,
+      "faf5_thousand_tons": 975730.63,
+      "faf5_pct_of_national": 4.88,
+      "cfs_million_tons": 1303303.45,
+      "cfs_pct_of_shipments": 5.36,
+      "primary_mode": "Truck",
+      "top_corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "top_corridors": [
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 82509.52
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+          "thousand_tons": 63649.65
+        },
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 55479.19
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 5
+    },
+    {
+      "sctg": "07",
+      "commodity": "Meat",
+      "moving_a_lot_score": 4.14,
+      "faf5_thousand_tons": 687886.3,
+      "faf5_pct_of_national": 3.44,
+      "cfs_million_tons": 1258627.05,
+      "cfs_pct_of_shipments": 5.18,
+      "primary_mode": "Truck",
+      "top_corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "top_corridors": [
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 20721.35
+        },
+        {
+          "corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+          "thousand_tons": 15888.75
+        },
+        {
+          "corridor": "FAF zone 069 \u2192 FAF zone 069",
+          "thousand_tons": 15379.47
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 6
+    },
+    {
+      "sctg": "16",
+      "commodity": "Natural gas",
+      "moving_a_lot_score": 3.66,
+      "faf5_thousand_tons": 1219860.19,
+      "faf5_pct_of_national": 6.1,
+      "cfs_million_tons": null,
+      "cfs_pct_of_shipments": 0.0,
+      "primary_mode": "Pipeline",
+      "top_corridor": "Remainder of Texas \u2192 FAF zone 483",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Texas \u2192 FAF zone 483",
+          "thousand_tons": 131189.6
+        },
+        {
+          "corridor": "Remainder of Ohio \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 101577.34
+        },
+        {
+          "corridor": "Remainder of Texas \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 94149.78
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": false,
+        "aligned": false
+      },
+      "rank": 7
+    },
+    {
+      "sctg": "11",
+      "commodity": "Natural sands",
+      "moving_a_lot_score": 3.48,
+      "faf5_thousand_tons": 694230.34,
+      "faf5_pct_of_national": 3.47,
+      "cfs_million_tons": 849359.62,
+      "cfs_pct_of_shipments": 3.49,
+      "primary_mode": "Truck",
+      "top_corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+      "top_corridors": [
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 48242.75
+        },
+        {
+          "corridor": "Remainder of Illinois \u2192 Remainder of Illinois",
+          "thousand_tons": 41956.31
+        },
+        {
+          "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+          "thousand_tons": 33000.82
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 8
+    },
+    {
+      "sctg": "31",
+      "commodity": "Mixed freight",
+      "moving_a_lot_score": 3.46,
+      "faf5_thousand_tons": 1153380.9,
+      "faf5_pct_of_national": 5.76,
+      "cfs_million_tons": 17.74,
+      "cfs_pct_of_shipments": 0.0,
+      "primary_mode": "Truck",
+      "top_corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+      "top_corridors": [
+        {
+          "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+          "thousand_tons": 43655.08
+        },
+        {
+          "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+          "thousand_tons": 40059.91
+        },
+        {
+          "corridor": "FAF zone 363 \u2192 FAF zone 363",
+          "thousand_tons": 26741.25
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 9
+    },
+    {
+      "sctg": "03",
+      "commodity": "Other ag products",
+      "moving_a_lot_score": 3.07,
+      "faf5_thousand_tons": 741892.22,
+      "faf5_pct_of_national": 3.71,
+      "cfs_million_tons": 513130.9,
+      "cfs_pct_of_shipments": 2.11,
+      "primary_mode": "Truck",
+      "top_corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+      "top_corridors": [
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 25035.82
+        },
+        {
+          "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+          "thousand_tons": 24230.76
+        },
+        {
+          "corridor": "Remainder of Ohio \u2192 Remainder of Ohio",
+          "thousand_tons": 21808.14
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 10
+    }
+  ],
+  "count": 43,
+  "export_csv": "exports/moving_commodity_v1.csv",
+  "elapsed_sec": 23.96,
+  "created_at": "2026-07-09T03:10:30Z"
+}

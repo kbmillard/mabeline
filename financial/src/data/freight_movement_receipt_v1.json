@@ -1,0 +1,361 @@
+{
+  "scan_type": "freight_movement_faf5_v1",
+  "source": "_unwrapped/faf5_freight/release=2026-07-05/faf5_csv/FAF5.7.1.csv",
+  "dataset": "FAF5.7.1 \u2014 BTS/FHWA Freight Analysis Framework",
+  "year": "2024",
+  "units": {
+    "tons": "thousand tons (kt)",
+    "tmiles": "million ton-miles (M tm)",
+    "value": "million USD"
+  },
+  "what_this_is": "Modeled national freight flows by origin-destination FAF zone, mode, and commodity. Not live telemetry and not company-level shipment ledgers.",
+  "what_this_is_not": [
+    "Real-time freight in motion",
+    "Per-carrier tonnage (use FMCSA census for fleet registry only)",
+    "Port TEU / rail carload event streams"
+  ],
+  "totals": {
+    "rows": 2671386,
+    "thousand_tons": 20011502.95,
+    "million_ton_miles": 5381689.86,
+    "million_usd_value": 18991190.9,
+    "billion_tons_equiv": 20.012
+  },
+  "by_mode": [
+    {
+      "mode": "Truck",
+      "thousand_tons": 12843949.22,
+      "million_ton_miles": 2408115.22,
+      "pct_of_tons": 64.18
+    },
+    {
+      "mode": "Pipeline",
+      "thousand_tons": 4025257.41,
+      "million_ton_miles": 1093161.4,
+      "pct_of_tons": 20.11
+    },
+    {
+      "mode": "Rail",
+      "thousand_tons": 1532843.37,
+      "million_ton_miles": 970421.35,
+      "pct_of_tons": 7.66
+    },
+    {
+      "mode": "Water",
+      "thousand_tons": 771510.54,
+      "million_ton_miles": 349484.14,
+      "pct_of_tons": 3.86
+    },
+    {
+      "mode": "Multiple modes",
+      "thousand_tons": 634479.93,
+      "million_ton_miles": 544911.99,
+      "pct_of_tons": 3.17
+    },
+    {
+      "mode": "8",
+      "thousand_tons": 116413.44,
+      "million_ton_miles": 0.0,
+      "pct_of_tons": 0.58
+    },
+    {
+      "mode": "Other/unknown",
+      "thousand_tons": 80348.21,
+      "million_ton_miles": 7801.89,
+      "pct_of_tons": 0.4
+    },
+    {
+      "mode": "Air",
+      "thousand_tons": 6700.84,
+      "million_ton_miles": 7793.87,
+      "pct_of_tons": 0.03
+    }
+  ],
+  "top_corridors": [
+    {
+      "orig": "486",
+      "dest": "486",
+      "corridor": "Houston-The Woodlands, TX \u2192 Houston-The Woodlands, TX",
+      "thousand_tons": 469414.46,
+      "million_ton_miles": 14470.5
+    },
+    {
+      "orig": "061",
+      "dest": "061",
+      "corridor": "Los Angeles-Long Beach, CA \u2192 Los Angeles-Long Beach, CA",
+      "thousand_tons": 392586.69,
+      "million_ton_miles": 13104.69
+    },
+    {
+      "orig": "489",
+      "dest": "489",
+      "corridor": "Remainder of Texas \u2192 Remainder of Texas",
+      "thousand_tons": 357122.51,
+      "million_ton_miles": 74956.89
+    },
+    {
+      "orig": "190",
+      "dest": "190",
+      "corridor": "Remainder of Iowa \u2192 Remainder of Iowa",
+      "thousand_tons": 321820.96,
+      "million_ton_miles": 45578.74
+    },
+    {
+      "orig": "484",
+      "dest": "484",
+      "corridor": "Dallas-Fort Worth, TX \u2192 Dallas-Fort Worth, TX",
+      "thousand_tons": 313638.99,
+      "million_ton_miles": 13992.25
+    },
+    {
+      "orig": "559",
+      "dest": "559",
+      "corridor": "Remainder of Wisconsin \u2192 Remainder of Wisconsin",
+      "thousand_tons": 231801.64,
+      "million_ton_miles": 26744.81
+    },
+    {
+      "orig": "179",
+      "dest": "179",
+      "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+      "thousand_tons": 220971.13,
+      "million_ton_miles": 30449.85
+    },
+    {
+      "orig": "171",
+      "dest": "171",
+      "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+      "thousand_tons": 199635.33,
+      "million_ton_miles": 5774.38
+    },
+    {
+      "orig": "319",
+      "dest": "319",
+      "corridor": "Remainder of Missouri \u2192 Remainder of Missouri",
+      "thousand_tons": 176642.37,
+      "million_ton_miles": 28359.7
+    },
+    {
+      "orig": "129",
+      "dest": "129",
+      "corridor": "Remainder of Illinois \u2192 Remainder of Illinois",
+      "thousand_tons": 175884.78,
+      "million_ton_miles": 21658.38
+    },
+    {
+      "orig": "489",
+      "dest": "486",
+      "corridor": "Remainder of Texas \u2192 Houston-The Woodlands, TX",
+      "thousand_tons": 174909.96,
+      "million_ton_miles": 49798.54
+    },
+    {
+      "orig": "050",
+      "dest": "050",
+      "corridor": "Arkansas \u2192 Arkansas",
+      "thousand_tons": 165649.23,
+      "million_ton_miles": 19706.71
+    },
+    {
+      "orig": "064",
+      "dest": "064",
+      "corridor": "San Jose-SF-Oakland, CA \u2192 San Jose-SF-Oakland, CA",
+      "thousand_tons": 164262.06,
+      "million_ton_miles": 5777.07
+    },
+    {
+      "orig": "341",
+      "dest": "341",
+      "corridor": "Remainder of New York \u2192 Remainder of New York",
+      "thousand_tons": 163078.76,
+      "million_ton_miles": 4402.29
+    },
+    {
+      "orig": "380",
+      "dest": "380",
+      "corridor": "Remainder of Ohio \u2192 Remainder of Ohio",
+      "thousand_tons": 161782.1,
+      "million_ton_miles": 23286.65
+    },
+    {
+      "orig": "531",
+      "dest": "531",
+      "corridor": "FAF zone 531 \u2192 FAF zone 531",
+      "thousand_tons": 157272.75,
+      "million_ton_miles": 5951.17
+    },
+    {
+      "orig": "261",
+      "dest": "261",
+      "corridor": "FAF zone 261 \u2192 FAF zone 261",
+      "thousand_tons": 154683.97,
+      "million_ton_miles": 5057.34
+    },
+    {
+      "orig": "122",
+      "dest": "122",
+      "corridor": "FAF zone 122 \u2192 FAF zone 122",
+      "thousand_tons": 154417.81,
+      "million_ton_miles": 5097.77
+    },
+    {
+      "orig": "279",
+      "dest": "279",
+      "corridor": "FAF zone 279 \u2192 FAF zone 279",
+      "thousand_tons": 147405.51,
+      "million_ton_miles": 25222.61
+    },
+    {
+      "orig": "429",
+      "dest": "429",
+      "corridor": "FAF zone 429 \u2192 FAF zone 429",
+      "thousand_tons": 145034.26,
+      "million_ton_miles": 15351.37
+    }
+  ],
+  "top_commodities_sctg2": [
+    {
+      "sctg2": "19",
+      "commodity": "Coal",
+      "thousand_tons": 3081943.1,
+      "million_ton_miles": 616142.93
+    },
+    {
+      "sctg2": "12",
+      "commodity": "Gasoline & jet fuel",
+      "thousand_tons": 1961487.55,
+      "million_ton_miles": 186916.26
+    },
+    {
+      "sctg2": "17",
+      "commodity": "Petroleum products",
+      "thousand_tons": 1459974.0,
+      "million_ton_miles": 203078.16
+    },
+    {
+      "sctg2": "02",
+      "commodity": "Cereal grains",
+      "thousand_tons": 1326135.17,
+      "million_ton_miles": 415146.87
+    },
+    {
+      "sctg2": "16",
+      "commodity": "Natural gas",
+      "thousand_tons": 1219860.19,
+      "million_ton_miles": 678726.49
+    },
+    {
+      "sctg2": "31",
+      "commodity": "Mixed freight",
+      "thousand_tons": 1153380.9,
+      "million_ton_miles": 172164.57
+    },
+    {
+      "sctg2": "18",
+      "commodity": "Chemical products",
+      "thousand_tons": 975730.63,
+      "million_ton_miles": 138488.3
+    },
+    {
+      "sctg2": "03",
+      "commodity": "Other ag products",
+      "thousand_tons": 741892.22,
+      "million_ton_miles": 253961.46
+    },
+    {
+      "sctg2": "41",
+      "commodity": "Waste/scrap",
+      "thousand_tons": 722852.28,
+      "million_ton_miles": 116959.56
+    },
+    {
+      "sctg2": "11",
+      "commodity": "Natural sands",
+      "thousand_tons": 694230.34,
+      "million_ton_miles": 130072.48
+    },
+    {
+      "sctg2": "07",
+      "commodity": "Meat",
+      "thousand_tons": 687886.3,
+      "million_ton_miles": 244854.25
+    },
+    {
+      "sctg2": "15",
+      "commodity": "Nonmetal minerals",
+      "thousand_tons": 626581.15,
+      "million_ton_miles": 338219.82
+    },
+    {
+      "sctg2": "25",
+      "commodity": "SCTG 25",
+      "thousand_tons": 583691.53,
+      "million_ton_miles": 82369.94
+    },
+    {
+      "sctg2": "04",
+      "commodity": "SCTG 04",
+      "thousand_tons": 457710.68,
+      "million_ton_miles": 123239.71
+    },
+    {
+      "sctg2": "26",
+      "commodity": "SCTG 26",
+      "thousand_tons": 452318.74,
+      "million_ton_miles": 124701.76
+    }
+  ],
+  "yoy_mode_growth": [
+    {
+      "mode": "Air",
+      "thousand_tons_2023": 6583.54,
+      "thousand_tons_2024": 6700.84,
+      "yoy_pct": 1.78
+    },
+    {
+      "mode": "Truck",
+      "thousand_tons_2023": 12741506.92,
+      "thousand_tons_2024": 12843949.22,
+      "yoy_pct": 0.8
+    },
+    {
+      "mode": "Multiple modes",
+      "thousand_tons_2023": 635780.57,
+      "thousand_tons_2024": 634479.93,
+      "yoy_pct": -0.2
+    },
+    {
+      "mode": "Pipeline",
+      "thousand_tons_2023": 4053465.75,
+      "thousand_tons_2024": 4025257.41,
+      "yoy_pct": -0.7
+    },
+    {
+      "mode": "Water",
+      "thousand_tons_2023": 787688.55,
+      "thousand_tons_2024": 771510.54,
+      "yoy_pct": -2.05
+    },
+    {
+      "mode": "8",
+      "thousand_tons_2023": 119791.82,
+      "thousand_tons_2024": 116413.44,
+      "yoy_pct": -2.82
+    },
+    {
+      "mode": "Rail",
+      "thousand_tons_2023": 1593806.96,
+      "thousand_tons_2024": 1532843.37,
+      "yoy_pct": -3.83
+    },
+    {
+      "mode": "Other/unknown",
+      "thousand_tons_2023": 83974.22,
+      "thousand_tons_2024": 80348.21,
+      "yoy_pct": -4.32
+    }
+  ],
+  "elapsed_sec": 2.36,
+  "dedupe_method": "aggregate_sum_by_dimension",
+  "created_at": "2026-07-08T01:31:37Z"
+}

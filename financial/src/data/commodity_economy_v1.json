@@ -1,0 +1,1172 @@
+{
+  "scan_type": "commodity_economy_v1",
+  "algorithm": "aggregate_physical_commodity_layers",
+  "as_of": "2026-07-09",
+  "what_this_is": "Unified physical commodity economy from FAF5 freight, Census CFS shipments, EIA crude import flows, and USGS mineral deposit inventory.",
+  "what_this_is_not": [
+    "Live commodity futures or spot prices",
+    "Company revenue or inventory ledgers",
+    "Real-time port/rail telemetry"
+  ],
+  "sources": {
+    "faf5": {
+      "status": "present",
+      "path": "_unwrapped/faf5_freight/release=2026-07-05/faf5_csv/FAF5.7.1.csv",
+      "bytes": 1179593832
+    },
+    "cfs_2022": {
+      "status": "present",
+      "path": "_unwrapped/trade/release=2026-07-05/cfs_2022_pums/cfs_2022_pums.csv",
+      "bytes": 2824487751
+    },
+    "usgs_commodity": {
+      "status": "present",
+      "path": "_unwrapped/usgs_minerals/release=2026-07-05/usgs_mrds_relational_compact/Commodity.txt",
+      "bytes": 65107793
+    },
+    "pet_imports": {
+      "status": "present",
+      "path": "_unwrapped/maritime/release=2026-07-09/PET_IMPORTS/PET_IMPORTS.txt",
+      "bytes": 44005977
+    },
+    "census_trade": {
+      "status": "missing"
+    },
+    "source_truth": {
+      "faf5_csv": "_unwrapped/faf5_freight/release=2026-07-05/faf5_csv/FAF5.7.1.csv",
+      "cfs_2022_pums": "_unwrapped/trade/release=2026-07-05/cfs_2022_pums/cfs_2022_pums.csv",
+      "pet_imports": "_unwrapped/maritime/release=2026-07-09/PET_IMPORTS/PET_IMPORTS.txt",
+      "eia_coal": "_unwrapped/rail/release=2026-07-09/COAL/COAL.txt",
+      "fmcsa_census": "_unwrapped/fmcsa_carriers/company_census.csv",
+      "fmcsa_inspections": "_unwrapped/fmcsa_carriers/mcmis/vehicle_inspection_file.csv",
+      "usgs_commodity": "_unwrapped/usgs_minerals/release=2026-07-05/usgs_mrds_relational_compact/Commodity.txt",
+      "stb_ep724_public": "_unwrapped/stb_rail/release=2026-07-09/ep724-public-data.csv",
+      "stb_ep724_dwell": "_unwrapped/stb_rail/release=2026-07-09/ep724-average-terminal-dwell-time.csv",
+      "stb_ep724_element10": "_unwrapped/stb_rail/release=2026-07-09/ep724-element-10.csv",
+      "epa_tri_2024": "_unwrapped/epa_toxics/release=2026-07-09/tri_2024_US_basic.csv"
+    }
+  },
+  "physical_economy_totals": {
+    "faf5_billion_tons": 20.012,
+    "cfs_million_tons": 24303229.07,
+    "cfs_billion_usd_shipment_value": 17939.29,
+    "usgs_deposit_sites": 304544,
+    "crude_imports_kbbl_latest": 187705
+  },
+  "layers": {
+    "faf5": {
+      "layer": "faf5_freight",
+      "year": "2024",
+      "total_thousand_tons": 20011502.93,
+      "billion_tons_equiv": 20.012,
+      "top_commodities": [
+        {
+          "sctg2": "19",
+          "commodity": "Coal",
+          "thousand_tons": 3081943.1,
+          "pct_of_tons": 15.4
+        },
+        {
+          "sctg2": "12",
+          "commodity": "Gasoline & jet fuel",
+          "thousand_tons": 1961487.55,
+          "pct_of_tons": 9.8
+        },
+        {
+          "sctg2": "17",
+          "commodity": "Petroleum products",
+          "thousand_tons": 1459974.0,
+          "pct_of_tons": 7.3
+        },
+        {
+          "sctg2": "02",
+          "commodity": "Cereal grains",
+          "thousand_tons": 1326135.17,
+          "pct_of_tons": 6.63
+        },
+        {
+          "sctg2": "16",
+          "commodity": "Natural gas",
+          "thousand_tons": 1219860.19,
+          "pct_of_tons": 6.1
+        },
+        {
+          "sctg2": "31",
+          "commodity": "Mixed freight",
+          "thousand_tons": 1153380.9,
+          "pct_of_tons": 5.76
+        },
+        {
+          "sctg2": "18",
+          "commodity": "Chemical products",
+          "thousand_tons": 975730.63,
+          "pct_of_tons": 4.88
+        },
+        {
+          "sctg2": "03",
+          "commodity": "Other ag products",
+          "thousand_tons": 741892.22,
+          "pct_of_tons": 3.71
+        },
+        {
+          "sctg2": "41",
+          "commodity": "Waste/scrap",
+          "thousand_tons": 722852.28,
+          "pct_of_tons": 3.61
+        },
+        {
+          "sctg2": "11",
+          "commodity": "Natural sands",
+          "thousand_tons": 694230.34,
+          "pct_of_tons": 3.47
+        },
+        {
+          "sctg2": "07",
+          "commodity": "Meat",
+          "thousand_tons": 687886.3,
+          "pct_of_tons": 3.44
+        },
+        {
+          "sctg2": "15",
+          "commodity": "Nonmetal minerals",
+          "thousand_tons": 626581.15,
+          "pct_of_tons": 3.13
+        },
+        {
+          "sctg2": "25",
+          "commodity": "SCTG 25",
+          "thousand_tons": 583691.53,
+          "pct_of_tons": 2.92
+        },
+        {
+          "sctg2": "04",
+          "commodity": "SCTG 04",
+          "thousand_tons": 457710.68,
+          "pct_of_tons": 2.29
+        },
+        {
+          "sctg2": "26",
+          "commodity": "SCTG 26",
+          "thousand_tons": 452318.74,
+          "pct_of_tons": 2.26
+        },
+        {
+          "sctg2": "20",
+          "commodity": "SCTG 20",
+          "thousand_tons": 452265.54,
+          "pct_of_tons": 2.26
+        },
+        {
+          "sctg2": "43",
+          "commodity": "SCTG 43",
+          "thousand_tons": 433832.1,
+          "pct_of_tons": 2.17
+        },
+        {
+          "sctg2": "32",
+          "commodity": "SCTG 32",
+          "thousand_tons": 358977.81,
+          "pct_of_tons": 1.79
+        },
+        {
+          "sctg2": "24",
+          "commodity": "SCTG 24",
+          "thousand_tons": 281414.27,
+          "pct_of_tons": 1.41
+        },
+        {
+          "sctg2": "22",
+          "commodity": "SCTG 22",
+          "thousand_tons": 235627.65,
+          "pct_of_tons": 1.18
+        }
+      ],
+      "top_commodity_modes": {
+        "Cereal grains": [
+          {
+            "mode": "Truck",
+            "thousand_tons": 1034039.25
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 188215.65
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 68929.68
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 34879.04
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 71.52
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 0.02
+          }
+        ],
+        "Other ag products": [
+          {
+            "mode": "Truck",
+            "thousand_tons": 621273.55
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 54873.07
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 51591.46
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 13950.99
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 172.87
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 30.29
+          }
+        ],
+        "Gasoline & jet fuel": [
+          {
+            "mode": "Truck",
+            "thousand_tons": 1767720.4
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 103775.83
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 57686.49
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 21030.65
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 11262.96
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 11.22
+          },
+          {
+            "mode": "Pipeline",
+            "thousand_tons": 0.0
+          }
+        ],
+        "Natural gas": [
+          {
+            "mode": "Pipeline",
+            "thousand_tons": 993708.94
+          },
+          {
+            "mode": "8",
+            "thousand_tons": 116413.44
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 62540.11
+          },
+          {
+            "mode": "Truck",
+            "thousand_tons": 24021.25
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 23167.42
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 9.02
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 0.02
+          }
+        ],
+        "Petroleum products": [
+          {
+            "mode": "Truck",
+            "thousand_tons": 906082.59
+          },
+          {
+            "mode": "Pipeline",
+            "thousand_tons": 423115.79
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 65863.35
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 37326.63
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 27581.88
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 3.67
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 0.09
+          }
+        ],
+        "Chemical products": [
+          {
+            "mode": "Truck",
+            "thousand_tons": 625083.08
+          },
+          {
+            "mode": "Pipeline",
+            "thousand_tons": 179147.35
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 123035.21
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 27335.92
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 21122.8
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 4.36
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 1.91
+          }
+        ],
+        "Coal": [
+          {
+            "mode": "Pipeline",
+            "thousand_tons": 2383006.2
+          },
+          {
+            "mode": "Truck",
+            "thousand_tons": 371565.17
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 207887.88
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 96924.44
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 22555.74
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 2.8
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 0.87
+          }
+        ],
+        "Mixed freight": [
+          {
+            "mode": "Truck",
+            "thousand_tons": 1082947.0
+          },
+          {
+            "mode": "Rail",
+            "thousand_tons": 36455.46
+          },
+          {
+            "mode": "Multiple",
+            "thousand_tons": 24846.81
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 8615.95
+          },
+          {
+            "mode": "Air",
+            "thousand_tons": 498.37
+          },
+          {
+            "mode": "Pipeline",
+            "thousand_tons": 15.64
+          },
+          {
+            "mode": "Other",
+            "thousand_tons": 1.69
+          }
+        ]
+      }
+    },
+    "cfs_2022": {
+      "layer": "census_cfs_2022",
+      "survey_year": 2022,
+      "shipments": 37576546,
+      "million_tons_weighted": 24303229.07,
+      "billion_usd_value_weighted": 17939.29,
+      "by_sctg": [
+        {
+          "sctg": "12",
+          "commodity": "Gasoline & jet fuel",
+          "million_tons": 3758012.29,
+          "billion_usd": 29.17,
+          "pct_of_tons": 15.46
+        },
+        {
+          "sctg": "31",
+          "commodity": "Mixed freight",
+          "million_tons": 2384001.12,
+          "billion_usd": 257.45,
+          "pct_of_tons": 9.81
+        },
+        {
+          "sctg": "17",
+          "commodity": "Petroleum products",
+          "million_tons": 1946607.79,
+          "billion_usd": 841.65,
+          "pct_of_tons": 8.01
+        },
+        {
+          "sctg": "19",
+          "commodity": "Coal",
+          "million_tons": 1720925.34,
+          "billion_usd": 429.37,
+          "pct_of_tons": 7.08
+        },
+        {
+          "sctg": "18",
+          "commodity": "Chemical products",
+          "million_tons": 1303303.45,
+          "billion_usd": 591.44,
+          "pct_of_tons": 5.36
+        },
+        {
+          "sctg": "07",
+          "commodity": "Meat",
+          "million_tons": 1258627.05,
+          "billion_usd": 796.89,
+          "pct_of_tons": 5.18
+        },
+        {
+          "sctg": "20",
+          "commodity": "SCTG 20",
+          "million_tons": 978803.19,
+          "billion_usd": 335.3,
+          "pct_of_tons": 4.03
+        },
+        {
+          "sctg": "02",
+          "commodity": "Cereal grains",
+          "million_tons": 968840.2,
+          "billion_usd": 130.52,
+          "pct_of_tons": 3.99
+        },
+        {
+          "sctg": "15",
+          "commodity": "Nonmetal minerals",
+          "million_tons": 897619.51,
+          "billion_usd": 28.38,
+          "pct_of_tons": 3.69
+        },
+        {
+          "sctg": "43",
+          "commodity": "SCTG 43",
+          "million_tons": 869380.66,
+          "billion_usd": 1728.3,
+          "pct_of_tons": 3.58
+        },
+        {
+          "sctg": "11",
+          "commodity": "Natural sands",
+          "million_tons": 849359.62,
+          "billion_usd": 7.05,
+          "pct_of_tons": 3.49
+        },
+        {
+          "sctg": "04",
+          "commodity": "SCTG 04",
+          "million_tons": 664621.45,
+          "billion_usd": 177.51,
+          "pct_of_tons": 2.73
+        },
+        {
+          "sctg": "26",
+          "commodity": "SCTG 26",
+          "million_tons": 629908.49,
+          "billion_usd": 372.46,
+          "pct_of_tons": 2.59
+        },
+        {
+          "sctg": "32",
+          "commodity": "SCTG 32",
+          "million_tons": 581330.6,
+          "billion_usd": 614.51,
+          "pct_of_tons": 2.39
+        },
+        {
+          "sctg": "03",
+          "commodity": "Other ag products",
+          "million_tons": 513130.9,
+          "billion_usd": 266.98,
+          "pct_of_tons": 2.11
+        },
+        {
+          "sctg": "24",
+          "commodity": "SCTG 24",
+          "million_tons": 479351.86,
+          "billion_usd": 769.85,
+          "pct_of_tons": 1.97
+        },
+        {
+          "sctg": "00",
+          "commodity": "SCTG 00",
+          "million_tons": 475604.55,
+          "billion_usd": 93.8,
+          "pct_of_tons": 1.96
+        },
+        {
+          "sctg": "36",
+          "commodity": "SCTG 36",
+          "million_tons": 399204.18,
+          "billion_usd": 1465.73,
+          "pct_of_tons": 1.64
+        },
+        {
+          "sctg": "41",
+          "commodity": "Waste/scrap",
+          "million_tons": 333986.46,
+          "billion_usd": 94.16,
+          "pct_of_tons": 1.37
+        },
+        {
+          "sctg": "23",
+          "commodity": "SCTG 23",
+          "million_tons": 308812.4,
+          "billion_usd": 487.98,
+          "pct_of_tons": 1.27
+        }
+      ],
+      "by_sector": [
+        {
+          "sector": "42",
+          "label": "Wholesale trade",
+          "million_tons": 8225580.95,
+          "billion_usd": 8091.98
+        },
+        {
+          "sector": "31-33",
+          "label": "Manufacturing",
+          "million_tons": 9865756.77,
+          "billion_usd": 7022.29
+        },
+        {
+          "sector": "48-49",
+          "label": "Transportation & warehousing",
+          "million_tons": 612866.61,
+          "billion_usd": 1345.36
+        },
+        {
+          "sector": "44-45",
+          "label": "Retail trade",
+          "million_tons": 197368.25,
+          "billion_usd": 1051.27
+        },
+        {
+          "sector": "55",
+          "label": "55",
+          "million_tons": 350078.53,
+          "billion_usd": 311.53
+        },
+        {
+          "sector": "21",
+          "label": "Mining",
+          "million_tons": 5047696.71,
+          "billion_usd": 100.46
+        },
+        {
+          "sector": "51",
+          "label": "Information",
+          "million_tons": 3881.24,
+          "billion_usd": 16.41
+        }
+      ]
+    },
+    "usgs_minerals": {
+      "layer": "usgs_mrds_minerals",
+      "distinct_deposit_sites": 304544,
+      "top_commodities": [
+        {
+          "commodity": "Gold",
+          "group": "Gold",
+          "type": "Metallic",
+          "deposit_sites": 84402
+        },
+        {
+          "commodity": "Silver",
+          "group": "Silver",
+          "type": "Metallic",
+          "deposit_sites": 50653
+        },
+        {
+          "commodity": "Sand and Gravel, Construction",
+          "group": "Sand and Gravel",
+          "type": "Non-metallic",
+          "deposit_sites": 46221
+        },
+        {
+          "commodity": "Copper",
+          "group": "Copper",
+          "type": "Metallic",
+          "deposit_sites": 44932
+        },
+        {
+          "commodity": "Lead",
+          "group": "Lead",
+          "type": "Metallic",
+          "deposit_sites": 37998
+        },
+        {
+          "commodity": "Zinc",
+          "group": "Zinc",
+          "type": "Metallic",
+          "deposit_sites": 27445
+        },
+        {
+          "commodity": "Iron",
+          "group": "Iron",
+          "type": "Metallic",
+          "deposit_sites": 22287
+        },
+        {
+          "commodity": "Stone, Crushed/Broken",
+          "group": "Stone, Crushed",
+          "type": "Non-metallic",
+          "deposit_sites": 17455
+        },
+        {
+          "commodity": "Uranium",
+          "group": "Uranium",
+          "type": "Metallic",
+          "deposit_sites": 15127
+        },
+        {
+          "commodity": "Manganese",
+          "group": "Manganese",
+          "type": "Metallic",
+          "deposit_sites": 10063
+        },
+        {
+          "commodity": "Tungsten",
+          "group": "Tungsten",
+          "type": "Metallic",
+          "deposit_sites": 8069
+        },
+        {
+          "commodity": "Clay",
+          "group": "Clays",
+          "type": "Non-metallic",
+          "deposit_sites": 6367
+        },
+        {
+          "commodity": "Chromium",
+          "group": "Chromium",
+          "type": "Metallic",
+          "deposit_sites": 5626
+        },
+        {
+          "commodity": "Vanadium",
+          "group": "Vanadium",
+          "type": "Metallic",
+          "deposit_sites": 4826
+        },
+        {
+          "commodity": "Molybdenum",
+          "group": "Molybdenum",
+          "type": "Metallic",
+          "deposit_sites": 4770
+        },
+        {
+          "commodity": "Mica",
+          "group": "Mica",
+          "type": "Non-metallic",
+          "deposit_sites": 4650
+        },
+        {
+          "commodity": "Stone",
+          "group": "Stone",
+          "type": "Non-metallic",
+          "deposit_sites": 4602
+        },
+        {
+          "commodity": "Barium-Barite",
+          "group": "Barium",
+          "type": "Non-metallic",
+          "deposit_sites": 4544
+        },
+        {
+          "commodity": "Fluorine-Fluorite",
+          "group": "Fluorine",
+          "type": "Non-metallic",
+          "deposit_sites": 4135
+        },
+        {
+          "commodity": "Mercury",
+          "group": "Mercury",
+          "type": "Metallic",
+          "deposit_sites": 4090
+        },
+        {
+          "commodity": "Antimony",
+          "group": "Antimony",
+          "type": "Metallic",
+          "deposit_sites": 3953
+        },
+        {
+          "commodity": "Limestone, General",
+          "group": "Limestone",
+          "type": "Non-metallic",
+          "deposit_sites": 3427
+        },
+        {
+          "commodity": "Aluminum",
+          "group": "Aluminum",
+          "type": "Metallic",
+          "deposit_sites": 3243
+        },
+        {
+          "commodity": "Phosphorus-Phosphates",
+          "group": "Phosphorus",
+          "type": "Non-metallic",
+          "deposit_sites": 3124
+        },
+        {
+          "commodity": "Feldspar",
+          "group": "Feldspar",
+          "type": "Non-metallic",
+          "deposit_sites": 2986
+        }
+      ],
+      "by_mineral_type": [
+        {
+          "type": "Metallic",
+          "deposit_sites": 191337
+        },
+        {
+          "type": "Non-metallic",
+          "deposit_sites": 119998
+        },
+        {
+          "type": "Energy",
+          "deposit_sites": 2669
+        }
+      ]
+    },
+    "petroleum": {
+      "layer": "petroleum_imports",
+      "source": "_unwrapped/maritime/release=2026-07-09/PET_IMPORTS/PET_IMPORTS.txt",
+      "product": "crude oil imports to Total U.S.",
+      "latest_month": "202604",
+      "world_total_kbbl": 187705,
+      "by_origin_region": [
+        {
+          "region": "Canada",
+          "region_code": "REG_CA",
+          "latest_month": "202604",
+          "thousand_barrels": 123058,
+          "prior_month_kbbl": 125220,
+          "units": "thousand barrels"
+        },
+        {
+          "region": "Other Americas",
+          "region_code": "REG_OA",
+          "latest_month": "202604",
+          "thousand_barrels": 43560,
+          "prior_month_kbbl": 46977,
+          "units": "thousand barrels"
+        },
+        {
+          "region": "Middle East",
+          "region_code": "REG_ME",
+          "latest_month": "202604",
+          "thousand_barrels": 14933,
+          "prior_month_kbbl": 21138,
+          "units": "thousand barrels"
+        },
+        {
+          "region": "Africa",
+          "region_code": "REG_AF",
+          "latest_month": "202604",
+          "thousand_barrels": 6099,
+          "prior_month_kbbl": 7289,
+          "units": "thousand barrels"
+        },
+        {
+          "region": "REG_EA",
+          "region_code": "REG_EA",
+          "latest_month": "202510",
+          "thousand_barrels": 1016,
+          "prior_month_kbbl": 2584,
+          "units": "thousand barrels"
+        },
+        {
+          "region": "Asia-Pacific",
+          "region_code": "REG_AP",
+          "latest_month": "202310",
+          "thousand_barrels": 633,
+          "prior_month_kbbl": 624,
+          "units": "thousand barrels"
+        },
+        {
+          "region": "Europe",
+          "region_code": "REG_EU",
+          "latest_month": "202604",
+          "thousand_barrels": 55,
+          "prior_month_kbbl": 1989,
+          "units": "thousand barrels"
+        }
+      ],
+      "note": "EIA PET_IMPORTS via maritime release; monthly thousand barrels"
+    }
+  },
+  "unified_commodity_slate": [
+    {
+      "sctg": "12",
+      "commodity": "Gasoline & jet fuel",
+      "economy_score": 12.35,
+      "faf5_thousand_tons": 1961487.55,
+      "faf5_pct": 9.8,
+      "cfs_million_tons": 3758012.29,
+      "cfs_billion_usd": 29.17,
+      "cfs_pct": 15.46,
+      "primary_mode": "Truck"
+    },
+    {
+      "sctg": "19",
+      "commodity": "Coal",
+      "economy_score": 11.66,
+      "faf5_thousand_tons": 3081943.1,
+      "faf5_pct": 15.4,
+      "cfs_million_tons": 1720925.34,
+      "cfs_billion_usd": 429.37,
+      "cfs_pct": 7.08,
+      "primary_mode": "Pipeline"
+    },
+    {
+      "sctg": "17",
+      "commodity": "Petroleum products",
+      "economy_score": 7.62,
+      "faf5_thousand_tons": 1459974.0,
+      "faf5_pct": 7.3,
+      "cfs_million_tons": 1946607.79,
+      "cfs_billion_usd": 841.65,
+      "cfs_pct": 8.01,
+      "primary_mode": "Truck"
+    },
+    {
+      "sctg": "31",
+      "commodity": "Mixed freight",
+      "economy_score": 7.58,
+      "faf5_thousand_tons": 1153380.9,
+      "faf5_pct": 5.76,
+      "cfs_million_tons": 2384001.12,
+      "cfs_billion_usd": 257.45,
+      "cfs_pct": 9.81,
+      "primary_mode": "Truck"
+    },
+    {
+      "sctg": "02",
+      "commodity": "Cereal grains",
+      "economy_score": 5.44,
+      "faf5_thousand_tons": 1326135.17,
+      "faf5_pct": 6.63,
+      "cfs_million_tons": 968840.2,
+      "cfs_billion_usd": 130.52,
+      "cfs_pct": 3.99,
+      "primary_mode": "Truck"
+    },
+    {
+      "sctg": "18",
+      "commodity": "Chemical products",
+      "economy_score": 5.1,
+      "faf5_thousand_tons": 975730.63,
+      "faf5_pct": 4.88,
+      "cfs_million_tons": 1303303.45,
+      "cfs_billion_usd": 591.44,
+      "cfs_pct": 5.36,
+      "primary_mode": "Truck"
+    },
+    {
+      "sctg": "07",
+      "commodity": "Meat",
+      "economy_score": 4.22,
+      "faf5_thousand_tons": 687886.3,
+      "faf5_pct": 3.44,
+      "cfs_million_tons": 1258627.05,
+      "cfs_billion_usd": 796.89,
+      "cfs_pct": 5.18,
+      "primary_mode": null
+    },
+    {
+      "sctg": "11",
+      "commodity": "Natural sands",
+      "economy_score": 3.48,
+      "faf5_thousand_tons": 694230.34,
+      "faf5_pct": 3.47,
+      "cfs_million_tons": 849359.62,
+      "cfs_billion_usd": 7.05,
+      "cfs_pct": 3.49,
+      "primary_mode": null
+    },
+    {
+      "sctg": "15",
+      "commodity": "Nonmetal minerals",
+      "economy_score": 3.38,
+      "faf5_thousand_tons": 626581.15,
+      "faf5_pct": 3.13,
+      "cfs_million_tons": 897619.51,
+      "cfs_billion_usd": 28.38,
+      "cfs_pct": 3.69,
+      "primary_mode": null
+    },
+    {
+      "sctg": "16",
+      "commodity": "Natural gas",
+      "economy_score": 3.35,
+      "faf5_thousand_tons": 1219860.19,
+      "faf5_pct": 6.1,
+      "cfs_million_tons": null,
+      "cfs_billion_usd": null,
+      "cfs_pct": null,
+      "primary_mode": "Pipeline"
+    },
+    {
+      "sctg": "20",
+      "commodity": "SCTG 20",
+      "economy_score": 3.06,
+      "faf5_thousand_tons": 452265.54,
+      "faf5_pct": 2.26,
+      "cfs_million_tons": 978803.19,
+      "cfs_billion_usd": 335.3,
+      "cfs_pct": 4.03,
+      "primary_mode": null
+    },
+    {
+      "sctg": "03",
+      "commodity": "Other ag products",
+      "economy_score": 2.99,
+      "faf5_thousand_tons": 741892.22,
+      "faf5_pct": 3.71,
+      "cfs_million_tons": 513130.9,
+      "cfs_billion_usd": 266.98,
+      "cfs_pct": 2.11,
+      "primary_mode": "Truck"
+    },
+    {
+      "sctg": "43",
+      "commodity": "SCTG 43",
+      "economy_score": 2.8,
+      "faf5_thousand_tons": 433832.1,
+      "faf5_pct": 2.17,
+      "cfs_million_tons": 869380.66,
+      "cfs_billion_usd": 1728.3,
+      "cfs_pct": 3.58,
+      "primary_mode": null
+    },
+    {
+      "sctg": "41",
+      "commodity": "Waste/scrap",
+      "economy_score": 2.6,
+      "faf5_thousand_tons": 722852.28,
+      "faf5_pct": 3.61,
+      "cfs_million_tons": 333986.46,
+      "cfs_billion_usd": 94.16,
+      "cfs_pct": 1.37,
+      "primary_mode": null
+    },
+    {
+      "sctg": "04",
+      "commodity": "SCTG 04",
+      "economy_score": 2.49,
+      "faf5_thousand_tons": 457710.68,
+      "faf5_pct": 2.29,
+      "cfs_million_tons": 664621.45,
+      "cfs_billion_usd": 177.51,
+      "cfs_pct": 2.73,
+      "primary_mode": null
+    },
+    {
+      "sctg": "26",
+      "commodity": "SCTG 26",
+      "economy_score": 2.41,
+      "faf5_thousand_tons": 452318.74,
+      "faf5_pct": 2.26,
+      "cfs_million_tons": 629908.49,
+      "cfs_billion_usd": 372.46,
+      "cfs_pct": 2.59,
+      "primary_mode": null
+    },
+    {
+      "sctg": "32",
+      "commodity": "SCTG 32",
+      "economy_score": 2.06,
+      "faf5_thousand_tons": 358977.81,
+      "faf5_pct": 1.79,
+      "cfs_million_tons": 581330.6,
+      "cfs_billion_usd": 614.51,
+      "cfs_pct": 2.39,
+      "primary_mode": null
+    },
+    {
+      "sctg": "24",
+      "commodity": "SCTG 24",
+      "economy_score": 1.66,
+      "faf5_thousand_tons": 281414.27,
+      "faf5_pct": 1.41,
+      "cfs_million_tons": 479351.86,
+      "cfs_billion_usd": 769.85,
+      "cfs_pct": 1.97,
+      "primary_mode": null
+    },
+    {
+      "sctg": "25",
+      "commodity": "SCTG 25",
+      "economy_score": 1.61,
+      "faf5_thousand_tons": 583691.53,
+      "faf5_pct": 2.92,
+      "cfs_million_tons": null,
+      "cfs_billion_usd": null,
+      "cfs_pct": null,
+      "primary_mode": null
+    },
+    {
+      "sctg": "00",
+      "commodity": "SCTG 00",
+      "economy_score": 0.88,
+      "faf5_thousand_tons": null,
+      "faf5_pct": null,
+      "cfs_million_tons": 475604.55,
+      "cfs_billion_usd": 93.8,
+      "cfs_pct": 1.96,
+      "primary_mode": null
+    },
+    {
+      "sctg": "36",
+      "commodity": "SCTG 36",
+      "economy_score": 0.74,
+      "faf5_thousand_tons": null,
+      "faf5_pct": null,
+      "cfs_million_tons": 399204.18,
+      "cfs_billion_usd": 1465.73,
+      "cfs_pct": 1.64,
+      "primary_mode": null
+    },
+    {
+      "sctg": "22",
+      "commodity": "SCTG 22",
+      "economy_score": 0.65,
+      "faf5_thousand_tons": 235627.65,
+      "faf5_pct": 1.18,
+      "cfs_million_tons": null,
+      "cfs_billion_usd": null,
+      "cfs_pct": null,
+      "primary_mode": null
+    },
+    {
+      "sctg": "23",
+      "commodity": "SCTG 23",
+      "economy_score": 0.57,
+      "faf5_thousand_tons": null,
+      "faf5_pct": null,
+      "cfs_million_tons": 308812.4,
+      "cfs_billion_usd": 487.98,
+      "cfs_pct": 1.27,
+      "primary_mode": null
+    }
+  ],
+  "energy_snapshot": {
+    "top_freight_commodity": {
+      "sctg": "12",
+      "commodity": "Gasoline & jet fuel",
+      "economy_score": 12.35,
+      "faf5_thousand_tons": 1961487.55,
+      "faf5_pct": 9.8,
+      "cfs_million_tons": 3758012.29,
+      "cfs_billion_usd": 29.17,
+      "cfs_pct": 15.46,
+      "primary_mode": "Truck"
+    },
+    "pipeline_share_faf5_pct": 6.1,
+    "crude_imports_by_origin": [
+      {
+        "region": "Canada",
+        "region_code": "REG_CA",
+        "latest_month": "202604",
+        "thousand_barrels": 123058,
+        "prior_month_kbbl": 125220,
+        "units": "thousand barrels"
+      },
+      {
+        "region": "Other Americas",
+        "region_code": "REG_OA",
+        "latest_month": "202604",
+        "thousand_barrels": 43560,
+        "prior_month_kbbl": 46977,
+        "units": "thousand barrels"
+      },
+      {
+        "region": "Middle East",
+        "region_code": "REG_ME",
+        "latest_month": "202604",
+        "thousand_barrels": 14933,
+        "prior_month_kbbl": 21138,
+        "units": "thousand barrels"
+      },
+      {
+        "region": "Africa",
+        "region_code": "REG_AF",
+        "latest_month": "202604",
+        "thousand_barrels": 6099,
+        "prior_month_kbbl": 7289,
+        "units": "thousand barrels"
+      },
+      {
+        "region": "REG_EA",
+        "region_code": "REG_EA",
+        "latest_month": "202510",
+        "thousand_barrels": 1016,
+        "prior_month_kbbl": 2584,
+        "units": "thousand barrels"
+      },
+      {
+        "region": "Asia-Pacific",
+        "region_code": "REG_AP",
+        "latest_month": "202310",
+        "thousand_barrels": 633,
+        "prior_month_kbbl": 624,
+        "units": "thousand barrels"
+      }
+    ]
+  },
+  "gaps": [],
+  "dedupe_method": "aggregate_sum_by_sctg_and_region",
+  "elapsed_sec": 21.26,
+  "created_at": "2026-07-09T03:10:51Z"
+}

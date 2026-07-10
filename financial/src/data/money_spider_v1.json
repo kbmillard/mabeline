@@ -1,0 +1,605 @@
+{
+  "scan_type": "money_spider_v1",
+  "as_of": "2026-07-08",
+  "story": "One spider: physical economy + FMCSA operators + inspection shipper ties + moneyball market screen + matured patterns. Sell inspection CSVs (shipper\u2192carrier\u2192commodity). Sell carrier leads. Watch market leg.",
+  "legs": [
+    {
+      "leg_id": "physical",
+      "source": "build_reports/commodity_economy_v1.json",
+      "status": "ok",
+      "node_count": 23,
+      "note": "FAF5+CFS+PET+USGS"
+    },
+    {
+      "leg_id": "market",
+      "source": "build_reports/moneyball_aggregate_v1.json",
+      "status": "ok",
+      "node_count": 20,
+      "note": "penny moneyball slate"
+    },
+    {
+      "leg_id": "pattern",
+      "source": "build_reports/return_scan_receipt_v1.json",
+      "status": "ok",
+      "node_count": 2,
+      "note": "matured=ARTV freight_basket=UNFI"
+    },
+    {
+      "leg_id": "operators",
+      "source": "_unwrapped/fmcsa_carriers/company_census.csv",
+      "status": "ok",
+      "node_count": 2558017,
+      "note": "FMCSA company census"
+    },
+    {
+      "leg_id": "inspections",
+      "source": "build_reports/cargo_inspection_v1.json",
+      "status": "ok",
+      "node_count": 2000,
+      "note": "shipper_documented=5,187,088"
+    }
+  ],
+  "inspection_coverage": {
+    "total_inspections": 8281702,
+    "documented_shipper": 5187088,
+    "documented_cargo_tank": 233165,
+    "hazmat_placard": 322095,
+    "shipper_rate_pct": 62.6
+  },
+  "threads": [
+    {
+      "thread_id": "general_truck",
+      "label": "General freight (top fleet)",
+      "commodity": "Mixed freight",
+      "physical_score": 7.58,
+      "carrier_lead_count": 200,
+      "public_tickers": [
+        "JBHT",
+        "ODFL",
+        "KNX",
+        "WERN",
+        "XPO",
+        "CHRW",
+        "UPS",
+        "FDX"
+      ],
+      "moneyball_tickers": [],
+      "matured_reference": null,
+      "spider_score": 117.7,
+      "invoiceable": "freight_operator_leads",
+      "export_csv": "spider_leads_general_truck_v1.csv",
+      "inspection_tie_count": 12930,
+      "inspection_export": "spider_inspection_general_truck_general_freight_v1.csv",
+      "top_shipper_ties": [
+        {
+          "shipper": "DOLLAR GENERAL",
+          "dot_number": "852587",
+          "carrier_entity": "D G LOGISTICS LLC",
+          "city": "GOODLETTSVILLE",
+          "state": "TN",
+          "phone": "6158554000",
+          "power_units": 2284,
+          "commodity_lane_cert": "general_freight",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 115823.0,
+          "inspection_count": 1173,
+          "latest_insp_date": 20260702
+        },
+        {
+          "shipper": "AMAZON",
+          "dot_number": "2881058",
+          "carrier_entity": "AMAZON LOGISTICS INC",
+          "city": "SEATTLE",
+          "state": "WA",
+          "phone": null,
+          "power_units": 15259,
+          "commodity_lane_cert": "general_freight",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 40293.0,
+          "inspection_count": 1147,
+          "latest_insp_date": 20260702
+        },
+        {
+          "shipper": "FRITO LAY",
+          "dot_number": "1421875",
+          "carrier_entity": "FL TRANSPORTATION INC",
+          "city": "PLANO",
+          "state": "TX",
+          "phone": "9723347000",
+          "power_units": 1763,
+          "commodity_lane_cert": "general_freight",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 111492.0,
+          "inspection_count": 966,
+          "latest_insp_date": 20260702
+        },
+        {
+          "shipper": "AUTOZONE",
+          "dot_number": "288323",
+          "carrier_entity": "AUTOZONE TEXAS LLC",
+          "city": "MEMPHIS",
+          "state": "TN",
+          "phone": "9014958695",
+          "power_units": 496,
+          "commodity_lane_cert": "general_freight",
+          "inspection_lane_hint": "hazmat",
+          "cargo_tank": null,
+          "hazmat": "Y",
+          "avg_gcw": 118389.0,
+          "inspection_count": 921,
+          "latest_insp_date": 20260701
+        },
+        {
+          "shipper": "FEDEX",
+          "dot_number": "239039",
+          "carrier_entity": "FEDEX FREIGHT INC",
+          "city": "HARRISON",
+          "state": "AR",
+          "phone": null,
+          "power_units": 17633,
+          "commodity_lane_cert": "general_freight",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 106720.0,
+          "inspection_count": 861,
+          "latest_insp_date": 20260701
+        }
+      ]
+    },
+    {
+      "thread_id": "petroleum",
+      "label": "Petroleum & chemical haulers",
+      "commodity": "Petroleum products",
+      "physical_score": 7.62,
+      "carrier_lead_count": 200,
+      "public_tickers": [],
+      "moneyball_tickers": [],
+      "matured_reference": null,
+      "spider_score": 77.7,
+      "invoiceable": "energy_logistics_leads",
+      "export_csv": "spider_leads_petroleum_v1.csv",
+      "inspection_tie_count": 10453,
+      "inspection_export": "spider_inspection_petroleum_petroleum_chem_v1.csv",
+      "top_shipper_ties": [
+        {
+          "shipper": "N/A",
+          "dot_number": "711125",
+          "carrier_entity": "TRANSPORTADORA NORTE DE CHIHUAHUA S A DE C V",
+          "city": "CD JUAREZ",
+          "state": "CI",
+          "phone": "6566131542",
+          "power_units": 165,
+          "commodity_lane_cert": "petroleum_chem",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 83693.0,
+          "inspection_count": 731,
+          "latest_insp_date": 20260625
+        },
+        {
+          "shipper": "XPO",
+          "dot_number": "241829",
+          "carrier_entity": "XPO LOGISTICS FREIGHT INC",
+          "city": "ANN ARBOR",
+          "state": "MI",
+          "phone": "7347571667",
+          "power_units": 10260,
+          "commodity_lane_cert": "petroleum_chem",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 108527.0,
+          "inspection_count": 716,
+          "latest_insp_date": 20260630
+        },
+        {
+          "shipper": "PEPSI",
+          "dot_number": "692947",
+          "carrier_entity": "NEW BERN TRANSPORT CORPORATION",
+          "city": "PURCHASE",
+          "state": "NY",
+          "phone": "9147676000",
+          "power_units": 9786,
+          "commodity_lane_cert": "petroleum_chem",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 105637.0,
+          "inspection_count": 710,
+          "latest_insp_date": 20260629
+        },
+        {
+          "shipper": "US FOODS",
+          "dot_number": "358597",
+          "carrier_entity": "US FOODS INC",
+          "city": "ROSEMONT",
+          "state": "IL",
+          "phone": "9789796176",
+          "power_units": 4941,
+          "commodity_lane_cert": "petroleum_chem",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 96915.0,
+          "inspection_count": 668,
+          "latest_insp_date": 20260629
+        },
+        {
+          "shipper": "N/A",
+          "dot_number": "662058",
+          "carrier_entity": "VRP TRANSPORTES DE MEXICO S DE RL DE CV",
+          "city": "JUAREZ",
+          "state": "CI",
+          "phone": null,
+          "power_units": 145,
+          "commodity_lane_cert": "petroleum_chem",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 70286.0,
+          "inspection_count": 636,
+          "latest_insp_date": 20260625
+        }
+      ]
+    },
+    {
+      "thread_id": "metal_scrap",
+      "label": "Metal & scrap haulers",
+      "commodity": "Waste/scrap",
+      "physical_score": 2.6,
+      "carrier_lead_count": 200,
+      "public_tickers": [],
+      "moneyball_tickers": [],
+      "matured_reference": null,
+      "spider_score": 75.9,
+      "invoiceable": "norfolk_metal_leads",
+      "export_csv": "spider_leads_metal_scrap_v1.csv",
+      "inspection_tie_count": 14650,
+      "inspection_export": "spider_inspection_metal_scrap_waste_scrap_v1.csv",
+      "top_shipper_ties": [
+        {
+          "shipper": "VESTAS",
+          "dot_number": "320691",
+          "carrier_entity": "LONE STAR TRANSPORTATION LLC",
+          "city": "FORT WORTH",
+          "state": "TX",
+          "phone": null,
+          "power_units": 404,
+          "commodity_lane_cert": "metal_sheet",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 230336.0,
+          "inspection_count": 1350,
+          "latest_insp_date": 20260615
+        },
+        {
+          "shipper": "PRODUCTOS DE AGUA",
+          "dot_number": "555365",
+          "carrier_entity": "TRANSPORTES AGUILA DE CIUDAD JUAREZ SA DE CV",
+          "city": "JUAREZ",
+          "state": "CI",
+          "phone": "9152173833",
+          "power_units": 82,
+          "commodity_lane_cert": "metal_sheet",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 106933.0,
+          "inspection_count": 739,
+          "latest_insp_date": 20260630
+        },
+        {
+          "shipper": "N/A",
+          "dot_number": "264184",
+          "carrier_entity": "SCHNEIDER NATIONAL CARRIERS INC",
+          "city": "GREEN BAY",
+          "state": "WI",
+          "phone": "8005586767",
+          "power_units": 9866,
+          "commodity_lane_cert": "metal_sheet",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 101181.0,
+          "inspection_count": 703,
+          "latest_insp_date": 20260629
+        },
+        {
+          "shipper": "UNITED RENTALS",
+          "dot_number": "899748",
+          "carrier_entity": "UNITED RENTALS NORTH AMERICA INC",
+          "city": "IRVING",
+          "state": "TX",
+          "phone": "2093247760",
+          "power_units": 8747,
+          "commodity_lane_cert": "metal_sheet",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 86421.0,
+          "inspection_count": 666,
+          "latest_insp_date": 20260701
+        },
+        {
+          "shipper": "WASTE MANAGEMENT",
+          "dot_number": "344050",
+          "carrier_entity": "WASTE MANAGEMENT OF PENNSYLVANIA INC",
+          "city": "GILBERTSVILLE",
+          "state": "PA",
+          "phone": "3479921597",
+          "power_units": 1200,
+          "commodity_lane_cert": "waste_scrap",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 73565.0,
+          "inspection_count": 478,
+          "latest_insp_date": 20260622
+        }
+      ]
+    },
+    {
+      "thread_id": "grain_feed",
+      "label": "Grain & feed carriers",
+      "commodity": "Cereal grains",
+      "physical_score": 5.44,
+      "carrier_lead_count": 200,
+      "public_tickers": [
+        "UNFI"
+      ],
+      "moneyball_tickers": [],
+      "matured_reference": "UNFI",
+      "spider_score": 59.8,
+      "invoiceable": "ag_logistics_leads",
+      "export_csv": "spider_leads_grain_feed_v1.csv",
+      "inspection_tie_count": 2570,
+      "inspection_export": "spider_inspection_grain_feed_grain_feed_v1.csv",
+      "top_shipper_ties": [
+        {
+          "shipper": "DOLLAR GENERAL",
+          "dot_number": "1137660",
+          "carrier_entity": "HOGAN DEDICATED SERVICES LLC",
+          "city": "BRIDGETON",
+          "state": "MO",
+          "phone": "3148132777",
+          "power_units": 1581,
+          "commodity_lane_cert": "grain_feed",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 116854.0,
+          "inspection_count": 194,
+          "latest_insp_date": 20260630
+        },
+        {
+          "shipper": "TRANSPORTES UNIDOS DE NORTEAMERICA SA",
+          "dot_number": "634763",
+          "carrier_entity": "TRANSPORTES UNIDOS DE NORTEAMERICA SA",
+          "city": "OJINAGA",
+          "state": "CI",
+          "phone": "6261005424",
+          "power_units": 20,
+          "commodity_lane_cert": "grain_feed",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 97301.0,
+          "inspection_count": 187,
+          "latest_insp_date": 20260608
+        },
+        {
+          "shipper": "RURAL KING",
+          "dot_number": "227709",
+          "carrier_entity": "RED KNIGHT TRANSPORTATION LLC",
+          "city": "MATTOON",
+          "state": "IL",
+          "phone": "2172357102",
+          "power_units": 200,
+          "commodity_lane_cert": "grain_feed",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 119117.0,
+          "inspection_count": 185,
+          "latest_insp_date": 20260628
+        },
+        {
+          "shipper": "CARRIER",
+          "dot_number": "326390",
+          "carrier_entity": "AFFTON TRANSPORT LLC",
+          "city": "ST LOUIS",
+          "state": "MO",
+          "phone": "3143889700",
+          "power_units": 77,
+          "commodity_lane_cert": "grain_feed",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 58769.0,
+          "inspection_count": 178,
+          "latest_insp_date": 20260629
+        },
+        {
+          "shipper": "SCHREIBER",
+          "dot_number": "236361",
+          "carrier_entity": "PRIDE TRANSPORT INC",
+          "city": "SALT LAKE CITY",
+          "state": "UT",
+          "phone": "8019728890",
+          "power_units": 526,
+          "commodity_lane_cert": "grain_feed",
+          "inspection_lane_hint": null,
+          "cargo_tank": null,
+          "hazmat": null,
+          "avg_gcw": 115519.0,
+          "inspection_count": 137,
+          "latest_insp_date": 20260629
+        }
+      ]
+    }
+  ],
+  "capital_signals": [
+    {
+      "ticker": "HOWL",
+      "moneyball_score": 162.0,
+      "price": 0.34,
+      "stake_for_100": 4.8571,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "JSPR",
+      "moneyball_score": 146.1,
+      "price": 0.48,
+      "stake_for_100": 5.2345,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "MDCX",
+      "moneyball_score": 122.9,
+      "price": 0.44,
+      "stake_for_100": 7.7601,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "AIM",
+      "moneyball_score": 121.9,
+      "price": 0.31,
+      "stake_for_100": 5.9048,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "ENSC",
+      "moneyball_score": 120.0,
+      "price": 0.28,
+      "stake_for_100": 1.7021,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "TPST",
+      "moneyball_score": 116.1,
+      "price": 0.99,
+      "stake_for_100": 9.0,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "IGC",
+      "moneyball_score": 115.2,
+      "price": 0.28,
+      "stake_for_100": 6.5882,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "SLXN",
+      "moneyball_score": 107.0,
+      "price": 2.74,
+      "stake_for_100": 4.5667,
+      "cent_zone": false,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "MDNAF",
+      "moneyball_score": 106.2,
+      "price": 0.29,
+      "stake_for_100": 8.9231,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    },
+    {
+      "ticker": "KAPA",
+      "moneyball_score": 105.0,
+      "price": 0.36,
+      "stake_for_100": 4.5,
+      "cent_zone": true,
+      "leg": "market",
+      "note": "pre-run screen; not advice"
+    }
+  ],
+  "actions_today": [
+    {
+      "priority": 1,
+      "action": "sell_inspection_ties",
+      "thread": "metal_scrap",
+      "file": "exports/spider_inspection_metal_scrap_waste_scrap_v1.csv",
+      "count": 14650,
+      "example": "VESTAS \u2192 LONE STAR TRANSPORTATION LLC",
+      "pitch": "Documented shipper\u2192carrier\u2192commodity ties from FMCSA inspections (Metal & scrap haulers)"
+    },
+    {
+      "priority": 2,
+      "action": "sell_leads",
+      "thread": "general_truck",
+      "file": "exports/spider_leads_general_truck_v1.csv",
+      "count": 200,
+      "pitch": "200 General freight (top fleet) with phone/DOT \u2014 weekly refresh"
+    },
+    {
+      "priority": 3,
+      "action": "personal_capital_watch",
+      "tickers": [
+        "HOWL",
+        "JSPR",
+        "MDCX"
+      ],
+      "leg": "market"
+    },
+    {
+      "priority": 4,
+      "action": "freight_intel_brief",
+      "topic": "crude import origins + truck commodity share",
+      "source": "commodity_economy_v1"
+    }
+  ],
+  "matured_pattern": {
+    "biotech_runner": "ARTV",
+    "freight_food_runner": {
+      "ticker": "UNFI",
+      "return_pct": 103
+    },
+    "lesson": "ARTV matured on market leg; UNFI on freight/food; spider hunts pre-run + sells operator leads"
+  },
+  "exports": [
+    "exports/spider_leads_metal_scrap_v1.csv",
+    "exports/spider_inspection_metal_scrap_metal_sheet_v1.csv",
+    "exports/spider_inspection_metal_scrap_waste_scrap_v1.csv",
+    "exports/spider_leads_grain_feed_v1.csv",
+    "exports/spider_inspection_grain_feed_grain_feed_v1.csv",
+    "exports/spider_leads_petroleum_v1.csv",
+    "exports/spider_inspection_petroleum_petroleum_chem_v1.csv",
+    "exports/spider_leads_general_truck_v1.csv",
+    "exports/spider_inspection_general_truck_general_freight_v1.csv"
+  ],
+  "commands": {
+    "run": "bin/mabel-catalog money-spider",
+    "refresh_all": "bin/mabel-catalog money-spider --refresh",
+    "find_cargo": "bin/mabel-catalog find-cargo",
+    "financial": "bin/mabel-catalog financial"
+  },
+  "dedupe_method": "thread_unique_carrier_dot_rank",
+  "elapsed_sec": 24.49,
+  "created_at": "2026-07-08T02:23:02Z"
+}

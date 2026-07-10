@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-07-07",
+  "source": "web_yahoo_sec_gtbp_catalyst_h2_2026",
+  "note": "Names added from SEC file + web catalyst scan; not in penny_forward biotech-only pass",
+  "candidates": [
+    {
+      "ticker": "GTBP",
+      "name": "GT Biopharma, Inc.",
+      "price_now": 0.46,
+      "proj_1y_target": 3.0,
+      "proj_upside_pct": 552.2,
+      "ret_1y": 41.4,
+      "ret_3m": -6.1,
+      "mcap_m": 16.6,
+      "exchange": "NCM",
+      "rec": "buy",
+      "vol": 1473251,
+      "catalyst": "GTB-3650/GTB-5550 Phase 1 data H2 2026; NK TriKE platform; ~$13-17M mcap vs billion-dollar NK peers",
+      "sec_file": "_unwrapped/sec_filings/company_tickers.json",
+      "web_refs": [
+        "https://finance.yahoo.com/quote/GTBP/",
+        "https://investingnews.com/the-13-million-company-teaching-the-immune-system-to-hunt-cancer/"
+      ]
+    }
+  ]
+}

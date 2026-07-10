@@ -1,0 +1,112 @@
+{
+  "scan_type": "moneyball_price_refresh_v1",
+  "as_of": "2026-07-08",
+  "slate_prices": {
+    "HOWL": {
+      "market": "SEC",
+      "name": "Werewolf Therapeutics, Inc.",
+      "start": 1.06,
+      "end": 0.344,
+      "ret_1y": -67.55
+    },
+    "JSPR": {
+      "market": "SEC",
+      "name": "Jasper Therapeutics, Inc.",
+      "start": 3.02,
+      "end": 0.482,
+      "ret_1y": -84.04
+    },
+    "MDCX": {
+      "market": "SEC",
+      "name": "Medicus Pharma Ltd.",
+      "start": 2.99,
+      "end": 0.44,
+      "ret_1y": -85.28
+    },
+    "AIM": {
+      "market": "SEC",
+      "name": "AIM ImmunoTech Inc.",
+      "start": 8.8264,
+      "end": 0.31,
+      "ret_1y": -96.49
+    },
+    "ENSC": {
+      "market": "SEC",
+      "name": "Ensysce Biosciences, Inc.",
+      "start": 2.19,
+      "end": 0.276,
+      "ret_1y": -87.4
+    },
+    "TPST": {
+      "market": "SEC",
+      "name": "Tempest Therapeutics, Inc.",
+      "start": 7.44,
+      "end": 0.991,
+      "ret_1y": -86.68
+    },
+    "IGC": {
+      "market": "SEC",
+      "name": "IGC Pharma, Inc.",
+      "start": 0.32,
+      "end": 0.28,
+      "ret_1y": -12.5
+    },
+    "SLXN": {
+      "market": "SEC",
+      "name": "Silexion Therapeutics Corp",
+      "start": 121.5,
+      "end": 2.74,
+      "ret_1y": -97.74
+    },
+    "GTBP": {
+      "market": "SEC",
+      "name": "GT Biopharma, Inc.",
+      "start": 2.05,
+      "end": 0.46,
+      "ret_1y": -77.56
+    },
+    "MDNAF": {
+      "market": "SEC",
+      "name": "Medicenna Therapeutics Corp.",
+      "start": 0.637,
+      "end": 0.29,
+      "ret_1y": -54.47
+    },
+    "ESLA": {
+      "market": "SEC",
+      "name": "Estrella Immunopharma, Inc.",
+      "start": 0.871,
+      "end": 0.91,
+      "ret_1y": 4.48
+    },
+    "SNTI": {
+      "market": "SEC",
+      "name": "Senti Biosciences Holdings, Inc.",
+      "start": 2.2,
+      "end": 1.01,
+      "ret_1y": -54.09
+    },
+    "REVB": {
+      "market": "SEC",
+      "name": "REVELATION BIOSCIENCES, INC.",
+      "start": 10.04,
+      "end": 0.99,
+      "ret_1y": -90.14
+    },
+    "RVPH": {
+      "market": "SEC",
+      "name": "REVIVA PHARMACEUTICALS HOLDINGS, INC.",
+      "start": 7.532,
+      "end": 0.6,
+      "ret_1y": -92.03
+    },
+    "CELZ": {
+      "market": "SEC",
+      "name": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+      "start": 2.69,
+      "end": 1.09,
+      "ret_1y": -59.48
+    }
+  },
+  "created_at": "2026-07-08T13:51:01Z"
+}

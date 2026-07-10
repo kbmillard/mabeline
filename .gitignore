@@ -1,0 +1,37 @@
+# Raw evidence — never push
+_unwrapped/
+warehouse/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Local agent / IDE
+.cursor/
+agent-transcripts/
+
+# Node / Next
+**/node_modules/
+**/.next/
+**/out/
+**/.turbo/
+*.log
+.env
+.env.*
+!.env.example
+
+# Large local exports / ML artifacts (demo JSON lives under financial/src/data)
+exports/
+reports/
+build_reports/
+*.parquet
+*.gguf
+*.pt
+*.pth
+
+# Python packaging
+*.egg-info/
+dist/
+build/

@@ -1,0 +1,375 @@
+{
+  "created_at": "2026-07-07T13:29:48Z",
+  "policy": "_unwrapped canonical; overture_places excluded",
+  "dest_unwrapped": "/Users/kyle/Documents/mabeline/_unwrapped",
+  "family_count": 61,
+  "total_bytes": 248730474806,
+  "families": [
+    {
+      "family": "all_the_places",
+      "status": "pass",
+      "file_count": 4771,
+      "total_bytes": 27600726546
+    },
+    {
+      "family": "amazon_facilities",
+      "status": "pass",
+      "file_count": 4,
+      "total_bytes": 1660542
+    },
+    {
+      "family": "amazon_logistics",
+      "status": "pass",
+      "file_count": 7,
+      "total_bytes": 1547884
+    },
+    {
+      "family": "atf_firearms",
+      "status": "partial",
+      "file_count": 3,
+      "total_bytes": 22673282
+    },
+    {
+      "family": "bls_employment",
+      "status": "pass",
+      "file_count": 1,
+      "total_bytes": 439500013
+    },
+    {
+      "family": "canada_statcan",
+      "status": "pass",
+      "file_count": 6,
+      "total_bytes": 236397897
+    },
+    {
+      "family": "census",
+      "status": "pass",
+      "file_count": 358,
+      "total_bytes": 797381020
+    },
+    {
+      "family": "census_gazetteer",
+      "status": "pass",
+      "file_count": 6,
+      "total_bytes": 21440313
+    },
+    {
+      "family": "cms_medicare",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 683628385
+    },
+    {
+      "family": "commercial",
+      "status": "empty",
+      "file_count": 1,
+      "total_bytes": 138
+    },
+    {
+      "family": "economic",
+      "status": "pass",
+      "file_count": 9,
+      "total_bytes": 38393559
+    },
+    {
+      "family": "eia_energy",
+      "status": "pass",
+      "file_count": 37,
+      "total_bytes": 25224958
+    },
+    {
+      "family": "epa_facilities",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 2672213179
+    },
+    {
+      "family": "epa_toxics",
+      "status": "partial",
+      "file_count": 6,
+      "total_bytes": 307639148
+    },
+    {
+      "family": "exchanges",
+      "status": "pass",
+      "file_count": 12,
+      "total_bytes": 7829031
+    },
+    {
+      "family": "faa_aviation",
+      "status": "pass",
+      "file_count": 10,
+      "total_bytes": 606796078
+    },
+    {
+      "family": "faf5_freight",
+      "status": "partial",
+      "file_count": 11,
+      "total_bytes": 3352122409
+    },
+    {
+      "family": "fcc_licenses",
+      "status": "pass",
+      "file_count": 80,
+      "total_bytes": 5291832307
+    },
+    {
+      "family": "fda",
+      "status": "pass",
+      "file_count": 10,
+      "total_bytes": 2753404363
+    },
+    {
+      "family": "fdic_banks",
+      "status": "pass",
+      "file_count": 1,
+      "total_bytes": 22106284
+    },
+    {
+      "family": "fed",
+      "status": "partial",
+      "file_count": 14,
+      "total_bytes": 772288865
+    },
+    {
+      "family": "fmc_maritime",
+      "status": "partial",
+      "file_count": 2,
+      "total_bytes": 610272
+    },
+    {
+      "family": "fmcsa_carriers",
+      "status": "pass",
+      "file_count": 12,
+      "total_bytes": 11496124509
+    },
+    {
+      "family": "fpds_contracts",
+      "status": "pass",
+      "file_count": 3,
+      "total_bytes": 6303656401
+    },
+    {
+      "family": "gov",
+      "status": "pass",
+      "file_count": 312,
+      "total_bytes": 14458875110
+    },
+    {
+      "family": "gov_state",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 65698
+    },
+    {
+      "family": "hud_housing",
+      "status": "pass",
+      "file_count": 3,
+      "total_bytes": 27263741
+    },
+    {
+      "family": "international",
+      "status": "pass",
+      "file_count": 4,
+      "total_bytes": 35263772
+    },
+    {
+      "family": "irs_nonprofits",
+      "status": "partial",
+      "file_count": 4,
+      "total_bytes": 342745263
+    },
+    {
+      "family": "irs_tax_stats",
+      "status": "pass",
+      "file_count": 11,
+      "total_bytes": 14954089
+    },
+    {
+      "family": "lei_entities",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 5099064092
+    },
+    {
+      "family": "manual_gaps",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 1755302
+    },
+    {
+      "family": "maritime",
+      "status": "pass",
+      "file_count": 3,
+      "total_bytes": 49508058
+    },
+    {
+      "family": "mexico_auto",
+      "status": "pass",
+      "file_count": 6,
+      "total_bytes": 28001176
+    },
+    {
+      "family": "mexico_denue",
+      "status": "pass",
+      "file_count": 23,
+      "total_bytes": 401968605
+    },
+    {
+      "family": "msha_mines",
+      "status": "pass",
+      "file_count": 5,
+      "total_bytes": 1757348828
+    },
+    {
+      "family": "ncua_credit_unions",
+      "status": "pass",
+      "file_count": 4,
+      "total_bytes": 4534984
+    },
+    {
+      "family": "nhtsa_vehicles",
+      "status": "pass",
+      "file_count": 4,
+      "total_bytes": 2357872459
+    },
+    {
+      "family": "non_gov",
+      "status": "pass",
+      "file_count": 1,
+      "total_bytes": 125453024
+    },
+    {
+      "family": "nppes_providers",
+      "status": "pass",
+      "file_count": 10,
+      "total_bytes": 11782453494
+    },
+    {
+      "family": "nrc_nuclear",
+      "status": "partial",
+      "file_count": 3,
+      "total_bytes": 129367
+    },
+    {
+      "family": "nsi_brands",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 26762351
+    },
+    {
+      "family": "offshore_energy",
+      "status": "pass",
+      "file_count": 4,
+      "total_bytes": 84842
+    },
+    {
+      "family": "open_pois",
+      "status": "pass",
+      "file_count": 93,
+      "total_bytes": 3814750645
+    },
+    {
+      "family": "osha_enforcement",
+      "status": "pass",
+      "file_count": 1,
+      "total_bytes": 6488752128
+    },
+    {
+      "family": "pbgc_pensions",
+      "status": "pass",
+      "file_count": 6,
+      "total_bytes": 23488131
+    },
+    {
+      "family": "phmsa_pipelines",
+      "status": "pass",
+      "file_count": 224,
+      "total_bytes": 144151977
+    },
+    {
+      "family": "procurement",
+      "status": "empty",
+      "file_count": 1,
+      "total_bytes": 317
+    },
+    {
+      "family": "rail",
+      "status": "pass",
+      "file_count": 157,
+      "total_bytes": 1289910918
+    },
+    {
+      "family": "sam_gov",
+      "status": "pass",
+      "file_count": 9,
+      "total_bytes": 7837214121
+    },
+    {
+      "family": "sba",
+      "status": "pass",
+      "file_count": 6,
+      "total_bytes": 885867052
+    },
+    {
+      "family": "sec_filings",
+      "status": "partial",
+      "file_count": 1,
+      "total_bytes": 798068
+    },
+    {
+      "family": "stb_rail",
+      "status": "pass",
+      "file_count": 226,
+      "total_bytes": 10531076
+    },
+    {
+      "family": "trade",
+      "status": "pass",
+      "file_count": 8,
+      "total_bytes": 3502141725
+    },
+    {
+      "family": "ttb_alcohol",
+      "status": "pass",
+      "file_count": 5,
+      "total_bytes": 25204901
+    },
+    {
+      "family": "usda",
+      "status": "pass",
+      "file_count": 2,
+      "total_bytes": 45259168
+    },
+    {
+      "family": "usda_ag_transport",
+      "status": "pass",
+      "file_count": 6,
+      "total_bytes": 85152390
+    },
+    {
+      "family": "usgs_minerals",
+      "status": "pass",
+      "file_count": 18,
+      "total_bytes": 495153058
+    },
+    {
+      "family": "uspto_ip",
+      "status": "pass",
+      "file_count": 36,
+      "total_bytes": 16509319753
+    },
+    {
+      "family": "wikidata",
+      "status": "pass",
+      "file_count": 3,
+      "total_bytes": 102209832649
+    },
+    {
+      "family": "wof_boundaries",
+      "status": "pass",
+      "file_count": 123,
+      "total_bytes": 5393645091
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "scan_type": "penny_forward_full_v1",
+  "as_of": "2026-07-08",
+  "method": "all priced tickers <= $5 not matured (ret_1y<120%); price-only, no analyst enrich",
+  "count": 2666,
+  "candidates": [
+    {
+      "ticker": "ADTX",
+      "market": "SEC",
+      "name": "Aditxt, Inc.",
+      "start": 30754.0801,
+      "end": 0.004,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "AREB",
+      "market": "SEC",
+      "name": "AMERICAN REBEL HOLDINGS INC",
+      "start": 51200.0,
+      "end": 0.335,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "GTIJF",
+      "market": "SEC",
+      "name": "GRAPHJET TECHNOLOGY",
+      "start": 5.28,
+      "end": 0.0002,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "HUBC",
+      "market": "SEC",
+      "name": "Hub Cyber Security Ltd.",
+      "start": 31650.0,
+      "end": 1.38,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "PADEF",
+      "market": "SEC",
+      "name": "Adaro Energy PT/ADR/",
+      "start": 145374.4688,
+      "end": 0.1125,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "RUBI",
+      "market": "SEC",
+      "name": "Rubico Inc.",
+      "start": 199218.75,
+      "end": 4.73,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "SONG",
+      "market": "SEC",
+      "name": "Music Licensing Inc.",
+      "start": 240.0,
+      "end": 0.0004,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "TIRXF",
+      "market": "SEC",
+      "name": "TIAN RUIXIANG HOLDINGS LTD",
+      "start": 298.75,
+      "end": 0.0001,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "WOK",
+      "market": "SEC",
+      "name": "WORK Medical Technology Group LTD",
+      "start": 780000.0,
+      "end": 2.03,
+      "ret_1y": -100.0
+    },
+    {
+      "ticker": "FOXO",
+      "market": "SEC",
+      "name": "FOXO TECHNOLOGIES INC.",
+      "start": 995.1989,
+      "end": 0.105,
+      "ret_1y": -99.99
+    },
+    {
+      "ticker": "IGTA",
+      "market": "SEC",
+      "name": "Inception Growth Acquisition Ltd",
+      "start": 12.35,
+      "end": 0.001,
+      "ret_1y": -99.99
+    },
+    {
+      "ticker": "LIVG",
+      "market": "SEC",
+      "name": "Livento Group, Inc.",
+      "start": 40.0,
+      "end": 0.01,
+      "ret_1y": -99.98
+    },
+    {
+      "ticker": "YGMZF",
+      "market": "SEC",
+      "name": "MingZhu Logistics Holdings Ltd",
+      "start": 12.864,
+      "end": 0.003,
+      "ret_1y": -99.98
+    },
+    {
+      "ticker": "ZNB",
+      "market": "SEC",
+      "name": "Zeta Network Group",
+      "start": 2500.0,
+      "end": 0.49,
+      "ret_1y": -99.98
+    },
+    {
+      "ticker": "BHATF",
+      "market": "SEC",
+      "name": "Blue Hat Interactive Entertainment Technology",
+      "start": 86.5,
+      "end": 0.028,
+      "ret_1y": -99.97
+    },
+    {
+      "ticker": "EPWKF",
+      "market": "SEC",
+      "name": "EPWK Holdings Ltd.",
+      "start": 20.8,
+      "end": 0.006,
+      "ret_1y": -99.97
+    },
+    {
+      "ticker": "FATPQ",
+      "market": "SEC",
+      "name": "Fat Brands, Inc",
+      "start": 3.06,
+      "end": 0.001,
+      "ret_1y": -99.97
+    },
+    {
+      "ticker": "GBUX",
+      "market": "SEC",
+      "name": "GIVBUX, INC.",
+      "start": 2.0,
+      "end": 0.0007,
+      "ret_1y": -99.97
+    },
+    {
+      "ticker": "WHLR",
+      "market": "SEC",
+      "name": "Wheeler Real Estate Investment Trust, Inc.",
+      "start": 2088.0,
+      "end": 0.555,
+      "ret_1y": -99.97
+    },
+    {
+      "ticker": "BLMZF",
+      "market": "SEC",
+      "name": "Harrison Global Holdings Inc.",
+      "start": 1.564,
+      "end": 0.0007,
+      "ret_1y": -99.96
+    },
+    {
+      "ticker": "DCX",
+      "market": "SEC",
+      "name": "Digital Currency X Technology Inc.",
+      "start": 2424.0,
+      "end": 1.02,
+      "ret_1y": -99.96
+    },
+    {
+      "ticker": "OCG",
+      "market": "SEC",
+      "name": "Oriental Culture Holding LTD",
+      "start": 4009.1335,
+      "end": 1.63,
+      "ret_1y": -99.96
+    },
+    {
+      "ticker": "WLGSF",
+      "market": "SEC",
+      "name": "WANG & LEE GROUP, Inc.",
+      "start": 9.75,
+      "end": 0.004,
+      "ret_1y": -99.96
+    },
+    {
+      "ticker": "YYGH",
+      "market": "SEC",
+      "name": "YY Group Holding Ltd.",
+      "start": 4252.5,
+      "end": 1.5,
+      "ret_1y": -99.96
+    },
+    {
+      "ticker": "GMEX",
+      "market": "SEC",
+      "name": "GMEX Robotics Corp",
+      "start": 4748.688,
+      "end": 2.6,
+      "ret_1y": -99.95
+    },
+    {
+      "ticker": "KIDZ",
+      "market": "SEC",
+      "name": "KIDZ AI Inc.",
+      "start": 1420.0,
+      "end": 0.736,
+      "ret_1y": -99.95
+    },
+    {
+      "ticker": "PFSA",
+      "market": "SEC",
+      "name": "Profusa, Inc.",
+      "start": 187.5,
+      "end": 0.094,
+      "ret_1y": -99.95
+    },
+    {
+      "ticker": "RAYA",
+      "market": "SEC",
+      "name": "Erayak Power Solution Group Inc.",
+      "start": 5390.0,
+      "end": 2.78,
+      "ret_1y": -99.95
+    },
+    {
+      "ticker": "RPGL",
+      "market": "SEC",
+      "name": "Republic Power Group Ltd",
+      "start": 3984.0,
+      "end": 1.84,
+      "ret_1y": -99.95
+    },
+    {
+      "ticker": "VMAR",
+      "market": "SEC",
+      "name": "Vision Marine Technologies Inc.",
+      "start": 2616.0,
+      "end": 1.41,
+      "ret_1y": -99.95
+    },
+    {
+      "ticker": "MTEN",
+      "market": "SEC",
+      "name": "Mingteng International Corp Inc.",
+      "start": 2136.0,
+      "end": 1.3,
+      "ret_1y": -99.94
+    },
+    {
+      "ticker": "FCHL",
+      "market": "SEC",
+      "name": "Fitness Champs Holdings Ltd",
+      "start": 1912.5,
+      "end": 1.37,
+      "ret_1y": -99.93
+    },
+    {
+      "ticker": "TSEOQ",
+      "market": "SEC",
+      "name": "Trinseo PLC",
+      "start": 2.9501,
+      "end": 0.002,
+      "ret_1y": -99.93
+    },
+    {
+      "ticker": "IVPR",
+      "market": "SEC",
+      "name": "INSPIRE VETERINARY PARTNERS, INC.",
+      "start": 1.25,
+      "end": 0.001,
+      "ret_1y": -99.92
+    },
+    {
+      "ticker": "VCIG",
+      "market": "SEC",
+      "name": "VCI Global Ltd",
+      "start": 2754.0,
+      "end": 2.1,
+      "ret_1y": -99.92
+    },
+    {
+      "ticker": "CDT",
+      "market": "SEC",
+      "name": "CDT Equity Inc.",
+      "start": 492.0,
+      "end": 0.44,
+      "ret_1y": -99.91
+    },
+    {
+      "ticker": "CHSN",
+      "market": "SEC",
+      "name": "Chanson International Holding",
+      "start": 1040.0,
+      "end": 1.065,
+      "ret_1y": -99.9
+    },
+    {
+      "ticker": "EZGO",
+      "market": "SEC",
+      "name": "EZGO Technologies Ltd.",
+      "start": 1271.25,
+      "end": 1.31,
+      "ret_1y": -99.9
+    },
+    {
+      "ticker": "CERO",
+      "market": "SEC",
+      "name": "CERO THERAPEUTICS HOLDINGS, INC.",
+      "start": 8.67,
+      "end": 0.011,
+      "ret_1y": -99.87
+    },
+    {
+      "ticker": "LRHC",
+      "market": "SEC",
+      "name": "La Rosa Holdings Corp.",
+      "start": 809.0,
+      "end": 1.05,
+      "ret_1y": -99.87
+    },
+    {
+      "ticker": "BSLK",
+      "market": "SEC",
+      "name": "Bolt Projects Holdings, Inc.",
+      "start": 3.38,
+      "end": 0.005,
+      "ret_1y": -99.85
+    },
+    {
+      "ticker": "LAAI",
+      "market": "SEC",
+      "name": "Loan Artificial Intelligence Corp.",
+      "start": 9.6,
+      "end": 0.014,
+      "ret_1y": -99.85
+    },
+    {
+      "ticker": "UOKAF",
+      "market": "SEC",
+      "name": "MDJM LTD",
+      "start": 89.95,
+      "end": 0.138,
+      "ret_1y": -99.85
+    },
+    {
+      "ticker": "KACLF",
+      "market": "SEC",
+      "name": "Kairous Acquisition Corp. Ltd",
+      "start": 13.05,
+      "end": 0.021,
+      "ret_1y": -99.84
+    },
+    {
+      "ticker": "BINI",
+      "market": "SEC",
+      "name": "BOLLINGER INNOVATIONS, INC.",
+      "start": 52.5,
+      "end": 0.09,
+      "ret_1y": -99.83
+    },
+    {
+      "ticker": "CIMG",
+      "market": "SEC",
+      "name": "CIMG Inc.",
+      "start": 4.58,
+      "end": 0.008,
+      "ret_1y": -99.83
+    },
+    {
+      "ticker": "RGBP",
+      "market": "SEC",
+      "name": "Regen BioPharma Inc",
+      "start": 0.0541,
+      "end": 0.0001,
+      "ret_1y": -99.82
+    },
+    {
+      "ticker": "GDC",
+      "market": "SEC",
+      "name": "GD Culture Group Ltd",
+      "start": 912.5,
+      "end": 1.72,
+      "ret_1y": -99.81
+    },
+    {
+      "ticker": "KUKEY",
+      "market": "SEC",
+      "name": "Kuke Music Holding Ltd",
+      "start": 3.07,
+      "end": 0.006,
+      "ret_1y": -99.8
+    },
+    {
+      "ticker": "MEHA",
+      "market": "SEC",
+      "name": "Functional Brands Inc.",
+      "start": 2.75,
+      "end": 0.0056,
+      "ret_1y": -99.8
+    },
+    {
+      "ticker": "VIVK",
+      "market": "SEC",
+      "name": "Vivakor, Inc.",
+      "start": 152.205,
+      "end": 0.315,
+      "ret_1y": -99.79
+    },
+    {
+      "ticker": "ZSPC",
+      "market": "SEC",
+      "name": "zSpace, Inc.",
+      "start": 77.25,
+      "end": 0.18,
+      "ret_1y": -99.77
+    },
+    {
+      "ticker": "NXTT",
+      "market": "SEC",
+      "name": "Next Technology Holding Inc.",
+      "start": 476.0,
+      "end": 1.15,
+      "ret_1y": -99.76
+    },
+    {
+      "ticker": "ZCMD",
+      "market": "SEC",
+      "name": "Zhongchao Inc.",
+      "start": 907.68,
+      "end": 2.2,
+      "ret_1y": -99.76
+    },
+    {
+      "ticker": "XXII",
+      "market": "SEC",
+      "name": "22nd Century Group, Inc.",
+      "start": 1776.0,
+      "end": 4.36,
+      "ret_1y": -99.75
+    },
+    {
+      "ticker": "BTMCQ",
+      "market": "SEC",
+      "name": "Bitcoin Depot Inc.",
+      "start": 41.93,
+      "end": 0.11,
+      "ret_1y": -99.74
+    },
+    {
+      "ticker": "MSPR",
+      "market": "SEC",
+      "name": "MSP Recovery, Inc.",
+      "start": 7.84,
+      "end": 0.02,
+      "ret_1y": -99.74
+    },
+    {
+      "ticker": "FLYYQ",
+      "market": "SEC",
+      "name": "Spirit Aviation Holdings, Inc.",
+      "start": 4.88,
+      "end": 0.013,
+      "ret_1y": -99.73
+    },
+    {
+      "ticker": "CPTAF",
+      "market": "SEC",
+      "name": "Captivision Inc.",
+      "start": 1.28,
+      "end": 0.0037,
+      "ret_1y": -99.71
+    },
+    {
+      "ticker": "EDBL",
+      "market": "SEC",
+      "name": "Edible Garden AG Inc",
+      "start": 26.7,
+      "end": 0.088,
+      "ret_1y": -99.67
+    },
+    {
+      "ticker": "IOBTQ",
+      "market": "SEC",
+      "name": "IO Biotech, Inc.",
+      "start": 1.45,
+      "end": 0.005,
+      "ret_1y": -99.66
+    },
+    {
+      "ticker": "SNBR",
+      "market": "SEC",
+      "name": "Sleep Number Corp",
+      "start": 7.61,
+      "end": 0.026,
+      "ret_1y": -99.66
+    },
+    {
+      "ticker": "STEK",
+      "market": "SEC",
+      "name": "Stemtech Corp",
+      "start": 0.028,
+      "end": 0.0001,
+      "ret_1y": -99.64
+    },
+    {
+      "ticker": "CISS",
+      "market": "SEC",
+      "name": "C3is Inc.",
+      "start": 462.0,
+      "end": 1.72,
+      "ret_1y": -99.63
+    },
+    {
+      "ticker": "OPITQ",
+      "market": "SEC",
+      "name": "OFFICE PROPERTIES INCOME TRUST",
+      "start": 0.3897,
+      "end": 0.0014,
+      "ret_1y": -99.63
+    },
+    {
+      "ticker": "CMCT",
+      "market": "SEC",
+      "name": "Creative Media & Community Trust Corp",
+      "start": 822.0,
+      "end": 3.49,
+      "ret_1y": -99.58
+    },
+    {
+      "ticker": "BGL",
+      "market": "SEC",
+      "name": "Blue Gold Ltd",
+      "start": 54.4,
+      "end": 0.238,
+      "ret_1y": -99.56
+    },
+    {
+      "ticker": "QVCGQ",
+      "market": "SEC",
+      "name": "QVC Group, Inc.",
+      "start": 32.0,
+      "end": 0.14,
+      "ret_1y": -99.56
+    },
+    {
+      "ticker": "ONCO",
+      "market": "SEC",
+      "name": "Onconetix, Inc.",
+      "start": 240.0,
+      "end": 1.07,
+      "ret_1y": -99.55
+    },
+    {
+      "ticker": "IMAA",
+      "market": "SEC",
+      "name": "IMA Tech",
+      "start": 10.915,
+      "end": 0.05,
+      "ret_1y": -99.54
+    },
+    {
+      "ticker": "LVROF",
+      "market": "SEC",
+      "name": "Lavoro Ltd",
+      "start": 2.14,
+      "end": 0.01,
+      "ret_1y": -99.53
+    },
+    {
+      "ticker": "NOTVQ",
+      "market": "SEC",
+      "name": "Inotiv, Inc.",
+      "start": 2.12,
+      "end": 0.01,
+      "ret_1y": -99.53
+    },
+    {
+      "ticker": "BYAH",
+      "market": "SEC",
+      "name": "Park Ha Biological Technology Co., Ltd.",
+      "start": 149.5,
+      "end": 0.75,
+      "ret_1y": -99.5
+    },
+    {
+      "ticker": "WNLV",
+      "market": "SEC",
+      "name": "Winvest Group Ltd",
+      "start": 0.202,
+      "end": 0.001,
+      "ret_1y": -99.5
+    },
+    {
+      "ticker": "CMND",
+      "market": "SEC",
+      "name": "Clearmind Medicine Inc.",
+      "start": 414.8,
+      "end": 2.12,
+      "ret_1y": -99.49
+    },
+    {
+      "ticker": "NOTV",
+      "market": "SEC",
+      "name": "Inotiv, Inc.",
+      "start": 2.12,
+      "end": 0.011,
+      "ret_1y": -99.48
+    },
+    {
+      "ticker": "NUVI",
+      "market": "SEC",
+      "name": "Emo Capital Corp.",
+      "start": 4.0,
+      "end": 0.021,
+      "ret_1y": -99.48
+    },
+    {
+      "ticker": "FATAQ",
+      "market": "SEC",
+      "name": "Fat Brands, Inc",
+      "start": 2.46,
+      "end": 0.013,
+      "ret_1y": -99.47
+    },
+    {
+      "ticker": "HCTI",
+      "market": "SEC",
+      "name": "Healthcare Triangle, Inc.",
+      "start": 328.68,
+      "end": 1.79,
+      "ret_1y": -99.46
+    },
+    {
+      "ticker": "CTNT",
+      "market": "SEC",
+      "name": "CHEETAH NET SUPPLY CHAIN SERVICE INC.",
+      "start": 270.0,
+      "end": 1.51,
+      "ret_1y": -99.44
+    },
+    {
+      "ticker": "NEXR",
+      "market": "SEC",
+      "name": "Nexera Technologies Ltd",
+      "start": 98.28,
+      "end": 0.571,
+      "ret_1y": -99.42
+    },
+    {
+      "ticker": "KALA",
+      "market": "SEC",
+      "name": "KALA BIO, Inc.",
+      "start": 258.0,
+      "end": 1.51,
+      "ret_1y": -99.41
+    },
+    {
+      "ticker": "LZMH",
+      "market": "SEC",
+      "name": "LZ Technology Holdings Ltd",
+      "start": 217.0,
+      "end": 1.31,
+      "ret_1y": -99.4
+    },
+    {
+      "ticker": "ELAB",
+      "market": "SEC",
+      "name": "PMGC Holdings Inc.",
+      "start": 193.6842,
+      "end": 1.19,
+      "ret_1y": -99.39
+    },
+    {
+      "ticker": "NIVF",
+      "market": "SEC",
+      "name": "NewGenIvf Group Ltd",
+      "start": 198.0,
+      "end": 1.31,
+      "ret_1y": -99.34
+    },
+    {
+      "ticker": "HAO",
+      "market": "SEC",
+      "name": "Haoxi Health Technology Ltd",
+      "start": 166.4,
+      "end": 1.11,
+      "ret_1y": -99.33
+    },
+    {
+      "ticker": "OPTEY",
+      "market": "SEC",
+      "name": "Opthea Ltd",
+      "start": 3.41,
+      "end": 0.023,
+      "ret_1y": -99.33
+    },
+    {
+      "ticker": "TPICQ",
+      "market": "SEC",
+      "name": "TPI COMPOSITES, INC",
+      "start": 0.9427,
+      "end": 0.0067,
+      "ret_1y": -99.29
+    },
+    {
+      "ticker": "TDIC",
+      "market": "SEC",
+      "name": "Dreamland Ltd",
+      "start": 547.5,
+      "end": 4.07,
+      "ret_1y": -99.26
+    },
+    {
+      "ticker": "VSA",
+      "market": "SEC",
+      "name": "VisionSys AI Inc",
+      "start": 515.0,
+      "end": 3.835,
+      "ret_1y": -99.26
+    },
+    {
+      "ticker": "RTCJF",
+      "market": "SEC",
+      "name": "Baijiayun Group Ltd",
+      "start": 1.85,
+      "end": 0.014,
+      "ret_1y": -99.24
+    },
+    {
+      "ticker": "TRNR",
+      "market": "SEC",
+      "name": "Interactive Strength, Inc.",
+      "start": 463.4,
+      "end": 3.52,
+      "ret_1y": -99.24
+    },
+    {
+      "ticker": "NAKA",
+      "market": "SEC",
+      "name": "Nakamoto Inc.",
+      "start": 516.4,
+      "end": 3.99,
+      "ret_1y": -99.23
+    },
+    {
+      "ticker": "CHR",
+      "market": "SEC",
+      "name": "Cheer Holding, Inc.",
+      "start": 235.5,
+      "end": 1.85,
+      "ret_1y": -99.21
+    },
+    {
+      "ticker": "RDGT",
+      "market": "SEC",
+      "name": "Ridgetech Inc.",
+      "start": 163.5,
+      "end": 1.33,
+      "ret_1y": -99.19
+    },
+    {
+      "ticker": "TWNPQ",
+      "market": "SEC",
+      "name": "Twin Hospitality Group Inc.",
+      "start": 4.44,
+      "end": 0.036,
+      "ret_1y": -99.19
+    },
+    {
+      "ticker": "AGLY",
+      "market": "SEC",
+      "name": "Atlantis Glory Inc.",
+      "start": 2.05,
+      "end": 0.017,
+      "ret_1y": -99.17
+    },
+    {
+      "ticker": "LGHL",
+      "market": "SEC",
+      "name": "Lion Group Holding Ltd",
+      "start": 39.52,
+      "end": 0.3262,
+      "ret_1y": -99.17
+    },
+    {
+      "ticker": "STAI",
+      "market": "SEC",
+      "name": "ScanTech AI Systems Inc.",
+      "start": 14.1,
+      "end": 0.124,
+      "ret_1y": -99.12
+    },
+    {
+      "ticker": "SXTC",
+      "market": "SEC",
+      "name": "China SXT Pharmaceuticals, Inc.",
+      "start": 265.5,
+      "end": 2.46,
+      "ret_1y": -99.07
+    },
+    {
+      "ticker": "CLSDQ",
+      "market": "SEC",
+      "name": "Clearside Biomedical, Inc.",
+      "start": 12.495,
+      "end": 0.125,
+      "ret_1y": -99.0
+    },
+    {
+      "ticker": "LBGJ",
+      "market": "SEC",
+      "name": "Li Bang International Corp Inc.",
+      "start": 125.0,
+      "end": 1.26,
+      "ret_1y": -98.99
+    },
+    {
+      "ticker": "ESSI",
+      "market": "SEC",
+      "name": "ECO SCIENCE SOLUTIONS, INC.",
+      "start": 0.55,
+      "end": 0.0057,
+      "ret_1y": -98.96
+    },
+    {
+      "ticker": "KXIN",
+      "market": "SEC",
+      "name": "Kaixin Holdings",
+      "start": 423.0,
+      "end": 4.39,
+      "ret_1y": -98.96
+    },
+    {
+      "ticker": "GXXM",
+      "market": "SEC",
+      "name": "GEX MANAGEMENT, INC.",
+      "start": 1.0,
+      "end": 0.0105,
+      "ret_1y": -98.95
+    },
+    {
+      "ticker": "PPCB",
+      "market": "SEC",
+      "name": "Propanc Biopharma, Inc.",
+      "start": 165.0,
+      "end": 1.82,
+      "ret_1y": -98.9
+    },
+    {
+      "ticker": "LNKS",
+      "market": "SEC",
+      "name": "Linkers Industries Ltd",
+      "start": 124.75,
+      "end": 1.42,
+      "ret_1y": -98.86
+    },
+    {
+      "ticker": "NUWE",
+      "market": "SEC",
+      "name": "Nuwellis, Inc.",
+      "start": 276.5,
+      "end": 3.15,
+      "ret_1y": -98.86
+    },
+    {
+      "ticker": "ZICX",
+      "market": "SEC",
+      "name": "Zicix Corp",
+      "start": 6.0,
+      "end": 0.069,
+      "ret_1y": -98.85
+    },
+    {
+      "ticker": "MGAM",
+      "market": "SEC",
+      "name": "Mobile Global Esports, Inc.",
+      "start": 0.08,
+      "end": 0.001,
+      "ret_1y": -98.75
+    },
+    {
+      "ticker": "THH",
+      "market": "SEC",
+      "name": "TryHard Holdings Ltd",
+      "start": 24.19,
+      "end": 0.306,
+      "ret_1y": -98.74
+    },
+    {
+      "ticker": "YDKG",
+      "market": "SEC",
+      "name": "Yueda Digital Holding",
+      "start": 68.0,
+      "end": 0.86,
+      "ret_1y": -98.74
+    },
+    {
+      "ticker": "NOTE",
+      "market": "SEC",
+      "name": "FiscalNote Holdings, Inc.",
+      "start": 8.748,
+      "end": 0.111,
+      "ret_1y": -98.73
+    },
+    {
+      "ticker": "WINT",
+      "market": "SEC",
+      "name": "WINDTREE THERAPEUTICS INC /DE/",
+      "start": 0.79,
+      "end": 0.01,
+      "ret_1y": -98.73
+    },
+    {
+      "ticker": "BNRG",
+      "market": "SEC",
+      "name": "Brenmiller Energy Ltd.",
+      "start": 75.95,
+      "end": 0.97,
+      "ret_1y": -98.72
+    },
+    {
+      "ticker": "IVF",
+      "market": "SEC",
+      "name": "INVO Fertility, Inc.",
+      "start": 102.0,
+      "end": 1.34,
+      "ret_1y": -98.69
+    },
+    {
+      "ticker": "ASNS",
+      "market": "SEC",
+      "name": "ACTELIS NETWORKS INC",
+      "start": 5.95,
+      "end": 0.08,
+      "ret_1y": -98.66
+    },
+    {
+      "ticker": "CETX",
+      "market": "SEC",
+      "name": "CEMTREX INC",
+      "start": 198.0,
+      "end": 2.65,
+      "ret_1y": -98.66
+    },
+    {
+      "ticker": "DAIC",
+      "market": "SEC",
+      "name": "CID Holdco, Inc.",
+      "start": 148.5,
+      "end": 2.0,
+      "ret_1y": -98.65
+    },
+    {
+      "ticker": "VGLS",
+      "market": "SEC",
+      "name": "SB Technology Holdings, Inc.",
+      "start": 2.0,
+      "end": 0.027,
+      "ret_1y": -98.65
+    },
+    {
+      "ticker": "YMT",
+      "market": "SEC",
+      "name": "Yimutian Inc.",
+      "start": 42.0,
+      "end": 0.566,
+      "ret_1y": -98.65
+    },
+    {
+      "ticker": "AMZE",
+      "market": "SEC",
+      "name": "AMAZE HOLDINGS, INC.",
+      "start": 8.95,
+      "end": 0.122,
+      "ret_1y": -98.64
+    },
+    {
+      "ticker": "NCL",
+      "market": "SEC",
+      "name": "Northann Corp.",
+      "start": 11.712,
+      "end": 0.159,
+      "ret_1y": -98.64
+    },
+    {
+      "ticker": "ORIS",
+      "market": "SEC",
+      "name": "ORIENTAL RISE HOLDINGS Ltd",
+      "start": 46.96,
+      "end": 0.6465,
+      "ret_1y": -98.62
+    },
+    {
+      "ticker": "GLVT",
+      "market": "SEC",
+      "name": "GREENLIT VENTURES INC.",
+      "start": 4.0,
+      "end": 0.056,
+      "ret_1y": -98.6
+    },
+    {
+      "ticker": "SIGY",
+      "market": "SEC",
+      "name": "Sigyn Therapeutics, Inc.",
+      "start": 2.75,
+      "end": 0.039,
+      "ret_1y": -98.58
+    },
+    {
+      "ticker": "RVSN",
+      "market": "SEC",
+      "name": "Rail Vision Ltd.",
+      "start": 326.7,
+      "end": 4.715,
+      "ret_1y": -98.56
+    },
+    {
+      "ticker": "KITT",
+      "market": "SEC",
+      "name": "Nauticus Robotics, Inc.",
+      "start": 74.16,
+      "end": 1.09,
+      "ret_1y": -98.53
+    },
+    {
+      "ticker": "DFNS",
+      "market": "SEC",
+      "name": "T3 Defense Inc.",
+      "start": 9.65,
+      "end": 0.143,
+      "ret_1y": -98.52
+    },
+    {
+      "ticker": "IPST",
+      "market": "SEC",
+      "name": "IP STRATEGY HOLDINGS, INC.",
+      "start": 156.4,
+      "end": 2.34,
+      "ret_1y": -98.5
+    },
+    {
+      "ticker": "GMM",
+      "market": "SEC",
+      "name": "Global Mofy AI Ltd",
+      "start": 136.0,
+      "end": 2.05,
+      "ret_1y": -98.49
+    },
+    {
+      "ticker": "PTPIF",
+      "market": "SEC",
+      "name": "PT Chandra Asri Petrochemical Tbk/ADR",
+      "start": 34.921,
+      "end": 0.5267,
+      "ret_1y": -98.49
+    },
+    {
+      "ticker": "AZI",
+      "market": "SEC",
+      "name": "Autozi Internet Technology (Global) Ltd.",
+      "start": 111.5,
+      "end": 1.69,
+      "ret_1y": -98.48
+    },
+    {
+      "ticker": "PBM",
+      "market": "SEC",
+      "name": "PSYENCE BIOMEDICAL LTD.",
+      "start": 201.1719,
+      "end": 3.11,
+      "ret_1y": -98.45
+    },
+    {
+      "ticker": "BDPT",
+      "market": "SEC",
+      "name": "BIOADAPTIVES, INC.",
+      "start": 0.07,
+      "end": 0.0011,
+      "ret_1y": -98.43
+    },
+    {
+      "ticker": "FGL",
+      "market": "SEC",
+      "name": "Founder Group Ltd",
+      "start": 84.8,
+      "end": 1.41,
+      "ret_1y": -98.34
+    },
+    {
+      "ticker": "ITOC",
+      "market": "SEC",
+      "name": "iTonic Holdings Ltd",
+      "start": 19.4,
+      "end": 0.322,
+      "ret_1y": -98.34
+    },
+    {
+      "ticker": "ALDS",
+      "market": "SEC",
+      "name": "APPlife Digital Solutions Inc",
+      "start": 4.8,
+      "end": 0.0801,
+      "ret_1y": -98.33
+    },
+    {
+      "ticker": "ALDSD",
+      "market": "SEC",
+      "name": "APPlife Digital Solutions Inc",
+      "start": 4.8,
+      "end": 0.0801,
+      "ret_1y": -98.33
+    },
+    {
+      "ticker": "BSFC",
+      "market": "SEC",
+      "name": "Blue Star Foods Corp.",
+      "start": 0.06,
+      "end": 0.001,
+      "ret_1y": -98.33
+    },
+    {
+      "ticker": "AMBIQ",
+      "market": "SEC",
+      "name": "Ambipar Emergency Response",
+      "start": 4.9249,
+      "end": 0.0851,
+      "ret_1y": -98.27
+    },
+    {
+      "ticker": "JEM",
+      "market": "SEC",
+      "name": "707 Cayman Holdings Ltd.",
+      "start": 77.4,
+      "end": 1.35,
+      "ret_1y": -98.26
+    },
+    {
+      "ticker": "RNLXY",
+      "market": "SEC",
+      "name": "Renalytix plc",
+      "start": 113.125,
+      "end": 2.04,
+      "ret_1y": -98.2
+    },
+    {
+      "ticker": "NMHI",
+      "market": "SEC",
+      "name": "Nature's Miracle Holding Inc.",
+      "start": 0.055,
+      "end": 0.001,
+      "ret_1y": -98.18
+    },
+    {
+      "ticker": "FCUV",
+      "market": "SEC",
+      "name": "FOCUS UNIVERSAL INC.",
+      "start": 156.0,
+      "end": 2.9,
+      "ret_1y": -98.14
+    },
+    {
+      "ticker": "HKIT",
+      "market": "SEC",
+      "name": "HiTek Global Inc.",
+      "start": 214.8,
+      "end": 4.17,
+      "ret_1y": -98.06
+    },
+    {
+      "ticker": "DRCT",
+      "market": "SEC",
+      "name": "Direct Digital Holdings, Inc.",
+      "start": 137.5,
+      "end": 2.71,
+      "ret_1y": -98.03
+    },
+    {
+      "ticker": "DGNX",
+      "market": "SEC",
+      "name": "Diginex Ltd",
+      "start": 51.35,
+      "end": 1.02,
+      "ret_1y": -98.01
+    },
+    {
+      "ticker": "YHC",
+      "market": "SEC",
+      "name": "LQR House Inc.",
+      "start": 1.97,
+      "end": 0.04,
+      "ret_1y": -97.97
+    },
+    {
+      "ticker": "RBOT",
+      "market": "SEC",
+      "name": "Vicarious Surgical Inc.",
+      "start": 7.72,
+      "end": 0.158,
+      "ret_1y": -97.95
+    },
+    {
+      "ticker": "LIMN",
+      "market": "SEC",
+      "name": "Liminatus Pharma, Inc.",
+      "start": 6.28,
+      "end": 0.13,
+      "ret_1y": -97.93
+    },
+    {
+      "ticker": "PRPH",
+      "market": "SEC",
+      "name": "ProPhase Labs, Inc.",
+      "start": 4.3,
+      "end": 0.09,
+      "ret_1y": -97.91
+    },
+    {
+      "ticker": "POM",
+      "market": "SEC",
+      "name": "POMDOCTOR Ltd",
+      "start": 72.54,
+      "end": 1.52,
+      "ret_1y": -97.9
+    },
+    {
+      "ticker": "ARTL",
+      "market": "SEC",
+      "name": "ARTELO BIOSCIENCES, INC.",
+      "start": 47.7,
+      "end": 1.005,
+      "ret_1y": -97.89
+    },
+    {
+      "ticker": "OBAI",
+      "market": "SEC",
+      "name": "Our Bond, Inc.",
+      "start": 33.0,
+      "end": 0.7,
+      "ret_1y": -97.88
+    },
+    {
+      "ticker": "YAAS",
+      "market": "SEC",
+      "name": "Youxin Technology Ltd",
+      "start": 32.8,
+      "end": 0.713,
+      "ret_1y": -97.83
+    },
+    {
+      "ticker": "AAPI",
+      "market": "SEC",
+      "name": "Apple iSports Group, Inc.",
+      "start": 6.375,
+      "end": 0.14,
+      "ret_1y": -97.8
+    },
+    {
+      "ticker": "SLXN",
+      "market": "SEC",
+      "name": "Silexion Therapeutics Corp",
+      "start": 121.5,
+      "end": 2.74,
+      "ret_1y": -97.74
+    },
+    {
+      "ticker": "BIYA",
+      "market": "SEC",
+      "name": "Baiya International Group Inc.",
+      "start": 18.2,
+      "end": 0.413,
+      "ret_1y": -97.73
+    },
+    {
+      "ticker": "CKDXF",
+      "market": "SEC",
+      "name": "Opthea Ltd",
+      "start": 0.44,
+      "end": 0.01,
+      "ret_1y": -97.73
+    },
+    {
+      "ticker": "EJH",
+      "market": "SEC",
+      "name": "E-Home Household Service Holdings Ltd",
+      "start": 70.625,
+      "end": 1.69,
+      "ret_1y": -97.61
+    },
+    {
+      "ticker": "FLYE",
+      "market": "SEC",
+      "name": "Fly-E Group, Inc.",
+      "start": 85.9,
+      "end": 2.1,
+      "ret_1y": -97.56
+    },
+    {
+      "ticker": "NCT",
+      "market": "SEC",
+      "name": "Intercont (Cayman) Ltd",
+      "start": 117.75,
+      "end": 2.87,
+      "ret_1y": -97.56
+    },
+    {
+      "ticker": "AIDX",
+      "market": "SEC",
+      "name": "20/20 Biolabs, Inc.",
+      "start": 23.85,
+      "end": 0.59,
+      "ret_1y": -97.53
+    },
+    {
+      "ticker": "MRNO",
+      "market": "SEC",
+      "name": "Murano Global Investments Plc",
+      "start": 10.13,
+      "end": 0.251,
+      "ret_1y": -97.52
+    },
+    {
+      "ticker": "CHEV",
+      "market": "SEC",
+      "name": "Charging Robotics Inc.",
+      "start": 5.05,
+      "end": 0.1269,
+      "ret_1y": -97.49
+    },
+    {
+      "ticker": "TRUG",
+      "market": "SEC",
+      "name": "TruGolf Holdings, Inc.",
+      "start": 54.8,
+      "end": 1.41,
+      "ret_1y": -97.43
+    },
+    {
+      "ticker": "HIGR",
+      "market": "SEC",
+      "name": "Hi-Great Group Holding Co",
+      "start": 1.0,
+      "end": 0.026,
+      "ret_1y": -97.4
+    },
+    {
+      "ticker": "KWM",
+      "market": "SEC",
+      "name": "K Wave Media Ltd.",
+      "start": 5.2,
+      "end": 0.135,
+      "ret_1y": -97.4
+    },
+    {
+      "ticker": "LABT",
+      "market": "SEC",
+      "name": "Lakewood-Amedex Biotherapeutics Inc.",
+      "start": 86.5,
+      "end": 2.39,
+      "ret_1y": -97.24
+    },
+    {
+      "ticker": "KUBR",
+      "market": "SEC",
+      "name": "Kuber Resources Corp",
+      "start": 5.4,
+      "end": 0.15,
+      "ret_1y": -97.22
+    },
+    {
+      "ticker": "CRDV",
+      "market": "SEC",
+      "name": "Community Redevelopment Inc.",
+      "start": 0.0071,
+      "end": 0.0002,
+      "ret_1y": -97.18
+    },
+    {
+      "ticker": "KUST",
+      "market": "SEC",
+      "name": "KUSTOM ENTERTAINMENT, INC.",
+      "start": 34.05,
+      "end": 0.96,
+      "ret_1y": -97.18
+    },
+    {
+      "ticker": "MGN",
+      "market": "SEC",
+      "name": "Megan Holdings Ltd.",
+      "start": 4.85,
+      "end": 0.137,
+      "ret_1y": -97.18
+    },
+    {
+      "ticker": "SEPSF",
+      "market": "SEC",
+      "name": "Asep Medical Holdings Inc.",
+      "start": 0.387,
+      "end": 0.0109,
+      "ret_1y": -97.18
+    },
+    {
+      "ticker": "JAGX",
+      "market": "SEC",
+      "name": "Jaguar Health, Inc.",
+      "start": 91.35,
+      "end": 2.66,
+      "ret_1y": -97.09
+    },
+    {
+      "ticker": "MIMI",
+      "market": "SEC",
+      "name": "Mint Inc Ltd",
+      "start": 71.1,
+      "end": 2.07,
+      "ret_1y": -97.09
+    },
+    {
+      "ticker": "JZXN",
+      "market": "SEC",
+      "name": "Jiuzi Holdings, Inc.",
+      "start": 40.4,
+      "end": 1.18,
+      "ret_1y": -97.08
+    },
+    {
+      "ticker": "ONAR",
+      "market": "SEC",
+      "name": "Onar Holding Corp",
+      "start": 0.051,
+      "end": 0.0015,
+      "ret_1y": -97.06
+    },
+    {
+      "ticker": "SOPAQ",
+      "market": "SEC",
+      "name": "SOCIETY PASS INCORPORATED.",
+      "start": 1.33,
+      "end": 0.04,
+      "ret_1y": -96.99
+    },
+    {
+      "ticker": "UCAR",
+      "market": "SEC",
+      "name": "U Power Ltd",
+      "start": 37.7,
+      "end": 1.14,
+      "ret_1y": -96.98
+    },
+    {
+      "ticker": "LGCL",
+      "market": "SEC",
+      "name": "Lucas GC Ltd",
+      "start": 42.4,
+      "end": 1.29,
+      "ret_1y": -96.96
+    },
+    {
+      "ticker": "HBUV",
+      "market": "SEC",
+      "name": "Hubilu Venture Corp",
+      "start": 1.3,
+      "end": 0.0401,
+      "ret_1y": -96.92
+    },
+    {
+      "ticker": "RPDL",
+      "market": "SEC",
+      "name": "Rapid Line Inc.",
+      "start": 9.8,
+      "end": 0.302,
+      "ret_1y": -96.92
+    },
+    {
+      "ticker": "YOOV",
+      "market": "SEC",
+      "name": "Concorde International Group Ltd.",
+      "start": 22.68,
+      "end": 0.705,
+      "ret_1y": -96.89
+    },
+    {
+      "ticker": "BTTC",
+      "market": "SEC",
+      "name": "Black Titan Corp",
+      "start": 23.98,
+      "end": 0.757,
+      "ret_1y": -96.84
+    },
+    {
+      "ticker": "VRSSF",
+      "market": "SEC",
+      "name": "Verses AI Inc.",
+      "start": 8.35,
+      "end": 0.265,
+      "ret_1y": -96.83
+    },
+    {
+      "ticker": "COSG",
+      "market": "SEC",
+      "name": "Cosmos Group Holdings Inc.",
+      "start": 2.0,
+      "end": 0.065,
+      "ret_1y": -96.75
+    },
+    {
+      "ticker": "AUUD",
+      "market": "SEC",
+      "name": "AUDDIA INC.",
+      "start": 37.3643,
+      "end": 1.24,
+      "ret_1y": -96.68
+    },
+    {
+      "ticker": "BGM",
+      "market": "SEC",
+      "name": "BGM Group Ltd.",
+      "start": 9.93,
+      "end": 0.333,
+      "ret_1y": -96.65
+    },
+    {
+      "ticker": "DEVS",
+      "market": "SEC",
+      "name": "DevvStream Corp.",
+      "start": 3.499,
+      "end": 0.122,
+      "ret_1y": -96.51
+    },
+    {
+      "ticker": "AIM",
+      "market": "SEC",
+      "name": "AIM ImmunoTech Inc.",
+      "start": 8.8264,
+      "end": 0.31,
+      "ret_1y": -96.49
+    },
+    {
+      "ticker": "NEON",
+      "market": "SEC",
+      "name": "Neonode Inc.",
+      "start": 26.4,
+      "end": 0.93,
+      "ret_1y": -96.48
+    },
+    {
+      "ticker": "ABPO",
+      "market": "SEC",
+      "name": "Abpro Holdings, Inc.",
+      "start": 5.88,
+      "end": 0.209,
+      "ret_1y": -96.45
+    },
+    {
+      "ticker": "CHAI",
+      "market": "SEC",
+      "name": "Core AI Holdings, Inc.",
+      "start": 16.52,
+      "end": 0.59,
+      "ret_1y": -96.43
+    },
+    {
+      "ticker": "CLDI",
+      "market": "SEC",
+      "name": "Calidi Biotherapeutics, Inc.",
+      "start": 4.02,
+      "end": 0.144,
+      "ret_1y": -96.42
+    },
+    {
+      "ticker": "MASK",
+      "market": "SEC",
+      "name": "3 E Network Technology Group Ltd",
+      "start": 53.9,
+      "end": 1.93,
+      "ret_1y": -96.42
+    },
+    {
+      "ticker": "BNZI",
+      "market": "SEC",
+      "name": "Banzai International, Inc.",
+      "start": 92.8,
+      "end": 3.36,
+      "ret_1y": -96.38
+    },
+    {
+      "ticker": "PMI",
+      "market": "SEC",
+      "name": "Picard Medical, Inc.",
+      "start": 4.59,
+      "end": 0.168,
+      "ret_1y": -96.34
+    },
+    {
+      "ticker": "PHGE",
+      "market": "SEC",
+      "name": "BiomX Inc.",
+      "start": 8.17,
+      "end": 0.301,
+      "ret_1y": -96.32
+    }
+  ],
+  "created_at": "2026-07-08T13:51:01Z"
+}

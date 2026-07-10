@@ -1,0 +1,726 @@
+{
+  "scan_type": "moneyball_aggregate_v1",
+  "algorithm": "aggregate_devise_moneyball",
+  "as_of": "2026-07-07",
+  "config": {
+    "max_entry_price": 5.0,
+    "cent_zone_max": 1.0,
+    "target_100x": 100.0,
+    "target_dollar_goal": 100.0,
+    "stake_usd": 1.0,
+    "top_k": 25,
+    "min_volume": 50000,
+    "max_mcap_m": 500.0
+  },
+  "inputs": {
+    "penny_forward_screen": "build_reports/penny_forward_screen_v1.json",
+    "moneyball_supplements": "build_reports/moneyball_supplements_v1.json",
+    "return_scan": "build_reports/return_scan_receipt_v1.json",
+    "sec_tickers_count": 10433,
+    "candidate_pool": 21,
+    "matured_excluded": [
+      "AMFN",
+      "ARTV",
+      "ECXJ"
+    ]
+  },
+  "matured_reference": {
+    "ticker": "ARTV",
+    "note": "already matured; excluded by ret_1y filter"
+  },
+  "summary": {
+    "scored": 21,
+    "cent_zone_count": 14,
+    "x100_feasible_count": 0,
+    "best_cent_zone": {
+      "ticker": "HOWL",
+      "name": "Werewolf Therapeutics, Inc.",
+      "price_now": 0.34,
+      "proj_target": 7.0,
+      "moneyball_score": 162.0,
+      "upside_multiple": 20.6,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 20.59,
+      "stake_needed_for_goal_usd": 4.8571,
+      "ret_1y": -67.2,
+      "ret_3m": -66.9,
+      "mcap_m": 16.7,
+      "exchange": "NMS",
+      "rec": "strong_buy",
+      "vol": 609734.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 35.0,
+        "liquidity": 27.0,
+        "exchange": 20,
+        "analyst_rec": 25,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    "best_x100": null
+  },
+  "moneyball_thesis": "Put $1.0 in a cent-zone name; if price reaches analyst target, position value scales by target/price. 100x = $1.0 \u2192 $100.0. Goal $100.0 requires higher multiple or larger stake.",
+  "top_k": 25,
+  "top": [
+    {
+      "ticker": "HOWL",
+      "name": "Werewolf Therapeutics, Inc.",
+      "price_now": 0.34,
+      "proj_target": 7.0,
+      "moneyball_score": 162.0,
+      "upside_multiple": 20.6,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 20.59,
+      "stake_needed_for_goal_usd": 4.8571,
+      "ret_1y": -67.2,
+      "ret_3m": -66.9,
+      "mcap_m": 16.7,
+      "exchange": "NMS",
+      "rec": "strong_buy",
+      "vol": 609734.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 35.0,
+        "liquidity": 27.0,
+        "exchange": 20,
+        "analyst_rec": 25,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "JSPR",
+      "name": "Jasper Therapeutics, Inc.",
+      "price_now": 0.48,
+      "proj_target": 9.17,
+      "moneyball_score": 146.1,
+      "upside_multiple": 19.1,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 19.1,
+      "stake_needed_for_goal_usd": 5.2345,
+      "ret_1y": -84.2,
+      "ret_3m": -29.6,
+      "mcap_m": 13.5,
+      "exchange": "NCM",
+      "rec": "buy",
+      "vol": 510522.0,
+      "components": {
+        "value_gap": 19.104166666666668,
+        "maturity": 35.0,
+        "liquidity": 27.0,
+        "exchange": 20,
+        "analyst_rec": 15,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "MDCX",
+      "name": "Medicus Pharma Ltd.",
+      "price_now": 0.44,
+      "proj_target": 5.67,
+      "moneyball_score": 122.9,
+      "upside_multiple": 12.9,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 12.89,
+      "stake_needed_for_goal_usd": 7.7601,
+      "ret_1y": -87.1,
+      "ret_3m": -10.4,
+      "mcap_m": 24.9,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 4114698.0,
+      "components": {
+        "value_gap": 12.886363636363637,
+        "maturity": 25.0,
+        "liquidity": 35.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "AIM",
+      "name": "AIM ImmunoTech Inc.",
+      "price_now": 0.31,
+      "proj_target": 5.25,
+      "moneyball_score": 121.9,
+      "upside_multiple": 16.9,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 16.94,
+      "stake_needed_for_goal_usd": 5.9048,
+      "ret_1y": -96.4,
+      "ret_3m": -48.2,
+      "mcap_m": 8.5,
+      "exchange": "ASE",
+      "rec": "none",
+      "vol": 28261309.0,
+      "components": {
+        "value_gap": 16.935483870967744,
+        "maturity": 35.0,
+        "liquidity": 20.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "ENSC",
+      "name": "Ensysce Biosciences, Inc.",
+      "price_now": 0.28,
+      "proj_target": 16.45,
+      "moneyball_score": 120.0,
+      "upside_multiple": 58.7,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 58.75,
+      "stake_needed_for_goal_usd": 1.7021,
+      "ret_1y": -88.1,
+      "ret_3m": -50.6,
+      "mcap_m": 4.2,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 2266508.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 35.0,
+        "liquidity": 10.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "TPST",
+      "name": "Tempest Therapeutics, Inc.",
+      "price_now": 0.99,
+      "proj_target": 11.0,
+      "moneyball_score": 116.1,
+      "upside_multiple": 11.1,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 11.11,
+      "stake_needed_for_goal_usd": 9.0,
+      "ret_1y": -86.0,
+      "ret_3m": -37.7,
+      "mcap_m": 15.8,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 195524.0,
+      "components": {
+        "value_gap": 11.11111111111111,
+        "maturity": 35.0,
+        "liquidity": 20.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "IGC",
+      "name": "IGC Pharma, Inc.",
+      "price_now": 0.28,
+      "proj_target": 4.25,
+      "moneyball_score": 115.2,
+      "upside_multiple": 15.2,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 15.18,
+      "stake_needed_for_goal_usd": 6.5882,
+      "ret_1y": -13.1,
+      "ret_3m": 3.0,
+      "mcap_m": 29.0,
+      "exchange": "ASE",
+      "rec": "none",
+      "vol": 1287855.0,
+      "components": {
+        "value_gap": 15.178571428571427,
+        "maturity": 15.0,
+        "liquidity": 35.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "SLXN",
+      "name": "Silexion Therapeutics Corp",
+      "price_now": 2.74,
+      "proj_target": 60.0,
+      "moneyball_score": 107.0,
+      "upside_multiple": 21.9,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 21.9,
+      "stake_needed_for_goal_usd": 4.5667,
+      "ret_1y": -97.8,
+      "ret_3m": -76.2,
+      "mcap_m": 2.9,
+      "exchange": "NCM",
+      "rec": "strong_buy",
+      "vol": 648800.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 35.0,
+        "liquidity": 2.0,
+        "exchange": 20,
+        "analyst_rec": 25,
+        "cent_zone": 0,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "GTBP",
+      "name": "GT Biopharma, Inc.",
+      "price_now": 0.46,
+      "proj_target": 3.0,
+      "moneyball_score": 106.5,
+      "upside_multiple": 6.5,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 6.52,
+      "stake_needed_for_goal_usd": 15.3333,
+      "ret_1y": 41.4,
+      "ret_3m": -6.1,
+      "mcap_m": 16.6,
+      "exchange": "NCM",
+      "rec": "buy",
+      "vol": 1473251.0,
+      "components": {
+        "value_gap": 6.521739130434782,
+        "maturity": 0.0,
+        "liquidity": 35.0,
+        "exchange": 20,
+        "analyst_rec": 15,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "moneyball_supplements_v1"
+      }
+    },
+    {
+      "ticker": "MDNAF",
+      "name": "Medicenna Therapeutics Corp.",
+      "price_now": 0.29,
+      "proj_target": 3.25,
+      "moneyball_score": 106.2,
+      "upside_multiple": 11.2,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 11.21,
+      "stake_needed_for_goal_usd": 8.9231,
+      "ret_1y": -55.2,
+      "ret_3m": -36.1,
+      "mcap_m": 26.8,
+      "exchange": "OQX",
+      "rec": "strong_buy",
+      "vol": 82119.0,
+      "components": {
+        "value_gap": 11.206896551724139,
+        "maturity": 35.0,
+        "liquidity": 20.0,
+        "exchange": -15,
+        "analyst_rec": 25,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "KAPA",
+      "name": "Kairos Pharma, LTD.",
+      "price_now": 0.36,
+      "proj_target": 8.0,
+      "moneyball_score": 105.0,
+      "upside_multiple": 22.2,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 22.22,
+      "stake_needed_for_goal_usd": 4.5,
+      "ret_1y": -45.7,
+      "ret_3m": -41.9,
+      "mcap_m": 7.7,
+      "exchange": "ASE",
+      "rec": "none",
+      "vol": 138414.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 25.0,
+        "liquidity": 5.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "RVPH",
+      "name": "REVIVA PHARMACEUTICALS HOLDINGS, INC.",
+      "price_now": 0.63,
+      "proj_target": 17.5,
+      "moneyball_score": 102.0,
+      "upside_multiple": 27.8,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 27.78,
+      "stake_needed_for_goal_usd": 3.6,
+      "ret_1y": -91.4,
+      "ret_3m": -11.5,
+      "mcap_m": 7.9,
+      "exchange": "OQB",
+      "rec": "strong_buy",
+      "vol": 475542.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 25.0,
+        "liquidity": 12.0,
+        "exchange": -15,
+        "analyst_rec": 25,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "SNTI",
+      "name": "Senti Biosciences Holdings, Inc.",
+      "price_now": 1.01,
+      "proj_target": 13.0,
+      "moneyball_score": 94.9,
+      "upside_multiple": 12.9,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 12.87,
+      "stake_needed_for_goal_usd": 7.7692,
+      "ret_1y": -54.3,
+      "ret_3m": 10.7,
+      "mcap_m": 31.5,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 201273.0,
+      "components": {
+        "value_gap": 12.871287128712872,
+        "maturity": 25.0,
+        "liquidity": 27.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 10,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "CELZ",
+      "name": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
+      "price_now": 1.09,
+      "proj_target": 20.0,
+      "moneyball_score": 93.3,
+      "upside_multiple": 18.3,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 18.35,
+      "stake_needed_for_goal_usd": 5.45,
+      "ret_1y": -58.9,
+      "ret_3m": -49.1,
+      "mcap_m": 4.0,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 3320770.0,
+      "components": {
+        "value_gap": 18.34862385321101,
+        "maturity": 35.0,
+        "liquidity": 10.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 10,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "ESLA",
+      "name": "Estrella Immunopharma, Inc.",
+      "price_now": 0.91,
+      "proj_target": 12.0,
+      "moneyball_score": 93.2,
+      "upside_multiple": 13.2,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 13.19,
+      "stake_needed_for_goal_usd": 7.5833,
+      "ret_1y": 3.2,
+      "ret_3m": -33.1,
+      "mcap_m": 39.2,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 52463.0,
+      "components": {
+        "value_gap": 13.186813186813186,
+        "maturity": 10.0,
+        "liquidity": 20.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "SBFM",
+      "name": "Sunshine Biopharma Inc.",
+      "price_now": 2.08,
+      "proj_target": 56.0,
+      "moneyball_score": 90.0,
+      "upside_multiple": 26.9,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 26.92,
+      "stake_needed_for_goal_usd": 3.7143,
+      "ret_1y": -85.9,
+      "ret_3m": -82.1,
+      "mcap_m": 4.4,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 1651285.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 35.0,
+        "liquidity": 10.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 0,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "REVB",
+      "name": "REVELATION BIOSCIENCES, INC.",
+      "price_now": 0.99,
+      "proj_target": 19.25,
+      "moneyball_score": 89.4,
+      "upside_multiple": 19.4,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 19.44,
+      "stake_needed_for_goal_usd": 5.1429,
+      "ret_1y": -90.4,
+      "ret_3m": -14.7,
+      "mcap_m": 3.9,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 61981.0,
+      "components": {
+        "value_gap": 19.444444444444443,
+        "maturity": 25.0,
+        "liquidity": -5.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "PHIO",
+      "name": "Phio Pharmaceuticals Corp.",
+      "price_now": 1.01,
+      "proj_target": 14.0,
+      "moneyball_score": 88.9,
+      "upside_multiple": 13.9,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 13.86,
+      "stake_needed_for_goal_usd": 7.2143,
+      "ret_1y": -60.4,
+      "ret_3m": -19.8,
+      "mcap_m": 11.7,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 159167.0,
+      "components": {
+        "value_gap": 13.861386138613861,
+        "maturity": 25.0,
+        "liquidity": 20.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 10,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "BTAI",
+      "name": "BioXcel Therapeutics, Inc.",
+      "price_now": 1.04,
+      "proj_target": 14.0,
+      "moneyball_score": 85.5,
+      "upside_multiple": 13.5,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 13.46,
+      "stake_needed_for_goal_usd": 7.4286,
+      "ret_1y": -45.3,
+      "ret_3m": -8.8,
+      "mcap_m": 32.1,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 794360.0,
+      "components": {
+        "value_gap": 13.461538461538462,
+        "maturity": 15.0,
+        "liquidity": 27.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 10,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "ACXP",
+      "name": "Acurx Pharmaceuticals, Inc.",
+      "price_now": 1.45,
+      "proj_target": 17.0,
+      "moneyball_score": 81.7,
+      "upside_multiple": 11.7,
+      "x100_feasible": false,
+      "cent_zone": false,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 11.72,
+      "stake_needed_for_goal_usd": 8.5294,
+      "ret_1y": -84.6,
+      "ret_3m": -59.0,
+      "mcap_m": 6.2,
+      "exchange": "NCM",
+      "rec": "none",
+      "vol": 115845.0,
+      "components": {
+        "value_gap": 11.724137931034484,
+        "maturity": 35.0,
+        "liquidity": 5.0,
+        "exchange": 20,
+        "analyst_rec": 0,
+        "cent_zone": 10,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    },
+    {
+      "ticker": "CASIF",
+      "name": "CASI Pharmaceuticals, Inc.",
+      "price_now": 0.13,
+      "proj_target": 4.0,
+      "moneyball_score": 45.0,
+      "upside_multiple": 30.8,
+      "x100_feasible": false,
+      "cent_zone": true,
+      "stake_usd": 1.0,
+      "value_at_target_usd": 30.77,
+      "stake_needed_for_goal_usd": 3.25,
+      "ret_1y": -90.2,
+      "ret_3m": -7.1,
+      "mcap_m": 2.7,
+      "exchange": "OQB",
+      "rec": "none",
+      "vol": 14968.0,
+      "components": {
+        "value_gap": 25,
+        "maturity": 25.0,
+        "liquidity": -20.0,
+        "exchange": -15,
+        "analyst_rec": 0,
+        "cent_zone": 30,
+        "x100_feasible": 0
+      },
+      "evidence": {
+        "source_row": "penny_forward_screen_v1"
+      }
+    }
+  ],
+  "method": "Aggregate penny screen + moneyball composite: value_gap, maturity, liquidity, exchange, analyst rec, cent_zone, 100x feasibility. NOT investment advice.",
+  "dedupe_method": "ticker_unique_score_rank",
+  "created_at": "2026-07-08T13:55:31Z"
+}
