@@ -14,7 +14,9 @@ from catalog.graph.thg_entity import append_identity_events
 from catalog.graph.thg_sources import (
     append_carrier_risk_events,
     append_eia_events,
+    append_fmc_maritime_events,
     append_pipeline_events,
+    append_stb_r1_events,
     append_trade_events,
 )
 from catalog.moving_commodity import get_cfs_csv
@@ -192,6 +194,8 @@ def run_thg_build(*, from_month: str = "202401", min_stops: int = 2) -> dict[str
     append_eia_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_iran_oil_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_trade_events(con, input_files=extra_input_files, warnings=build_warnings)
+    append_fmc_maritime_events(con, input_files=extra_input_files, warnings=build_warnings)
+    append_stb_r1_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_carrier_risk_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_pipeline_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_identity_events(con, input_files=extra_input_files, warnings=build_warnings)

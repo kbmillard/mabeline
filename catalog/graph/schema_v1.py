@@ -18,6 +18,7 @@ NODE_TYPES = (
     "national",
     "state",
     "country",
+    "maritime_org",
     "lei",
     "ticker",
 )
@@ -35,6 +36,7 @@ EDGE_TYPES = (
     "carrier_risk",
     "pipeline_signal",
     "identity_match",
+    "maritime_license",
 )
 
 EVENT_COLUMNS = (

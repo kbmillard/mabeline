@@ -697,10 +697,10 @@ def main(argv: list[str] | None = None) -> int:
     p_tq.add_argument("--month", default=None)
     p_tq.set_defaults(func=cmd_thg_query)
 
-    p_ht = sub.add_parser("htgnn-train", help="Smoke HT-GNN embeddings on subsampled THG edges")
+    p_ht = sub.add_parser("htgnn-train", help="Train HT-GNN embeddings on subsampled THG edges")
     p_ht.add_argument("--epochs", type=int, default=20)
     p_ht.add_argument("--snapshot-month", default=None)
-    p_ht.add_argument("--limit", type=int, default=50_000)
+    p_ht.add_argument("--limit", type=int, default=250_000)
     p_ht.set_defaults(func=cmd_htgnn_train)
 
     p_hs = sub.add_parser("htgnn-score", help="Score / verify node embeddings parquet")

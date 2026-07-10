@@ -1,6 +1,6 @@
 {
   "scan_type": "thg_iran_oil_v1",
-  "as_of": "2026-07-10T02:38:25Z",
+  "as_of": "2026-07-10T11:55:21Z",
   "thesis": "truck=sensor commodity=signal; Iran origin_pressure tags geopolitics onto SCTG 17",
   "sctg2": "17",
   "sctg2_name": "Petroleum products",
@@ -68,7 +68,7 @@
         "kbbl": 752.0
       }
     ],
-    "source_path": "_unwrapped/maritime/release=2026-07-09/PET_IMPORTS/PET_IMPORTS.txt",
+    "source_path": "_unwrapped/maritime/release=2026-07-10/PET_IMPORTS/PET_IMPORTS.txt",
     "series_last_updated": "2025-04-02T13:08:30-04:00"
   },
   "census_iran": {
@@ -86,7 +86,7 @@
         "con_val": 3873
       }
     ],
-    "source_path": "_unwrapped/trade/release=2026-07-09/IMDB2605.ZIP",
+    "source_path": "_unwrapped/trade/release=2026-07-10/IMDB2605.ZIP",
     "note": "May 2026 Iran\u2192US goods are non-oil (e.g. carpets); vessel crude weight is zero in IMDB month."
   },
   "truck_petroleum": {
@@ -99,7 +99,7 @@
   "hormuz_lever": {
     "pattern": "open_strait_calm_then_threaten_spike",
     "unit": "USD_per_bbl_WTI_reported",
-    "note": "Not Iran\u2192US barrels (EIA IRN last 202310). Lever is Hormuz risk + sanctions waiver on/off. Truck +55% is a separate sensor.",
+    "note": "WTI figures are reported market prints (USD/bbl), not EIA kbbl. Not Iran\u2192US barrels (EIA IRN last 202310). Lever is Hormuz risk + sanctions waiver on/off. Truck +55% is a separate disk sensor.",
     "events": [
       {
         "when": "war_peak_2026",

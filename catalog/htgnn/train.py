@@ -16,7 +16,7 @@ RECEIPT_PATH = BUILD_REPORTS / "htgnn_train_receipt_v1.json"
 VERSION = "htgnn_train_v1"
 
 
-def run_htgnn_train(*, epochs: int = 20, snapshot_month: str | None = None, limit: int = 50_000) -> dict[str, Any]:
+def run_htgnn_train(*, epochs: int = 20, snapshot_month: str | None = None, limit: int = 250_000) -> dict[str, Any]:
     timer = CommandTimer()
     edges, month = load_edge_subsample(snapshot_month=snapshot_month, limit=limit)
     emb = train_smoke_embeddings(edges, epochs=epochs)
@@ -37,6 +37,8 @@ def run_htgnn_train(*, epochs: int = 20, snapshot_month: str | None = None, limi
 
     export_parquet(rows, out_path)
 
+    from datetime import datetime, timezone
+
     receipt = write_receipt(
         RECEIPT_PATH,
         command="htgnn-train",
@@ -52,7 +54,10 @@ def run_htgnn_train(*, epochs: int = 20, snapshot_month: str | None = None, limi
         extra={
             "scan_type": VERSION,
             "snapshot_month": month,
+            "edges_subsample": len(edges),
             "epochs": epochs,
+            "limit": limit,
+            "as_of": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             "elapsed_sec": timer.elapsed_sec,
         },
     )

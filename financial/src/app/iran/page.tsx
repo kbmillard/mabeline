@@ -55,9 +55,12 @@ export default function IranPage() {
       {lever ? (
         <section className="mt-10 rounded-2xl border border-zinc-700 bg-zinc-950 p-6 sm:p-8">
           <p className="text-xs uppercase tracking-[0.2em] text-amber-500">
-            Hormuz lever · {lever.unit}
+            Hormuz lever · reported market prints (not EIA kbbl)
           </p>
           <p className="mt-2 font-mono text-sm text-zinc-300">{lever.pattern}</p>
+          <p className="mt-1 font-mono text-[11px] text-zinc-600">
+            unit {lever.unit}
+          </p>
           <p className="mt-3 max-w-2xl text-sm text-zinc-400">{lever.note}</p>
 
           <div className="mt-8 flex items-end gap-3 sm:gap-6">
@@ -90,7 +93,8 @@ export default function IranPage() {
                   <span className="font-mono text-zinc-500">{e.when}</span>
                   {e.wti_usd != null ? (
                     <span className="font-mono text-zinc-100">
-                      WTI ${e.wti_usd}
+                      WTI ${e.wti_usd}{" "}
+                      <span className="text-zinc-600">(reported)</span>
                     </span>
                   ) : null}
                 </div>

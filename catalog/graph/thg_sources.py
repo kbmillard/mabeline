@@ -376,3 +376,250 @@ def append_pipeline_events(
     return con.execute(
         "SELECT COUNT(*)::BIGINT FROM all_events WHERE edge_type = 'pipeline_signal'"
     ).fetchone()[0]
+
+
+def append_fmc_maritime_events(
+    con: duckdb.DuckDBPyConnection,
+    *,
+    input_files: list[str],
+    warnings: list[str],
+) -> int:
+    """FMC OTI + VOCC active licenses → maritime_license edges."""
+    oti = UNWRAPPED / "fmc_maritime" / "oti_licensed_active.csv"
+    vocc = UNWRAPPED / "fmc_maritime" / "vocc_active.csv"
+    paths = [("oti", oti), ("vocc", vocc)]
+    rows: list[tuple[str, str, str, float]] = []
+    for kind, path in paths:
+        if not path.exists() or path.stat().st_size < 100:
+            warnings.append(f"fmc_{kind}_missing")
+            continue
+        rel = str(path.relative_to(ROOT))
+        input_files.append(rel)
+        mtime = path.stat().st_mtime
+        con.execute(
+            f"""
+            CREATE OR REPLACE TABLE fmc_{kind} AS
+            SELECT
+              TRIM(CAST("Organization No." AS VARCHAR)) AS org_no,
+              TRIM(CAST("Legal Name" AS VARCHAR)) AS legal_name,
+              '{kind}' AS license_kind,
+              {mtime}::DOUBLE AS source_mtime,
+              '{rel}' AS source_path
+            FROM read_csv_auto('{path}', header=true, ignore_errors=true, all_varchar=true)
+            WHERE "Organization No." IS NOT NULL
+              AND TRIM(CAST("Organization No." AS VARCHAR)) != ''
+            """
+        )
+        n = con.execute(f"SELECT COUNT(*)::BIGINT FROM fmc_{kind}").fetchone()[0]
+        if n:
+            con.execute(
+                f"""
+                INSERT INTO all_events
+                SELECT
+                  md5('maritime_license|' || license_kind || '|' || org_no) AS event_id,
+                  'maritime_license' AS edge_type,
+                  'maritime_org' AS src_type, org_no AS src_id,
+                  'national' AS dst_type, 'US' AS dst_id,
+                  '2026' AS event_time, 'year' AS event_grain,
+                  1.0 AS weight, 'strong' AS confidence,
+                  'fmc_' || license_kind || '_active' AS inference_method,
+                  'fmc_maritime' AS source_family,
+                  source_path, source_mtime::BIGINT AS source_mtime,
+                  json_object(
+                    'org_no', org_no,
+                    'legal_name', legal_name,
+                    'license_kind', license_kind
+                  ) AS attrs_json
+                FROM fmc_{kind}
+                """
+            )
+            rows.append((kind, rel, str(n), float(n)))
+    # ensure node type maritime_org is acceptable via attrs only; schema NODE_TYPES may lack it
+    return int(sum(r[3] for r in rows))
+
+
+def _r1_workbook_paths() -> list[tuple[str, Path]]:
+    """Return (railroad_mark, xlsx_path) for R1 2025 filings on disk."""
+    out: list[tuple[str, Path]] = []
+    mapping = [
+        ("BNSF", UNWRAPPED / "stb_rail" / "R1-BNSF-2025.xlsx"),
+        ("NS", UNWRAPPED / "stb_rail" / "R1-NS-2025.xlsx"),
+        ("GTC", UNWRAPPED / "stb_rail" / "R1-GTC-2025.xlsx"),
+        ("SOO", UNWRAPPED / "stb_rail" / "R1-SOO-KCSR-2025.xlsx"),
+        ("CSXT", UNWRAPPED / "stb_rail" / "R1-CSX-2025" / "2025 Sch 755 Final.xlsx"),
+        ("UP", UNWRAPPED / "stb_rail" / "R1-UP-2025" / "2025 Sch 755 Final.xlsx"),
+    ]
+    # CSX/UP fuel + mileage may be separate files
+    extras = [
+        ("CSXT", "750", UNWRAPPED / "stb_rail" / "R1-CSX-2025" / "2025 Sch 750 Final.xlsx"),
+        ("CSXT", "700", UNWRAPPED / "stb_rail" / "R1-CSX-2025" / "2025 Sch 700 Final.xlsx"),
+        ("UP", "750", UNWRAPPED / "stb_rail" / "R1-UP-2025" / "2025 Sch 750 Final.xlsx"),
+        ("UP", "700", UNWRAPPED / "stb_rail" / "R1-UP-2025" / "2025 Sch 700 Final.xlsx"),
+    ]
+    for mark, path in mapping:
+        if path.exists() and path.stat().st_size > 10_000:
+            out.append((mark, path))
+    return out
+
+
+def _parse_r1_metrics(path: Path) -> dict[str, float]:
+    """Extract key operating metrics from an R1 workbook (Sch 755/750/700)."""
+    import openpyxl
+
+    metrics: dict[str, float] = {}
+    wb = openpyxl.load_workbook(path, data_only=True, read_only=True)
+    sheets = {s.lower(): s for s in wb.sheetnames}
+
+    def sheet_named(*cands: str) -> str | None:
+        # Prefer exact sheet name; never pick instruction sheets.
+        for c in cands:
+            if c.lower() in sheets:
+                return sheets[c.lower()]
+        for c in cands:
+            cl = c.lower()
+            for s in wb.sheetnames:
+                sl = s.lower()
+                if "instr" in sl:
+                    continue
+                if cl == sl or sl.startswith(cl + " ") or sl.endswith(" " + cl):
+                    return s
+                # SOO-style: "77 S755"
+                if f"s{cl}" in sl.replace(" ", "") or sl.endswith(cl):
+                    return s
+        return None
+
+    def freightish(nums: list[float]) -> float | None:
+        # Line/cross-check cols are small ints; freight values are large.
+        big = [n for n in nums if n >= 100]
+        return max(big) if big else None
+
+    s755 = sheet_named("755")
+    if s755:
+        for row in wb[s755].iter_rows(values_only=True):
+            vals = [c for c in row if c is not None]
+            text = " ".join(str(c) for c in vals if isinstance(c, str)).upper()
+            nums = [float(c) for c in vals if isinstance(c, (int, float))]
+            if not nums:
+                continue
+            if "MILES OF ROAD OPERATED" in text:
+                v = freightish(nums)
+                if v is not None:
+                    metrics["miles_of_road"] = v
+            elif "TOTAL TRAIN MILES" in text or "TOTAL ALL TRAINS" in text:
+                v = freightish(nums)
+                if v is not None:
+                    metrics["train_miles"] = v
+            elif "TOTAL ALL SERVICES" in text and ("LOCOMOTIVE" in text or "3-31" in text):
+                v = freightish(nums)
+                if v is not None:
+                    metrics["locomotive_unit_miles"] = v
+
+    s750 = sheet_named("750")
+    if s750:
+        for row in wb[s750].iter_rows(values_only=True):
+            vals = [c for c in row if c is not None]
+            text = " ".join(str(c) for c in vals if isinstance(c, str)).upper()
+            nums = [float(c) for c in vals if isinstance(c, (int, float))]
+            if nums and "FREIGHT" in text and "PASSENGER" not in text and "TOTAL" not in text:
+                # first freight diesel gallons line
+                if "diesel_freight_gallons" not in metrics and nums[-1] > 1_000_000:
+                    metrics["diesel_freight_gallons"] = nums[-1]
+
+    s700 = sheet_named("700")
+    if s700:
+        for row in wb[s700].iter_rows(values_only=True):
+            vals = [c for c in row if c is not None]
+            text = " ".join(str(c) for c in vals if isinstance(c, str)).upper()
+            nums = [float(c) for c in vals if isinstance(c, (int, float))]
+            if "GRAND TOTAL" in text and nums:
+                v = freightish(nums)
+                if v is not None:
+                    metrics["miles_operated_total"] = v
+
+    return metrics
+
+
+def append_stb_r1_events(
+    con: duckdb.DuckDBPyConnection,
+    *,
+    input_files: list[str],
+    warnings: list[str],
+) -> int:
+    """STB R1 2025 operating statistics → rail_metric edges (annual vintage)."""
+    paths = _r1_workbook_paths()
+    if not paths:
+        warnings.append("stb_r1_2025_missing")
+        return 0
+
+    # Also parse CSX/UP companion 750/700 if primary is 755-only
+    companion = {
+        "CSXT": [
+            UNWRAPPED / "stb_rail" / "R1-CSX-2025" / "2025 Sch 750 Final.xlsx",
+            UNWRAPPED / "stb_rail" / "R1-CSX-2025" / "2025 Sch 700 Final.xlsx",
+        ],
+        "UP": [
+            UNWRAPPED / "stb_rail" / "R1-UP-2025" / "2025 Sch 750 Final.xlsx",
+            UNWRAPPED / "stb_rail" / "R1-UP-2025" / "2025 Sch 700 Final.xlsx",
+        ],
+    }
+
+    event_rows: list[tuple[str, str, float, str, str, int]] = []
+    for mark, path in paths:
+        try:
+            metrics = _parse_r1_metrics(path)
+            for extra in companion.get(mark, []):
+                if extra.exists():
+                    metrics.update({k: v for k, v in _parse_r1_metrics(extra).items() if k not in metrics})
+                    input_files.append(str(extra.relative_to(ROOT)))
+        except Exception as exc:  # noqa: BLE001
+            warnings.append(f"stb_r1_parse_{mark}:{type(exc).__name__}")
+            continue
+        if not metrics:
+            warnings.append(f"stb_r1_empty_{mark}")
+            continue
+        rel = str(path.relative_to(ROOT))
+        input_files.append(rel)
+        mtime = int(path.stat().st_mtime)
+        for metric, weight in metrics.items():
+            if weight is None or weight <= 0:
+                continue
+            event_rows.append((mark, metric, float(weight), rel, "2025", mtime))
+
+    if not event_rows:
+        warnings.append("stb_r1_no_metrics")
+        return 0
+
+    values = ",".join(
+        f"('{rr}','{metric}',{w},'{path}','{year}',{mtime})"
+        for rr, metric, w, path, year, mtime in event_rows
+    )
+    con.execute(
+        f"""
+        CREATE OR REPLACE TABLE r1_metrics AS
+        SELECT * FROM (VALUES {values})
+        AS t(railroad_mark, metric, weight, source_path, event_year, source_mtime)
+        """
+    )
+    con.execute(
+        """
+        INSERT INTO all_events
+        SELECT
+          md5('rail_metric|r1|' || railroad_mark || '|' || metric || '|' || event_year) AS event_id,
+          'rail_metric' AS edge_type,
+          'rail_operator' AS src_type, railroad_mark AS src_id,
+          'national' AS dst_type, metric AS dst_id,
+          event_year AS event_time, 'year' AS event_grain,
+          weight, 'strong' AS confidence,
+          'stb_r1_2025' AS inference_method,
+          'stb_rail' AS source_family,
+          source_path, source_mtime,
+          json_object(
+            'railroad_mark', railroad_mark,
+            'metric', metric,
+            'r1_year', event_year,
+            'filing', 'R1'
+          ) AS attrs_json
+        FROM r1_metrics
+        """
+    )
+    return len(event_rows)

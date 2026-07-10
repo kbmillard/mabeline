@@ -264,8 +264,9 @@ def build_iran_oil_receipt(*, truck_month: str | None = None) -> dict[str, Any]:
             "pattern": "open_strait_calm_then_threaten_spike",
             "unit": "USD_per_bbl_WTI_reported",
             "note": (
+                "WTI figures are reported market prints (USD/bbl), not EIA kbbl. "
                 "Not Iran→US barrels (EIA IRN last 202310). Lever is Hormuz risk + sanctions waiver "
-                "on/off. Truck +55% is a separate sensor."
+                "on/off. Truck +55% is a separate disk sensor."
             ),
             "events": [
                 {
