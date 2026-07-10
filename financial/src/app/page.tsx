@@ -68,13 +68,19 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <Link
+        href="/iran"
+        className="mb-4 inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-950 px-4 py-3 text-sm text-zinc-100 transition hover:border-zinc-500"
+      >
+        <span className="font-semibold">Iran · oil · truck</span>
+        <span className="text-zinc-500">EIA · Census · haul proof</span>
+        <span aria-hidden>→</span>
+      </Link>
+      <Link
         href="/thg"
-        className="mb-8 inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-100 transition hover:border-zinc-500"
+        className="mb-8 ml-0 inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-100 transition hover:border-zinc-500 sm:ml-3"
       >
         <span className="font-semibold text-zinc-200">THG map</span>
-        <span className="text-zinc-500">
-          Petroleum +55% corridor sketch
-        </span>
+        <span className="text-zinc-500">Petroleum +55% corridors</span>
         <span aria-hidden>→</span>
       </Link>
       <header className="mb-10 border-b border-zinc-800 pb-8">

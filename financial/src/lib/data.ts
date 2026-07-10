@@ -15,9 +15,14 @@ import millionPlaybook from "@/data/dollar_to_million_playbook_v1.json";
 import freightMovement from "@/data/freight_movement_receipt_v1.json";
 import commodityEconomy from "@/data/commodity_economy_v1.json";
 import marketScan from "@/data/market_scan_returns_v1.json";
+import iranOil from "@/data/thg_iran_oil_v1.json";
 
 export function getMarketScan(): MarketScanReceipt {
   return marketScan as MarketScanReceipt;
+}
+
+export function getIranOil() {
+  return iranOil;
 }
 
 export function getReturnScan(): ReturnScanReceipt {
