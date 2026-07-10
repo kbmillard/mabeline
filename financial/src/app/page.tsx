@@ -68,25 +68,6 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <Link
-        href="/iran"
-        className="mb-4 flex flex-col gap-1 rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-500/15 to-transparent px-5 py-5 transition hover:border-amber-400/60 sm:flex-row sm:items-center sm:justify-between"
-      >
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
-            Live · Iran oil pressure
-          </p>
-          <p className="mt-1 text-lg font-semibold text-zinc-50">
-            Origin pressure on petroleum — see the join
-          </p>
-          <p className="mt-1 text-sm text-zinc-400">
-            EIA Iran crude · Census trade · US truck hauls on one spine
-          </p>
-        </div>
-        <span className="text-amber-400" aria-hidden>
-          mabeline.vercel.app/iran →
-        </span>
-      </Link>
-      <Link
         href="/thg"
         className="mb-8 inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-100 transition hover:border-zinc-500"
       >
