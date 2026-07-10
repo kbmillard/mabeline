@@ -68,27 +68,45 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <Link
-        href="/thg"
-        className="mb-8 inline-flex items-center gap-2 rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-zinc-100 transition hover:bg-amber-500/20"
+        href="/iran"
+        className="mb-4 flex flex-col gap-1 rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-500/15 to-transparent px-5 py-5 transition hover:border-amber-400/60 sm:flex-row sm:items-center sm:justify-between"
       >
-        <span className="font-semibold text-amber-400">THG demo</span>
-        <span className="text-zinc-400">
-          Petroleum +55% corridor map · commodity explorer
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
+            Live · Iran oil pressure
+          </p>
+          <p className="mt-1 text-lg font-semibold text-zinc-50">
+            Origin pressure on petroleum — see the join
+          </p>
+          <p className="mt-1 text-sm text-zinc-400">
+            EIA Iran crude · Census trade · US truck hauls on one spine
+          </p>
+        </div>
+        <span className="text-amber-400" aria-hidden>
+          mabeline.vercel.app/iran →
+        </span>
+      </Link>
+      <Link
+        href="/thg"
+        className="mb-8 inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-100 transition hover:border-zinc-500"
+      >
+        <span className="font-semibold text-zinc-200">THG map</span>
+        <span className="text-zinc-500">
+          Petroleum +55% corridor sketch
         </span>
         <span aria-hidden>→</span>
       </Link>
       <header className="mb-10 border-b border-zinc-800 pb-8">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-500">
-          Mabeline · Financial
+          Mabeline
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Return · Penny · Moneyball · Freight
+          Truck as sensor · commodity as signal
         </h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-zinc-400">
-          Aggregate dashboard from on-disk receipts: SEC/Yahoo returns, penny
-          forward screen, Moneyball 1¢→$100 slate, FAF5 freight, and full{" "}
+          Public transport evidence graph. Financial screens below are secondary.{" "}
           <Link href="/commodity" className="text-amber-400 hover:underline">
-            commodity economy
+            Commodity economy
           </Link>
           . Not investment advice.
         </p>

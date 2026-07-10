@@ -7,6 +7,7 @@ from typing import Any
 import duckdb
 
 from catalog.freight_movement import SCTG2_LABELS
+from catalog.graph.iran_oil import build_iran_oil_receipt
 from catalog.graph.month_picker import pick_snapshot_month
 from catalog.graph.schema_v1 import OUTPUTS
 from catalog.signals._common import CSV_OPTS
@@ -85,6 +86,17 @@ def run_thg_query(*, sctg2: str, month: str | None = None) -> dict[str, Any]:
         ],
         "top_carriers": [{"dot_number": r[0], "inspection_weight": float(r[1])} for r in top_carriers],
     }
+    if sctg == "17":
+        iran = build_iran_oil_receipt(truck_month=month)
+        result["iran_oil"] = {
+            "join": iran["join"],
+            "join_note": iran["join_note"],
+            "eia_last_month": iran["eia_iran"]["last_month"],
+            "eia_last_kbbl": iran["eia_iran"]["last_kbbl"],
+            "imdb_month": iran["census_iran"]["month"],
+            "imdb_con_val_mo": iran["census_iran"]["con_val_mo"],
+            "public_url": iran["public_url"],
+        }
     return result
 
 
@@ -103,4 +115,12 @@ def format_thg_query(result: dict[str, Any]) -> str:
     lines.append("  top carriers:")
     for c in result["top_carriers"]:
         lines.append(f"    DOT {c['dot_number']}: weight={c['inspection_weight']}")
+    iran = result.get("iran_oil")
+    if iran:
+        lines.append(
+            f"  iran_oil: join={iran['join']} eia={iran['eia_last_month']} "
+            f"({iran['eia_last_kbbl']} kbbl) imdb=${iran['imdb_con_val_mo']} "
+            f"→ {iran['public_url']}"
+        )
+        lines.append(f"    {iran['join_note']}")
     return "\n".join(lines)

@@ -1,0 +1,100 @@
+{
+  "scan_type": "thg_iran_oil_v1",
+  "as_of": "2026-07-10T02:17:42Z",
+  "thesis": "truck=sensor commodity=signal; Iran origin_pressure tags geopolitics onto SCTG 17",
+  "sctg2": "17",
+  "sctg2_name": "Petroleum products",
+  "join": "no_iran_eia_in_window",
+  "join_note": "US truck petroleum haul delta and EIA Iran crude do not share the same month \u2014 do not claim Iran caused the truck spike.",
+  "eia_iran": {
+    "last_month": "202310",
+    "last_kbbl": 752.0,
+    "series": "PET_IMPORTS.CTY_IR-US-ALL.M",
+    "monthly": [
+      {
+        "period": "202103",
+        "kbbl": 2033.0
+      },
+      {
+        "period": "202201",
+        "kbbl": 507.0
+      },
+      {
+        "period": "202308",
+        "kbbl": 447.0
+      },
+      {
+        "period": "202309",
+        "kbbl": 530.0
+      },
+      {
+        "period": "202310",
+        "kbbl": 752.0
+      }
+    ],
+    "annual": [
+      {
+        "period": "2021",
+        "kbbl": 2033.0
+      },
+      {
+        "period": "2022",
+        "kbbl": 507.0
+      },
+      {
+        "period": "2023",
+        "kbbl": 1729.0
+      }
+    ],
+    "houston_monthly": [
+      {
+        "period": "202103",
+        "kbbl": 2033.0
+      },
+      {
+        "period": "202201",
+        "kbbl": 507.0
+      },
+      {
+        "period": "202308",
+        "kbbl": 447.0
+      },
+      {
+        "period": "202309",
+        "kbbl": 530.0
+      },
+      {
+        "period": "202310",
+        "kbbl": 752.0
+      }
+    ],
+    "source_path": "_unwrapped/maritime/release=2026-07-09/PET_IMPORTS/PET_IMPORTS.txt",
+    "series_last_updated": "2025-04-02T13:08:30-04:00"
+  },
+  "census_iran": {
+    "cty_code": "5070",
+    "month": "202605",
+    "con_val_mo": 3873,
+    "con_val_yr": 441745,
+    "ves_val_mo": 0,
+    "ves_wgt_mo": 0,
+    "top_hs": [
+      {
+        "hs": "5701109000",
+        "month": "202605",
+        "cards": 2,
+        "con_val": 3873
+      }
+    ],
+    "source_path": "_unwrapped/trade/release=2026-07-09/IMDB2605.ZIP",
+    "note": "May 2026 Iran\u2192US goods are non-oil (e.g. carpets); vessel crude weight is zero in IMDB month."
+  },
+  "truck_petroleum": {
+    "snapshot_month": "202606",
+    "truck_observation_delta_pct": 55.118,
+    "truck_weight": 1576.0,
+    "prior_weight": 1016.0,
+    "source": "temporal_change_scores"
+  },
+  "public_url": "https://mabeline.vercel.app/iran"
+}

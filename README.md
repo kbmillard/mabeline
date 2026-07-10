@@ -4,7 +4,7 @@ Transport evidence graph: truck = sensor, commodity = signal.
 
 ## Live demo (Vercel)
 
-**https://mabeline.vercel.app** — financial board at `/`, THG petroleum corridor at [`/thg`](https://mabeline.vercel.app/thg).
+**https://mabeline.vercel.app** — Iran oil origin pressure at [`/iran`](https://mabeline.vercel.app/iran), THG corridor map at [`/thg`](https://mabeline.vercel.app/thg).
 
 Repo: https://github.com/kbmillard/mabeline · Vercel root: `financial/`
 

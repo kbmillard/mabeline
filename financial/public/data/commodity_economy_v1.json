@@ -1167,6 +1167,6 @@
   },
   "gaps": [],
   "dedupe_method": "aggregate_sum_by_sctg_and_region",
-  "elapsed_sec": 21.26,
-  "created_at": "2026-07-09T03:10:51Z"
+  "elapsed_sec": 23.2,
+  "created_at": "2026-07-09T03:12:53Z"
 }

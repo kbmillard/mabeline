@@ -17,6 +17,7 @@ NODE_TYPES = (
     "rail_operator",
     "national",
     "state",
+    "country",
     "lei",
     "ticker",
 )
@@ -29,6 +30,7 @@ EDGE_TYPES = (
     "shipment_share",
     "rail_metric",
     "commodity_pressure",
+    "origin_pressure",
     "trade_import",
     "carrier_risk",
     "pipeline_signal",

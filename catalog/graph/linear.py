@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
+from catalog.graph.iran_oil import build_iran_oil_receipt
 from catalog.graph.temporal_baseline import run_temporal_baseline
 from catalog.graph.thg_builder import run_thg_build
 from catalog.signals.dollar_to_million import run_dollar_to_million
@@ -19,6 +20,9 @@ def run_thg_linear(*, from_month: str = "202401", min_stops: int = 2, top_n: int
     baseline = run_temporal_baseline()
     steps.append({"step": "thg-baseline", "scores": baseline["row_counts"].get("change_scores", 0)})
 
+    iran = build_iran_oil_receipt()
+    steps.append({"step": "iran-oil", "join": iran.get("join"), "eia_last": iran["eia_iran"].get("last_month")})
+
     radar = run_market_trend_radar()
     steps.append({"step": "market-trend-radar", "trends": radar["row_counts"].get("trends", 0)})
 
@@ -30,6 +34,7 @@ def run_thg_linear(*, from_month: str = "202401", min_stops: int = 2, top_n: int
         "steps": steps,
         "build": build,
         "baseline": baseline,
+        "iran_oil": iran,
         "radar": radar,
         "dtm": dtm,
     }

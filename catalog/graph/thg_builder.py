@@ -8,6 +8,7 @@ import duckdb
 
 from catalog.config import BUILD_REPORTS, ROOT
 from catalog.freight_movement import get_faf_csv
+from catalog.graph.iran_oil import append_iran_oil_events
 from catalog.graph.schema_v1 import OUTPUTS, THG_ROOT
 from catalog.graph.thg_entity import append_identity_events
 from catalog.graph.thg_sources import (
@@ -189,6 +190,7 @@ def run_thg_build(*, from_month: str = "202401", min_stops: int = 2) -> dict[str
     build_warnings: list[str] = []
     extra_input_files: list[str] = []
     append_eia_events(con, input_files=extra_input_files, warnings=build_warnings)
+    append_iran_oil_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_trade_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_carrier_risk_events(con, input_files=extra_input_files, warnings=build_warnings)
     append_pipeline_events(con, input_files=extra_input_files, warnings=build_warnings)

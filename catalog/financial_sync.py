@@ -33,6 +33,7 @@ RECEIPT_SOURCES: dict[str, Path] = {
     "transport_economy_v1.json": BUILD_REPORTS / "transport_economy_v1.json",
     "moving_commodity_v1.json": BUILD_REPORTS / "moving_commodity_v1.json",
     "money_spider_v1.json": BUILD_REPORTS / "money_spider_v1.json",
+    "thg_iran_oil_v1.json": BUILD_REPORTS / "thg_iran_oil_v1.json",
 }
 
 SYNC_RECEIPT = BUILD_REPORTS / "financial_sync_receipt_v1.json"

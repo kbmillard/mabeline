@@ -30,70 +30,6 @@
   },
   "nodes": [
     {
-      "sctg": "15",
-      "commodity": "Nonmetal minerals",
-      "transport_score": 37.2,
-      "faf5": {
-        "thousand_tons": 626581.15,
-        "million_ton_miles": 338219.82,
-        "pct_of_national_tons": 3.13,
-        "top_modes": [
-          {
-            "mode": "Rail",
-            "thousand_tons": 337993.03
-          },
-          {
-            "mode": "Truck",
-            "thousand_tons": 134655.24
-          },
-          {
-            "mode": "Water",
-            "thousand_tons": 74398.83
-          }
-        ]
-      },
-      "cfs_2022": {
-        "million_tons": 897619.51,
-        "billion_usd": 28.38,
-        "pct_of_shipment_tons": 3.69
-      },
-      "fmcsa_carriers_certified": 376138,
-      "inspection_tie_count": 19674,
-      "top_shipper_carrier_ties": [
-        {
-          "shipper": "UPS",
-          "carrier": "UNITED PARCEL SERVICE INC",
-          "inspection_count": 9610
-        },
-        {
-          "shipper": "FEDEX",
-          "carrier": "FEDERAL EXPRESS CORPORATION",
-          "inspection_count": 5278
-        },
-        {
-          "shipper": "FED EX",
-          "carrier": "FEDERAL EXPRESS CORPORATION",
-          "inspection_count": 2077
-        },
-        {
-          "shipper": "FEDEX",
-          "carrier": "FEDEX FREIGHT INC",
-          "inspection_count": 1359
-        },
-        {
-          "shipper": "VESTAS",
-          "carrier": "LONE STAR TRANSPORTATION LLC",
-          "inspection_count": 1350
-        }
-      ],
-      "wiring": {
-        "faf5": true,
-        "cfs": true,
-        "fmcsa": true,
-        "inspections": true
-      }
-    },
-    {
       "sctg": "31",
       "commodity": "Mixed freight",
       "transport_score": 37.02,
@@ -209,9 +145,73 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
+        }
+      ],
+      "wiring": {
+        "faf5": true,
+        "cfs": true,
+        "fmcsa": true,
+        "inspections": true
+      }
+    },
+    {
+      "sctg": "15",
+      "commodity": "Nonmetal minerals",
+      "transport_score": 36.15,
+      "faf5": {
+        "thousand_tons": 626581.15,
+        "million_ton_miles": 338219.82,
+        "pct_of_national_tons": 3.13,
+        "top_modes": [
+          {
+            "mode": "Rail",
+            "thousand_tons": 337993.03
+          },
+          {
+            "mode": "Truck",
+            "thousand_tons": 134655.24
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 74398.83
+          }
+        ]
+      },
+      "cfs_2022": {
+        "million_tons": 45155.98,
+        "billion_usd": 18.68,
+        "pct_of_shipment_tons": 0.19
+      },
+      "fmcsa_carriers_certified": 376138,
+      "inspection_tie_count": 19674,
+      "top_shipper_carrier_ties": [
+        {
+          "shipper": "UPS",
+          "carrier": "UNITED PARCEL SERVICE INC",
+          "inspection_count": 9610
+        },
+        {
+          "shipper": "FEDEX",
+          "carrier": "FEDERAL EXPRESS CORPORATION",
+          "inspection_count": 5278
+        },
+        {
+          "shipper": "FED EX",
+          "carrier": "FEDERAL EXPRESS CORPORATION",
+          "inspection_count": 2077
+        },
+        {
+          "shipper": "FEDEX",
+          "carrier": "FEDEX FREIGHT INC",
+          "inspection_count": 1359
+        },
+        {
+          "shipper": "VESTAS",
+          "carrier": "LONE STAR TRANSPORTATION LLC",
+          "inspection_count": 1350
         }
       ],
       "wiring": {
@@ -515,8 +515,8 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
         }
       ],
@@ -639,8 +639,8 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
         }
       ],
@@ -703,8 +703,8 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
         }
       ],
@@ -831,8 +831,8 @@
           "inspection_count": 72
         },
         {
-          "shipper": "MCCAIN",
-          "carrier": "BLUE DIAMOND TRANSPORTATION LLC",
+          "shipper": "SAC",
+          "carrier": "WHITNEY TRANSPORT LLC",
           "inspection_count": 69
         }
       ],
@@ -990,16 +990,16 @@
     {
       "sctg": "25",
       "commodity": "SCTG 25",
-      "transport_score": 1.02,
+      "transport_score": 1.04,
       "faf5": {
         "thousand_tons": 583691.53,
         "million_ton_miles": 82369.94,
         "pct_of_national_tons": 2.92
       },
       "cfs_2022": {
-        "million_tons": 465.55,
-        "billion_usd": 0.33,
-        "pct_of_shipment_tons": 0.0
+        "million_tons": 13214.19,
+        "billion_usd": 2.1,
+        "pct_of_shipment_tons": 0.05
       },
       "fmcsa_carriers_certified": 0,
       "inspection_tie_count": 0,
@@ -1176,30 +1176,6 @@
       }
     },
     {
-      "sctg": "06",
-      "commodity": "SCTG 06",
-      "transport_score": 0.51,
-      "faf5": {
-        "thousand_tons": 146768.12,
-        "million_ton_miles": 65567.62,
-        "pct_of_national_tons": 0.73
-      },
-      "cfs_2022": {
-        "million_tons": 206595.4,
-        "billion_usd": 166.81,
-        "pct_of_shipment_tons": 0.85
-      },
-      "fmcsa_carriers_certified": 0,
-      "inspection_tie_count": 0,
-      "top_shipper_carrier_ties": [],
-      "wiring": {
-        "faf5": true,
-        "cfs": true,
-        "fmcsa": false,
-        "inspections": false
-      }
-    },
-    {
       "sctg": "33",
       "commodity": "SCTG 33",
       "transport_score": 0.5,
@@ -1248,30 +1224,6 @@
       }
     },
     {
-      "sctg": "40",
-      "commodity": "SCTG 40",
-      "transport_score": 0.45,
-      "faf5": {
-        "thousand_tons": 94704.15,
-        "million_ton_miles": 40999.62,
-        "pct_of_national_tons": 0.47
-      },
-      "cfs_2022": {
-        "million_tons": 229660.81,
-        "billion_usd": 702.46,
-        "pct_of_shipment_tons": 0.94
-      },
-      "fmcsa_carriers_certified": 0,
-      "inspection_tie_count": 0,
-      "top_shipper_carrier_ties": [],
-      "wiring": {
-        "faf5": true,
-        "cfs": true,
-        "fmcsa": false,
-        "inspections": false
-      }
-    },
-    {
       "sctg": "34",
       "commodity": "SCTG 34",
       "transport_score": 0.45,
@@ -1284,6 +1236,30 @@
         "million_tons": 180471.82,
         "billion_usd": 954.77,
         "pct_of_shipment_tons": 0.74
+      },
+      "fmcsa_carriers_certified": 0,
+      "inspection_tie_count": 0,
+      "top_shipper_carrier_ties": [],
+      "wiring": {
+        "faf5": true,
+        "cfs": true,
+        "fmcsa": false,
+        "inspections": false
+      }
+    },
+    {
+      "sctg": "40",
+      "commodity": "SCTG 40",
+      "transport_score": 0.45,
+      "faf5": {
+        "thousand_tons": 94704.15,
+        "million_ton_miles": 40999.62,
+        "pct_of_national_tons": 0.47
+      },
+      "cfs_2022": {
+        "million_tons": 229660.81,
+        "billion_usd": 702.46,
+        "pct_of_shipment_tons": 0.94
       },
       "fmcsa_carriers_certified": 0,
       "inspection_tie_count": 0,
@@ -1368,6 +1344,30 @@
       }
     },
     {
+      "sctg": "06",
+      "commodity": "SCTG 06",
+      "transport_score": 0.26,
+      "faf5": {
+        "thousand_tons": 146768.12,
+        "million_ton_miles": 65567.62,
+        "pct_of_national_tons": 0.73
+      },
+      "cfs_2022": {
+        "million_tons": 1723.53,
+        "billion_usd": 1.11,
+        "pct_of_shipment_tons": 0.01
+      },
+      "fmcsa_carriers_certified": 0,
+      "inspection_tie_count": 0,
+      "top_shipper_carrier_ties": [],
+      "wiring": {
+        "faf5": true,
+        "cfs": true,
+        "fmcsa": false,
+        "inspections": false
+      }
+    },
+    {
       "sctg": "30",
       "commodity": "SCTG 30",
       "transport_score": 0.21,
@@ -1380,6 +1380,30 @@
         "million_tons": 93845.18,
         "billion_usd": 684.95,
         "pct_of_shipment_tons": 0.39
+      },
+      "fmcsa_carriers_certified": 0,
+      "inspection_tie_count": 0,
+      "top_shipper_carrier_ties": [],
+      "wiring": {
+        "faf5": true,
+        "cfs": true,
+        "fmcsa": false,
+        "inspections": false
+      }
+    },
+    {
+      "sctg": "39",
+      "commodity": "SCTG 39",
+      "transport_score": 0.17,
+      "faf5": {
+        "thousand_tons": 51117.6,
+        "million_ton_miles": 23123.37,
+        "pct_of_national_tons": 0.26
+      },
+      "cfs_2022": {
+        "million_tons": 61451.3,
+        "billion_usd": 218.84,
+        "pct_of_shipment_tons": 0.25
       },
       "fmcsa_carriers_certified": 0,
       "inspection_tie_count": 0,
@@ -1416,30 +1440,6 @@
       }
     },
     {
-      "sctg": "10",
-      "commodity": "SCTG 10",
-      "transport_score": 0.14,
-      "faf5": {
-        "thousand_tons": 12704.75,
-        "million_ton_miles": 2167.63,
-        "pct_of_national_tons": 0.06
-      },
-      "cfs_2022": {
-        "million_tons": 95656.81,
-        "billion_usd": 18.98,
-        "pct_of_shipment_tons": 0.39
-      },
-      "fmcsa_carriers_certified": 0,
-      "inspection_tie_count": 0,
-      "top_shipper_carrier_ties": [],
-      "wiring": {
-        "faf5": true,
-        "cfs": true,
-        "fmcsa": false,
-        "inspections": false
-      }
-    },
-    {
       "sctg": "29",
       "commodity": "SCTG 29",
       "transport_score": 0.12,
@@ -1452,30 +1452,6 @@
         "million_tons": 55023.43,
         "billion_usd": 139.07,
         "pct_of_shipment_tons": 0.23
-      },
-      "fmcsa_carriers_certified": 0,
-      "inspection_tie_count": 0,
-      "top_shipper_carrier_ties": [],
-      "wiring": {
-        "faf5": true,
-        "cfs": true,
-        "fmcsa": false,
-        "inspections": false
-      }
-    },
-    {
-      "sctg": "39",
-      "commodity": "SCTG 39",
-      "transport_score": 0.09,
-      "faf5": {
-        "thousand_tons": 51117.6,
-        "million_ton_miles": 23123.37,
-        "pct_of_national_tons": 0.26
-      },
-      "cfs_2022": {
-        "million_tons": 54.65,
-        "billion_usd": 0.3,
-        "pct_of_shipment_tons": 0.0
       },
       "fmcsa_carriers_certified": 0,
       "inspection_tie_count": 0,
@@ -1558,73 +1534,33 @@
         "fmcsa": false,
         "inspections": false
       }
-    }
-  ],
-  "top_10": [
+    },
     {
-      "sctg": "15",
-      "commodity": "Nonmetal minerals",
-      "transport_score": 37.2,
+      "sctg": "10",
+      "commodity": "SCTG 10",
+      "transport_score": 0.02,
       "faf5": {
-        "thousand_tons": 626581.15,
-        "million_ton_miles": 338219.82,
-        "pct_of_national_tons": 3.13,
-        "top_modes": [
-          {
-            "mode": "Rail",
-            "thousand_tons": 337993.03
-          },
-          {
-            "mode": "Truck",
-            "thousand_tons": 134655.24
-          },
-          {
-            "mode": "Water",
-            "thousand_tons": 74398.83
-          }
-        ]
+        "thousand_tons": 12704.75,
+        "million_ton_miles": 2167.63,
+        "pct_of_national_tons": 0.06
       },
       "cfs_2022": {
-        "million_tons": 897619.51,
-        "billion_usd": 28.38,
-        "pct_of_shipment_tons": 3.69
+        "million_tons": 3261.79,
+        "billion_usd": 0.67,
+        "pct_of_shipment_tons": 0.01
       },
-      "fmcsa_carriers_certified": 376138,
-      "inspection_tie_count": 19674,
-      "top_shipper_carrier_ties": [
-        {
-          "shipper": "UPS",
-          "carrier": "UNITED PARCEL SERVICE INC",
-          "inspection_count": 9610
-        },
-        {
-          "shipper": "FEDEX",
-          "carrier": "FEDERAL EXPRESS CORPORATION",
-          "inspection_count": 5278
-        },
-        {
-          "shipper": "FED EX",
-          "carrier": "FEDERAL EXPRESS CORPORATION",
-          "inspection_count": 2077
-        },
-        {
-          "shipper": "FEDEX",
-          "carrier": "FEDEX FREIGHT INC",
-          "inspection_count": 1359
-        },
-        {
-          "shipper": "VESTAS",
-          "carrier": "LONE STAR TRANSPORTATION LLC",
-          "inspection_count": 1350
-        }
-      ],
+      "fmcsa_carriers_certified": 0,
+      "inspection_tie_count": 0,
+      "top_shipper_carrier_ties": [],
       "wiring": {
         "faf5": true,
         "cfs": true,
-        "fmcsa": true,
-        "inspections": true
+        "fmcsa": false,
+        "inspections": false
       }
-    },
+    }
+  ],
+  "top_10": [
     {
       "sctg": "31",
       "commodity": "Mixed freight",
@@ -1741,9 +1677,73 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
+        }
+      ],
+      "wiring": {
+        "faf5": true,
+        "cfs": true,
+        "fmcsa": true,
+        "inspections": true
+      }
+    },
+    {
+      "sctg": "15",
+      "commodity": "Nonmetal minerals",
+      "transport_score": 36.15,
+      "faf5": {
+        "thousand_tons": 626581.15,
+        "million_ton_miles": 338219.82,
+        "pct_of_national_tons": 3.13,
+        "top_modes": [
+          {
+            "mode": "Rail",
+            "thousand_tons": 337993.03
+          },
+          {
+            "mode": "Truck",
+            "thousand_tons": 134655.24
+          },
+          {
+            "mode": "Water",
+            "thousand_tons": 74398.83
+          }
+        ]
+      },
+      "cfs_2022": {
+        "million_tons": 45155.98,
+        "billion_usd": 18.68,
+        "pct_of_shipment_tons": 0.19
+      },
+      "fmcsa_carriers_certified": 376138,
+      "inspection_tie_count": 19674,
+      "top_shipper_carrier_ties": [
+        {
+          "shipper": "UPS",
+          "carrier": "UNITED PARCEL SERVICE INC",
+          "inspection_count": 9610
+        },
+        {
+          "shipper": "FEDEX",
+          "carrier": "FEDERAL EXPRESS CORPORATION",
+          "inspection_count": 5278
+        },
+        {
+          "shipper": "FED EX",
+          "carrier": "FEDERAL EXPRESS CORPORATION",
+          "inspection_count": 2077
+        },
+        {
+          "shipper": "FEDEX",
+          "carrier": "FEDEX FREIGHT INC",
+          "inspection_count": 1359
+        },
+        {
+          "shipper": "VESTAS",
+          "carrier": "LONE STAR TRANSPORTATION LLC",
+          "inspection_count": 1350
         }
       ],
       "wiring": {
@@ -2047,8 +2047,8 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
         }
       ],
@@ -2171,8 +2171,8 @@
           "inspection_count": 944
         },
         {
-          "shipper": "WAL MART",
-          "carrier": "WAL-MART TRANSPORTATION LLC",
+          "shipper": "CONSUMER GROUP",
+          "carrier": "CONTRACT TRANSPORTATION SYSTEMS CO",
           "inspection_count": 934
         }
       ],
@@ -2299,6 +2299,6 @@
     ],
     "note": "Rail performance overlay \u2014 not SCTG commodity proof"
   },
-  "elapsed_sec": 25.98,
-  "created_at": "2026-07-09T03:11:17Z"
+  "elapsed_sec": 25.44,
+  "created_at": "2026-07-09T03:13:18Z"
 }

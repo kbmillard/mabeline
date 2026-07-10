@@ -823,38 +823,6 @@
       "rank": 25
     },
     {
-      "sctg": "06",
-      "commodity": "SCTG 06",
-      "moving_a_lot_score": 0.78,
-      "faf5_thousand_tons": 146768.12,
-      "faf5_pct_of_national": 0.73,
-      "cfs_million_tons": 206595.4,
-      "cfs_pct_of_shipments": 0.85,
-      "primary_mode": null,
-      "top_corridor": "Arkansas \u2192 Arkansas",
-      "top_corridors": [
-        {
-          "corridor": "Arkansas \u2192 Arkansas",
-          "thousand_tons": 5245.45
-        },
-        {
-          "corridor": "FAF zone 519 \u2192 FAF zone 519",
-          "thousand_tons": 3245.57
-        },
-        {
-          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
-          "thousand_tons": 2859.61
-        }
-      ],
-      "tie": {
-        "spine": "SCTG",
-        "faf5": true,
-        "cfs_2022": true,
-        "aligned": true
-      },
-      "rank": 26
-    },
-    {
       "sctg": "00",
       "commodity": "SCTG 00",
       "moving_a_lot_score": 0.78,
@@ -871,7 +839,7 @@
         "cfs_2022": true,
         "aligned": false
       },
-      "rank": 27
+      "rank": 26
     },
     {
       "sctg": "33",
@@ -903,7 +871,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 28
+      "rank": 27
     },
     {
       "sctg": "05",
@@ -935,7 +903,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 29
+      "rank": 28
     },
     {
       "sctg": "34",
@@ -967,7 +935,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 30
+      "rank": 29
     },
     {
       "sctg": "40",
@@ -999,7 +967,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 31
+      "rank": 30
     },
     {
       "sctg": "35",
@@ -1031,7 +999,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 32
+      "rank": 31
     },
     {
       "sctg": "28",
@@ -1055,6 +1023,38 @@
         {
           "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
           "thousand_tons": 1474.05
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 32
+    },
+    {
+      "sctg": "06",
+      "commodity": "SCTG 06",
+      "moving_a_lot_score": 0.44,
+      "faf5_thousand_tons": 146768.12,
+      "faf5_pct_of_national": 0.73,
+      "cfs_million_tons": 1723.53,
+      "cfs_pct_of_shipments": 0.01,
+      "primary_mode": null,
+      "top_corridor": "Arkansas \u2192 Arkansas",
+      "top_corridors": [
+        {
+          "corridor": "Arkansas \u2192 Arkansas",
+          "thousand_tons": 5245.45
+        },
+        {
+          "corridor": "FAF zone 519 \u2192 FAF zone 519",
+          "thousand_tons": 3245.57
+        },
+        {
+          "corridor": "Remainder of Indiana \u2192 Remainder of Indiana",
+          "thousand_tons": 2859.61
         }
       ],
       "tie": {
@@ -1194,38 +1194,6 @@
       "rank": 37
     },
     {
-      "sctg": "10",
-      "commodity": "SCTG 10",
-      "moving_a_lot_score": 0.19,
-      "faf5_thousand_tons": 12704.75,
-      "faf5_pct_of_national": 0.06,
-      "cfs_million_tons": 95656.81,
-      "cfs_pct_of_shipments": 0.39,
-      "primary_mode": null,
-      "top_corridor": "FAF zone 122 \u2192 FAF zone 122",
-      "top_corridors": [
-        {
-          "corridor": "FAF zone 122 \u2192 FAF zone 122",
-          "thousand_tons": 794.29
-        },
-        {
-          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
-          "thousand_tons": 722.57
-        },
-        {
-          "corridor": "FAF zone 479 \u2192 FAF zone 479",
-          "thousand_tons": 694.18
-        }
-      ],
-      "tie": {
-        "spine": "SCTG",
-        "faf5": true,
-        "cfs_2022": true,
-        "aligned": true
-      },
-      "rank": 38
-    },
-    {
       "sctg": "29",
       "commodity": "SCTG 29",
       "moving_a_lot_score": 0.18,
@@ -1255,7 +1223,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 39
+      "rank": 38
     },
     {
       "sctg": "39",
@@ -1287,7 +1255,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 40
+      "rank": 39
     },
     {
       "sctg": "38",
@@ -1319,7 +1287,7 @@
         "cfs_2022": true,
         "aligned": true
       },
-      "rank": 41
+      "rank": 40
     },
     {
       "sctg": "37",
@@ -1343,6 +1311,38 @@
         {
           "corridor": "FAF zone 019 \u2192 FAF zone 019",
           "thousand_tons": 310.16
+        }
+      ],
+      "tie": {
+        "spine": "SCTG",
+        "faf5": true,
+        "cfs_2022": true,
+        "aligned": true
+      },
+      "rank": 41
+    },
+    {
+      "sctg": "10",
+      "commodity": "SCTG 10",
+      "moving_a_lot_score": 0.04,
+      "faf5_thousand_tons": 12704.75,
+      "faf5_pct_of_national": 0.06,
+      "cfs_million_tons": 3261.79,
+      "cfs_pct_of_shipments": 0.01,
+      "primary_mode": null,
+      "top_corridor": "FAF zone 122 \u2192 FAF zone 122",
+      "top_corridors": [
+        {
+          "corridor": "FAF zone 122 \u2192 FAF zone 122",
+          "thousand_tons": 794.29
+        },
+        {
+          "corridor": "Chicago-Naperville, IL \u2192 Chicago-Naperville, IL",
+          "thousand_tons": 722.57
+        },
+        {
+          "corridor": "FAF zone 479 \u2192 FAF zone 479",
+          "thousand_tons": 694.18
         }
       ],
       "tie": {
@@ -1710,6 +1710,6 @@
   ],
   "count": 43,
   "export_csv": "exports/moving_commodity_v1.csv",
-  "elapsed_sec": 23.96,
-  "created_at": "2026-07-09T03:10:30Z"
+  "elapsed_sec": 27.14,
+  "created_at": "2026-07-09T03:12:29Z"
 }
