@@ -1,0 +1,17 @@
+_unwrapped/
+warehouse/
+.venv/
+venv/
+exports/
+reports/
+build_reports/
+.git/
+**/.next/
+**/node_modules/
+*.parquet
+*.csv
+*.zip
+*.gz
+*.gguf
+*.pt
+*.pth
