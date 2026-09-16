@@ -17,7 +17,7 @@
   "gain_mode": null,
   "gain_settings": null,
   "frequency_configuration": null,
-  "rtl433_version": null,
+  "rtl433_version": "25.12",
   "rtl433_config": null,
   "feedline": null,
   "clock_source": null,

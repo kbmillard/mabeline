@@ -36,6 +36,25 @@
 
 Prices fluctuate; treat as planning estimates, not POs.
 
+## Budget lock (operator buy now)
+
+**Approved working budget: \$450 mid-kit for P19→P20 (2× SDR + antennas + adapters + USB extensions).**  
+Use the existing Mac as central + lean field host for P19 (skip Pi until overnight/outdoor). Add Pi kits later if needed (+\$150–400/site).
+
+| Cart (buy today) | Qty | Target USD |
+| --- | ---: | ---: |
+| RTL-SDR Blog V4 dongle | 2 | ~\$90–100 |
+| 433 MHz SMA magnetic-mount antenna | 2 | ~\$40–80 |
+| SMA/MCX adapter + short coax (match dongle) | 2 | ~\$25–40 |
+| USB extension (1–2 m, ferrite if available) | 2 | ~\$20–40 |
+| Optional: 315 MHz whip (fleet-dependent) | 1 | ~\$15–25 |
+| Optional: weather pouch / dry box | 1–2 | ~\$20–50 |
+| **Cart total (lean, no Pi)** | | **~\$210–\$335** |
+| **Contingency / tax / shipping** | | **→ plan \$450** |
+| Full dual Pi hosts (optional later) | 2 | +\$300–700 |
+
+**P19-only floor if cash-tight:** 1× V4 + antenna + adapter + USB ext ≈ **\$100–180** (Mac host). Still plan the second dongle before claiming P20.
+
 ## Software stack (no purchase)
 
 - `rtl_433` (build or package)

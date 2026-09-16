@@ -2,10 +2,20 @@
 
 **Central must use `GROUNDVIEW_MODE=field`.** Fixture/synthetic seed is forbidden for empirical sessions.
 
+**One-shot (preferred):** after survey filled and SDR plugged in:
+
+```bash
+source ~/.config/groundview/env.sh
+cd /path/to/mabeline/SkyView
+bash scripts/groundview-field-day.sh all
+```
+
+Budget / cart: [`BUY.md`](./BUY.md) (**\$450 lock**).
+
 ## 0. Prerequisites
 
-- Kit from [`BOM.md`](./BOM.md) in hand
-- Secrets from [`SECRETS_SETUP.md`](./SECRETS_SETUP.md)
+- Kit from [`BOM.md`](./BOM.md) / [`BUY.md`](./BUY.md) in hand
+- Secrets from [`SECRETS_SETUP.md`](./SECRETS_SETUP.md) (already on this Mac)
 - Site survey draft [`sites/SITE_A_SURVEY.json`](./sites/SITE_A_SURVEY.json)
 
 ## 1. Field host (Raspberry Pi / mini-PC)

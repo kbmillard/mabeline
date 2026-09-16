@@ -2,6 +2,12 @@
 
 **Never commit secrets.** Never put secrets in observations, manifests, STATUS, or spool NDJSON.
 
+## This Mac (already done)
+
+Secrets live at `~/.config/groundview/receiver-secrets.json` (mode 600).  
+Env helper: `source ~/.config/groundview/env.sh`  
+Do **not** re-generate unless rotating — rotating invalidates field nodes until redeployed.
+
 ## Generate secrets file (outside repo)
 
 ```bash
