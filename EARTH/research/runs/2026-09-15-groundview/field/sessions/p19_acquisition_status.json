@@ -1,15 +1,22 @@
 {
   "schema": "groundview_p19_acquisition_ledger_v1",
-  "recorded_at": "2026-09-16T01:00:00.000Z",
+  "recorded_at": "2026-09-16T01:20:00.000Z",
   "site_id": "SITE_A",
   "receiver_id": "GV-RX-FIELD-01",
   "acquisition": "ACTIVE_ACQUISITION",
   "outcome": "FIELD_VALIDATION_REQUIRED",
+  "durability": {
+    "commit_note": "DONE",
+    "skyview_branch": "wip/groundview",
+    "skyview_commit": "d317655",
+    "earth_commit": "43749a0",
+    "note": "GroundView tree committed; branch-switch wipe risk addressed for committed work."
+  },
   "host_probes": {
     "rtl_433_on_path": false,
     "usb_sdr_seen": false,
     "secrets_env_set": false,
-    "note": "Probed on operator Mac at plan execution; not a field host."
+    "note": "Probed on operator Mac; not a field host."
   },
   "prerequisites": {
     "sdr": false,
@@ -34,16 +41,17 @@
   "findings": [
     "Physical kit not yet on Site A — cannot invent capture rates.",
     "BOM, Site A candidates, INSTALL, capture/freeze/analyze CLIs are ready.",
-    "P19 PASS (including honest poor observability) requires live capture after prerequisites flip true."
+    "Commit durability DONE on wip/groundview."
   ],
   "next_operator_actions": [
-    "Buy kit per field/BOM.md (2 receivers for P20 path)",
+    "NEXT: Buy kit per field/BOM.md (2 receivers for P20 path)",
     "Create secrets per field/SECRETS_SETUP.md",
     "Survey Site A; fill sites/SITE_A_SURVEY.json",
     "node scripts/groundview-field-freeze.mjs --survey ...",
     "GROUNDVIEW_MODE=field bash scripts/groundview-field-capture.sh",
-    "Fill denominators from observation; node scripts/groundview-field-analyze.mjs --session ..."
+    "Fill denominators from observation; node scripts/groundview-field-analyze.mjs --session ...",
+    "Then P20+ per field/P20_P23_EXECUTION.md"
   ],
   "matcher_version": "groundview_match_v1",
-  "note": "Honest negative for live RF this session: NO_CAPTURE while hardware/site actively being acquired."
+  "note": "Locked next path starts at buy BOM. Live RF remains FIELD_VALIDATION_REQUIRED until capture."
 }
