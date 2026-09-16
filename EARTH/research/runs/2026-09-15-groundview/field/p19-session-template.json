@@ -1,0 +1,50 @@
+{
+  "session_id": "p19_YYYYMMDD_site",
+  "site_id": null,
+  "prerequisites": {
+    "sdr": false,
+    "antenna": false,
+    "host": false,
+    "site": false,
+    "secrets": false,
+    "clock": false,
+    "truth_aid": false
+  },
+  "capture_present": false,
+  "synthetic_fixture_count": 0,
+  "receiver_profile": {
+    "receiver_id": "GV-RX-FIELD-01",
+    "receiver_installation_id": null,
+    "sdr_model": null,
+    "antenna_type": null,
+    "installation_timestamp": null,
+    "operator_notes": null,
+    "survey_status": "FIELD_VALIDATION_REQUIRED"
+  },
+  "clock_quality": {
+    "clock_source": null,
+    "estimated_uncertainty_seconds": null
+  },
+  "denominators": {
+    "schema": "groundview_p19_denominator_sheet_v1",
+    "session_id": "p19_YYYYMMDD_site",
+    "site_id": null,
+    "matcher_version_frozen": "groundview_match_v1",
+    "counts": {
+      "vehicles_passing_site": null,
+      "vehicles_with_detectable_tpms": null,
+      "decoded_tpms_events": null,
+      "canonicalizable_events": null
+    },
+    "rates": {
+      "vehicles_passing_site": null,
+      "vehicles_with_detectable_tpms": null,
+      "decoded_tpms_events": null,
+      "canonicalizable_events": null
+    },
+    "fabricated": false,
+    "scientific_status": "FIELD_VALIDATION_REQUIRED",
+    "note": "Fill only from physical observation. Null means not yet measured."
+  },
+  "findings": []
+}

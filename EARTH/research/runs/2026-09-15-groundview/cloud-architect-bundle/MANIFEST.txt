@@ -1,0 +1,5 @@
+created: 2026-09-15
+skyview_branch: wip/groundview (uncommitted GroundView + offices removed + click cards + WGS84 search)
+chrome_main: 2cb1fc0 (pipeline offices removed; deployed; GroundView NOT shipped)
+prod: https://skyprairie.io/earth  (no GroundView)
+paste: HANDOFF.md
