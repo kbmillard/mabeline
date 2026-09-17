@@ -1,4 +1,4 @@
-# Mabeline Financial
+# The Mabeline Project — Financial
 
 Next.js dashboard for SEC return scans and penny-forward screening.
 
@@ -13,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Refresh data
 
-One command from the Mabeline repo root:
+One command from The Mabeline Project repo root:
 
 ```bash
 bin/mabel-catalog financial              # commodity + moneyball + sync

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mabeline — truck as sensor",
+  title: "The Mabeline Project — truck as sensor",
   description:
-    "Temporal haul graph and transport evidence from Mabeline",
+    "Temporal haul graph and transport evidence from The Mabeline Project",
 };
 
 export default function RootLayout({
