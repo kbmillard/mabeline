@@ -1,0 +1,71 @@
+{
+  "schema": "groundview_p19_acquisition_ledger_v1",
+  "recorded_at": "2026-09-16T01:49:00.000Z",
+  "site_id": "SITE_A",
+  "receiver_id": "GV-RX-FIELD-01",
+  "acquisition": "ACTIVE_ACQUISITION",
+  "outcome": "FIELD_VALIDATION_REQUIRED",
+  "budget": {
+    "lock_usd": 450,
+    "scope": "lean_dual_receiver_no_pi",
+    "p19_floor_usd": "100-180",
+    "cart_doc": "field/BUY.md",
+    "note": "Mac is lean P19 host; Pi deferred."
+  },
+  "durability": {
+    "commit_note": "DONE",
+    "skyview_branch": "wip/groundview",
+    "note": "GroundView tree committed; secrets outside repo."
+  },
+  "host_probes": {
+    "rtl_433_on_path": true,
+    "rtl_433_version": "25.12",
+    "chronyc_on_path": true,
+    "chronyd_reachable": false,
+    "usb_sdr_seen": false,
+    "secrets_env_set": true,
+    "secrets_file_readable": true,
+    "secrets_outside_repo": true,
+    "spool_dirs": [
+      "$HOME/groundview-spool/GV-RX-FIELD-01",
+      "$HOME/groundview-spool/GV-RX-FIELD-02"
+    ],
+    "note": "Operator Mac prepared as lean field host; no USB SDR yet."
+  },
+  "prerequisites": {
+    "sdr": false,
+    "antenna": false,
+    "host": true,
+    "site": false,
+    "secrets": true,
+    "clock": false,
+    "truth_aid": false
+  },
+  "missing_prerequisites": [
+    "sdr",
+    "antenna",
+    "site",
+    "clock"
+  ],
+  "capture_present": false,
+  "synthetic_fixture_count": 0,
+  "denominators_fabricated": false,
+  "findings": [
+    "Budget locked at $450 lean dual-receiver cart (BUY.md).",
+    "Secrets generated at ~/.config/groundview/receiver-secrets.json (not in repo).",
+    "rtl_433 25.12 + librtlsdr + chrony CLI installed via Homebrew.",
+    "Spool dirs created; field-day one-shot script landed.",
+    "No USB SDR enumerated — physical buy still required.",
+    "chronyd not running; mark clock true only after sync + freeze clock_quality."
+  ],
+  "next_operator_actions": [
+    "Buy cart per field/BUY.md (~$450 lock)",
+    "On delivery: plug SDR, confirm USB",
+    "Survey Site A; fill sites/SITE_A_SURVEY.json",
+    "Start chrony or record macOS NTP clock_quality; freeze",
+    "bash scripts/groundview-field-day.sh all",
+    "Then P20+ per field/P20_P23_EXECUTION.md"
+  ],
+  "matcher_version": "groundview_match_v1",
+  "note": "Agent-doable prep done. Live RF remains FIELD_VALIDATION_REQUIRED until buy+survey+capture."
+}

@@ -1,0 +1,102 @@
+{
+  "pre_p25_ops_review": {
+    "schema": "groundview_pre_p25_ops_review_v1",
+    "decisions": {
+      "site_auth": "HMAC receiver credentials via GROUNDVIEW_RECEIVER_SECRETS_FILE; field host only",
+      "ownership": "Operator-owned receivers; central SkyView writer process",
+      "camera": "Optional truth aid only; never feeds matcher-v1",
+      "access": "Field host + signed node ingest; no Vercel disk",
+      "retention": "OBSERVED append-only; manifests retained on hash failure",
+      "privacy": "No permanent vehicle identity; GV-C12 anonymous only",
+      "incident_handling": "Quarantine receiver; revoke credentials; fail closed on spool corruption"
+    },
+    "pending_decisions": [],
+    "benchmark": {
+      "name": "groundview_replay_load",
+      "iterations": 3,
+      "min_ms": 4.078125,
+      "max_ms": 6.217500000000001,
+      "mean_ms": 5.045416666666665,
+      "p50_ms": 4.840624999999996,
+      "scientific_status": "SOFTWARE_FOUNDATION_READY",
+      "note": "Benchmark harness only — not a production SLO claim.",
+      "ran": true,
+      "claims_slos": false
+    },
+    "p24_storage_migration": {
+      "trigger": "measured_bottleneck_only",
+      "measured_bottleneck": false,
+      "migrate_now": false,
+      "note": "Parity harness exists; follow mega-prompt 16-step cutover only if triggered."
+    },
+    "outcome": "SOFTWARE_FOUNDATION_READY"
+  },
+  "p25_regional_plan": {
+    "schema": "groundview_p25_regional_network_v1",
+    "region_id": "pending_field",
+    "receiver_ids": [],
+    "health": true,
+    "profiles": true,
+    "clocks": true,
+    "spool_ops": true,
+    "retention": true,
+    "on_call_basics": true,
+    "gv_c9_operational": "SOFTWARE_FOUNDATION_READY",
+    "scientific_status": "SOFTWARE_FOUNDATION_READY",
+    "empirical_authority": "FIELD_VALIDATION_REQUIRED"
+  },
+  "p26_multi_region": {
+    "schema": "groundview_multi_region_v1",
+    "region_ids": [],
+    "interfaces": {
+      "federation_peer": true,
+      "evidence_ingest": true,
+      "authority_boundary": "one_writer_per_observation"
+    },
+    "real_ops": "FIELD_VALIDATION_REQUIRED",
+    "note": "Interfaces ready; real multi-region ops only as earned."
+  },
+  "p27_episode_service": {
+    "schema": "groundview_episode_service_v1",
+    "episodes": [],
+    "capabilities": {
+      "query": true,
+      "playback": true,
+      "provenance_inspection": true,
+      "second_globe": false
+    },
+    "scientific_status": "SOFTWARE_FOUNDATION_READY",
+    "empirical_authority": "FIELD_VALIDATION_REQUIRED"
+  },
+  "p28_mabeline_bridge": {
+    "schema": "groundview_p28_mabeline_bridge_v1",
+    "edge_compatibility": true,
+    "may_contaminate_rf_matcher": false,
+    "matcher_v1_isolation": true,
+    "scientific_status": "SOFTWARE_FOUNDATION_READY"
+  },
+  "p29_surface": {
+    "schema": "groundview_surface_contract_v1",
+    "chips": true,
+    "cards": true,
+    "playback": true,
+    "provenance_inspection": true,
+    "observed_vs_inferred": {
+      "observed": "OBSERVED",
+      "inferred": "INFERRED",
+      "unmistakable": true
+    },
+    "production_deploy": {
+      "vercel_prod_authorized": false,
+      "requires_explicit_order": true
+    },
+    "scientific_status": "SOFTWARE_FOUNDATION_READY"
+  },
+  "p30_hardening": {
+    "schema": "groundview_p30_hardening_v1",
+    "geographic_expansion": "FIELD_VALIDATION_REQUIRED",
+    "auth_gated_deploy": true,
+    "vercel_prod_allowed": false,
+    "note": "No unauthorized vercel --prod. Expansion under authorization only."
+  }
+}
