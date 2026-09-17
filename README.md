@@ -4,19 +4,14 @@ Transport evidence graph: truck = sensor, commodity = signal.
 
 ## Live demo (Vercel)
 
-**https://mabeline.vercel.app** — Iran/oil/truck proof at [`/iran`](https://mabeline.vercel.app/iran), THG map at [`/thg`](https://mabeline.vercel.app/thg).
-
-Repo: https://github.com/kbmillard/mabeline · Vercel root: `financial/`
+**https://mabeline.vercel.app** — Vercel root: `financial/`
 
 ```bash
 cd financial && npm install && npm run dev
 ```
 
-## Catalog CLI
+## Related
 
-```bash
-bin/mabel-catalog thg-linear --from-month 202401 --top-n 50
-bin/mabel-catalog thg-query --sctg2 17
-```
-
-Raw evidence (`_unwrapped/`, `warehouse/`) is gitignored and not deployed.
+- SkyView / earth globe — separate repo `kbmillard/SkyView`
+- Angie's Food Truck — [angieskc.com](https://www.angieskc.com/) · repo `kbmillard/angies`
+- Lab archive (catalog, EARTH research, tests) — branch `archive/lab-2026-09` · tag `archive/pre-slim-20260917`
